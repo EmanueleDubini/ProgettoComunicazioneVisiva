@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
+
 
 /*
 * {
@@ -213,6 +215,11 @@ a.dropdown-item:focus {
     transition: width 0.3s ease; /* Imposta la transizione */
 }
 
+#mainNavigation .nav-item a.active::before {
+    width: 100%;
+}
+
+
 .nav-item a:focus::before,
 .nav-item a:hover::before {
     width: 100%; /* Fai espandere la sottolineatura al 100% */
@@ -249,4 +256,10 @@ a.dropdown-item:focus {
 #navbarNavDropdown.show .navbar-nav{
     background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%);
     padding:12px;
+}
+
+.title{
+    font-family: 'Lobster', sans-serif;
+    font-size:50px;
+    color: #dfdfdf;
 }
