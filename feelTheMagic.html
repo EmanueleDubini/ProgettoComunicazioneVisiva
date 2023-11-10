@@ -84,7 +84,7 @@
         counter++;
 
         // Salva il nuovo valore del contatore nei cookie
-        setCookie("counter", counter, 30); // 30 giorni di scadenza
+        setCookie("counter", counter, 0); // 30 giorni di scadenza
 
         // Verifica se il contatore è maggiore di 0 e la dimensione della finestra è inferiore o uguale a 768
         if (counter > 0 && $(window).width() <= 768) {
