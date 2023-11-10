@@ -238,6 +238,11 @@ a.dropdown-item:focus {
     color:#fff
 }
 
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+
 #mainNavigation {
     position:fixed;
     top:0;
@@ -263,3 +268,4 @@ a.dropdown-item:focus {
     font-size:50px;
     color: #dfdfdf;
 }
+

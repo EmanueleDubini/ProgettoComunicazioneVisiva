@@ -82,7 +82,7 @@
                     <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
                 </button>
             </div>
-            <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="text-center mt-3 collapse navbar-collapse show" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Our Story</a>
@@ -142,17 +142,22 @@
         // Incrementa il contatore
         counter++;
 
-
         // Salva il nuovo valore del contatore nei cookie
         setCookie("counter", counter, 0); // 30 giorni di scadenza
 
+
+
         // Verifica se il contatore è maggiore di 0 e la dimensione della finestra è inferiore o uguale a 768
-        if (counter > 0 && $(window).width() <= 768) {
-            $("#navbarNavDropdown").addClass("show");
+        if ($(window).width() <= 768) {
+            console.log("Ci sono entrato!")
+            console.log("Ho aggiunto show");
             // Attendi 1000 millisecondi (1 secondo) prima di simulare il click
             setTimeout(function() {
                 $(".navbar-toggler").trigger("click");
             }, 1000);
+        } else{
+
+            console.log("Il contatore è uguale a 0 e quindi sono nell'else!");
         }
     });
 
