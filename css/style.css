@@ -165,6 +165,13 @@ END CSS CONFIG FOR NAVBAR HTML + CSS*/
     color: #0c0725;
     position: relative;
     display: inline-block;
+    width: auto;
+    padding: 0 0 3px;
+
+}
+#mainNavigation .li-dropdown-item {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #mainNavigation .dropdown-menu a::before {
@@ -240,6 +247,6 @@ a.dropdown-item:focus {
 
 #navbarNavDropdown.collapsing .navbar-nav,
 #navbarNavDropdown.show .navbar-nav{
-    background:#0c0725;
+    background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%);
     padding:12px;
 }
