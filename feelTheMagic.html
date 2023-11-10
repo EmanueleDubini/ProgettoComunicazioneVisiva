@@ -77,47 +77,14 @@
 
 <script>
     $(document).ready(function(){
-        // Leggi il valore del contatore dai cookie
-        var counter = parseInt(getCookie("counter")) || 0;
-
-        // Incrementa il contatore
-        counter++;
-
-        // Salva il nuovo valore del contatore nei cookie
-        setCookie("counter", counter, 0); // 0 giorni di scadenza
-
         // Verifica se il contatore è maggiore di 0 e la dimensione della finestra è inferiore o uguale a 768
-        if (counter > 0 && $(window).width() <= 768) {
+        if ($(window).width() <= 768) {
             // Attendi 1000 millisecondi (1 secondo) prima di simulare il click
             setTimeout(function() {
                 $(".navbar-toggler").trigger("click");
             }, 1000);
         }
     });
-
-    // Funzione per impostare un cookie
-    function setCookie(name, value, days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + value + expires + "; path=/";
-    }
-
-    // Funzione per ottenere il valore di un cookie
-    function getCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            console.log("Valore counter: ", c);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-    }
 </script>
 
 
