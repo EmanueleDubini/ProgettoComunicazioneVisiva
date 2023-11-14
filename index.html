@@ -77,12 +77,12 @@
         <nav role="navigation">
         </nav>
         <div class="navbar-expand-md">
-            <div class="navbar-dark text-center my-2">
+            <div class="navbar-dark text-center my-0">
                 <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
                 </button>
             </div>
-            <div class="text-center mt-3 collapse navbar-collapse show" id="navbarNavDropdown">
+            <div class="text-center mt-0 collapse navbar-collapse show" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Our Story</a>
@@ -116,15 +116,17 @@
                 </ul>
             </div>
         </div>
-
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-6 text-center">
-                <h1 class="title">Serenity Dreams Travel</h1>
-            </div>
-        </div>
-
-
     </div>
+
+    <!--
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-6 text-center">
+            <h1 class="title">Serenity Dreams Travel</h1>
+        </div>
+    </div>
+
+    -->
 
     <!-- END NAVBAR BOOTSTRAP + CSS -->
 
@@ -143,7 +145,7 @@
             // Attendi 1000 millisecondi (1 secondo) prima di simulare il click
             setTimeout(function() {
                 $(".navbar-toggler").trigger("click");
-            }, 1000);
+            }, 500);
         }
     });
 </script>

@@ -244,23 +244,25 @@ a.dropdown-item:focus {
 }
 
 #mainNavigation {
-    position:fixed;
+    /*La barra, in questo modo, rimane fissata, ma gli elementi è come se non considerassero la barra*/
+    /*position: fixed; */
     top:0;
     left:0;
     width:100%;
     z-index:123;
-    padding-bottom:120px;
+    padding-bottom:25px;
+    padding-top: 0;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(top,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 #navbarNavDropdown.collapsing .navbar-nav,
 #navbarNavDropdown.show .navbar-nav{
     background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%);
-    padding:12px;
+    padding: 12px;
 }
 
 .title{
@@ -268,4 +270,3 @@ a.dropdown-item:focus {
     font-size:50px;
     color: #dfdfdf;
 }
-
