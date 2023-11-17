@@ -140,3 +140,15 @@ a.dropdown-item:focus {
     margin-left: 0;
 }
 
+#carouselExampleRide {
+    height: auto; /* Imposta l'altezza del carosello su "auto" */
+}
+
+#carouselExampleRide .carousel-inner {
+    height: 100%; /* Imposta l'altezza del contenitore interno del carosello al 100% */
+}
+
+#carouselExampleRide .carousel-item {
+    height: 100%; /* Imposta l'altezza di ogni elemento del carosello al 100% */
+}
+
