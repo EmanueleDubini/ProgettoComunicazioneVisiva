@@ -62,10 +62,6 @@ body {
     transform: scale(1,1.1) translate(-50%, 10%);
 }
 
-#mainNavigation{
-    position: fixed;
-}
-
 
 #mainNavigation a {
     font-family: 'Cabin', sans-serif;
@@ -171,7 +167,7 @@ a.dropdown-item:focus {
 
 #mainNavigation {
     /*La barra, in questo modo, rimane fissata, ma gli elementi è come se non considerassero la barra*/
-    /*position: fixed; */
+    position: sticky;
     top:0;
     left:0;
     width:100%;
