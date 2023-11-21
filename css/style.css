@@ -44,7 +44,7 @@ body {
     background-size: cover;
 }
 .section1 .text {
-    top:10%;
+    top:40%;
     transform: translateZ(-0.5px) scale(1.5,1.6) translate(-33%,10%);
 }
 .section2 {
@@ -55,13 +55,16 @@ body {
     left:50%;
     position: absolute;
     font-family: 'Lobster';
-    font-size: 10vw;
+    font-size: 9vw;
     color:white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
     transform: scale(1,1.1) translate(-50%, 10%);
 }
 
+#mainNavigation{
+    position: fixed;
+}
 
 
 #mainNavigation a {
