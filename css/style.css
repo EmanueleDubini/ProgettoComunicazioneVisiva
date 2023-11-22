@@ -31,7 +31,7 @@ body {
     width:100%;
     height: 100%;
     position: absolute;
-    background: url("landscape4k.jpg") top center;
+    background: url("img/landscape4k.jpg") top center;
     background-size: cover;
     transform: translateZ(-0.5px) scale(2.2);
 }
@@ -40,7 +40,7 @@ body {
     width:100%;
     height: 100%;
     position: absolute;
-    background: url("landscape4k_2.png") top center;
+    background: url("img/landscape4k_2.png") top center;
     background-size: cover;
 }
 .section1 .text {
