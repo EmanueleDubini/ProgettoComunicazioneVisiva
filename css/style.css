@@ -209,20 +209,6 @@ a.dropdown-item:focus {
     margin-right: 0;
     margin-left: 0;
 }
-
-#carouselExampleRide {
-    height: auto; /* Imposta l'altezza del carosello su "auto" */
-    width: 100%;
-}
-
-#carouselExampleRide .carousel-inner {
-    height: 100%; /* Imposta l'altezza del contenitore interno del carosello al 100% */
-}
-
-#carouselExampleRide .carousel-item {
-    height: 100%; /* Imposta l'altezza di ogni elemento del carosello al 100% */
-}
-
 /* CAROSELLO */
 /* ----------- SLIDER ------------ */
 .swiper{
@@ -313,6 +299,8 @@ contenitore{
     align-items: center;
     height: 100vh;
 }
+
+/* CAROSELLO END*/
 
 
 
