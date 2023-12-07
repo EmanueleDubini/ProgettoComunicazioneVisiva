@@ -4,7 +4,7 @@
 /* ------------ VARIABLES ------------ */
 :root{
     /* FONT */
-    --fontLobsterSansSerif: 'Lobster', sans-serif; /*todo capire se tenere due font sans serif da famiglie diverse*/
+    --fontLobsterSansSerif: 'Lobster', sans-serif;
 
     /* COLORS */
     --backgroundColor: #181335;
@@ -219,7 +219,7 @@ a.dropdown-item:focus {
     height: 35em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .card{

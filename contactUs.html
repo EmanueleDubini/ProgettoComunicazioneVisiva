@@ -97,7 +97,6 @@
                     <div class="card__image">
                         <img src="css/img/user1Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Web Designer</span>
                         <span class="card__name">Vanessa Martinez</span>
@@ -106,11 +105,10 @@
                     </div>
                 </div>
 
-                <div class="card swiper-slide">
+                <div class="card swiper-slide swiper-slide-visible">
                     <div class="card__image">
                         <img src="css/img/user2Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Ui Designer</span>
                         <span class="card__name">Sarah Bowen</span>
@@ -123,7 +121,6 @@
                     <div class="card__image">
                         <img src="css/img/user3Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Web Developer</span>
                         <span class="card__name">David Murphy</span>
@@ -132,18 +129,17 @@
                     </div>
                 </div>
 
-                <div class="card swiper-slide">
+                <!--<div class="card swiper-slide">
                     <div class="card__image">
                         <img src="css/img/user4Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Mobile Designer</span>
                         <span class="card__name">Kelsey West</span>
                         <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
                         <button class="card__btn">View More</button>
                     </div>
-                </div>
+                </div>-->
 
             </div>
         </section>
@@ -154,9 +150,10 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
+            initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
             centeredSlides: true,
             slidesPerView: "auto",
             coverflowEffect: {
