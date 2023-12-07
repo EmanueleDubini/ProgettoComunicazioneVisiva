@@ -31,7 +31,7 @@ body {
     width:100%;
     height: 100%;
     position: absolute;
-    background: url("img/landscape4k.jpg") top center;
+    background: url("img/Base.png") top center;
     background-size: cover;
     transform: translateZ(-0.5px) scale(2.2);
 }
@@ -40,11 +40,11 @@ body {
     width:100%;
     height: 100%;
     position: absolute;
-    background: url("img/landscape4k_2.png") top center;
+    background: url("img/First Layer.png") top center;
     background-size: cover;
 }
 .section1 .text {
-    top:40%;
+    top:25%;
     transform: translateZ(-0.5px) scale(1.5,1.6) translate(-33%,10%);
 }
 .section2 {
@@ -175,9 +175,9 @@ a.dropdown-item:focus {
     padding-bottom:25px;
     padding-top: 0;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(top,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(left,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
