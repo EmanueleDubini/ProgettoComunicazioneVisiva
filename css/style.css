@@ -5,7 +5,7 @@
 :root{
     /* FONT */
     --fontLobsterSansSerif: 'Lobster', sans-serif;
-    --fontCabinSansSerif: 'Cabin', sans-serif; /*font usato nella navigation bar*/
+    --fontCabinSansSerif: 'Cabin', sans-serif; /*font usato nella navigation bar*/ /*todo aggiornare font come su figma*/
 
     /* COLORS */
     --backgroundColor: #181335;
