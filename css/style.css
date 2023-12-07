@@ -184,8 +184,15 @@ a.dropdown-item:focus {
     left:0;
     width:100%;
     z-index:123;
-    padding-bottom:0px;
-    padding-top: 0;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.nav-colored{
+    background: #181335;
+}
+
+.nav-transparent{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: -moz-linear-gradient(left,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
