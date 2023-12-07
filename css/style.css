@@ -66,7 +66,7 @@ body {
 
 #mainNavigation a {
     font-family: 'Cabin', sans-serif;
-    font-size:14px;
+    font-size:20px;
     text-transform:uppercase;
     letter-spacing:2px;
     justify-content: space-between;
@@ -173,7 +173,7 @@ a.dropdown-item:focus {
     left:0;
     width:100%;
     z-index:123;
-    padding-bottom:25px;
+    padding-bottom:0px;
     padding-top: 0;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: -moz-linear-gradient(left,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
