@@ -1,20 +1,17 @@
 /* ------------ GOOGLE FONTS ------------ */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
 
 /* ------------ VARIABLES ------------ */
 :root{
     /* FONT */
-    /*--font: 'Poppins', sans-serif;*/
+    --fontLobsterSansSerif: 'Lobster', sans-serif; /*todo capire se tenere due font sans serif da famiglie diverse*/
 
     /* COLORS */
-    --color: #9176FF;
-    /*--bg-color: #f4f4f4;*/
+    --backgroundColor: #181335;
+    --carouselColor: #9176FF;
 }
-
+/* todo UTILIZZARE LE CLASSI DI BOOTSTRAP PER PADDING/MARGIN */
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
-
-/*UTILIZZARE LE CLASSI DI BOOTSTRAP PER PADDING/MARGIN */
 
 html{
     height: 100vh;
@@ -25,7 +22,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin:0;
-    background: #181335;
+    background: var(--backgroundColor);
     perspective: 1px;
     transform-style: preserve-3d;
     overflow-x: hidden;
@@ -65,7 +62,7 @@ body {
     top:30%;
     left:50%;
     position: absolute;
-    font-family: 'Lobster';
+    font-family: var(--fontLobsterSansSerif);
     font-size: 9vw;
     color:white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
@@ -76,7 +73,7 @@ body {
 
 
 #mainNavigation a {
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--fontLobsterSansSerif);
     font-size:20px;
     text-transform:uppercase;
     letter-spacing:2px;
@@ -203,13 +200,15 @@ a.dropdown-item:focus {
 
 
 .title{
-    font-family: 'Lobster', sans-serif;
+    font-family: var(--fontLobsterSansSerif);
     font-size:50px;
     color: #dfdfdf;
     margin-right: 0;
     margin-left: 0;
 }
-/* CAROSELLO */
+
+
+/* ----------- CAROSELLO contactUs.html ------------ */
 /* ----------- SLIDER ------------ */
 .swiper{
     width: 100%;
@@ -220,6 +219,7 @@ a.dropdown-item:focus {
     height: 35em;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card{
@@ -245,7 +245,7 @@ a.dropdown-item:focus {
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 5px solid var(--color);
+    border: 5px solid var(--carouselColor);
     padding: 3px;
     margin-bottom: 2em;
 }
@@ -271,7 +271,7 @@ a.dropdown-item:focus {
 }
 
 .card__name{
-    color: var(--color);
+    color: var(--carouselColor);
 }
 
 .card__text{
@@ -281,7 +281,7 @@ a.dropdown-item:focus {
 }
 
 .card__btn{
-    background-color: var(--color);
+    background-color: var(--carouselColor);
     color: #fff;
     font-size: 1rem;
     text-transform: uppercase;
@@ -293,14 +293,7 @@ a.dropdown-item:focus {
     cursor: pointer;
 }
 
-contenitore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* CAROSELLO END*/
+/* ------------ CAROSELLO contactUs.html END ------------*/
 
 
 
