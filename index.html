@@ -103,25 +103,27 @@
 </body>
 </html>
 
+
+<!-- Script per animazione di cambio colore dello sfondo della navbar con lo scorrimento-->
 <script>
     $(document).ready(function(){
-
         console.log("Sono entrato");
-        $("body").scroll(function(){
-            console.log("sono rientrato")
-            var scroll = $(window).scrollTop();
+
+        $("html, body").on("scroll", function(){
+            console.log("Sono rientrato");
+
+            var scroll = $(this).scrollTop();
             console.log(scroll);
-            if (scroll > 50) {
-                document.getElementById("mainNavigation").classList.remove("nav-transparent");
-                document.getElementById("mainNavigation").classList.add("nav-colored");
+
+            if (scroll > 300) {
+                $("#mainNavigation").removeClass("nav-transparent").addClass("nav-colored");
+            } else {
+                $("#mainNavigation").removeClass("nav-colored").addClass("nav-transparent");
             }
-            else{
-                document.getElementById("mainNavigation").classList.remove("nav-colored");
-                document.getElementById("mainNavigation").classList.add("nav-transparent");
-            }
-        })
-    })
+        });
+    });
 </script>
+
 
 <!-- Script per animazione di chiusura del menù in MOBILE -->
 

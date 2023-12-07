@@ -82,6 +82,26 @@
 
 </body>
 
+<!-- Script per animazione di cambio colore dello sfondo della navbar con lo scorrimento-->
+<script>
+    $(document).ready(function(){
+        console.log("Sono entrato");
+
+        $("html, body").on("scroll", function(){
+            console.log("Sono rientrato");
+
+            var scroll = $(this).scrollTop();
+            console.log(scroll);
+
+            if (scroll > 300) {
+                $("#mainNavigation").removeClass("nav-transparent").addClass("nav-colored");
+            } else {
+                $("#mainNavigation").removeClass("nav-colored").addClass("nav-transparent");
+            }
+        });
+    });
+</script>
+
 <script>
     $(document).ready(function(){
         // Verifica se il contatore è maggiore di 0 e la dimensione della finestra è inferiore o uguale a 768
