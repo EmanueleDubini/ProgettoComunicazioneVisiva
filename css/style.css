@@ -5,6 +5,7 @@
 :root{
     /* FONT */
     --fontLobsterSansSerif: 'Lobster', sans-serif;
+    --fontCabinSansSerif: 'Cabin', sans-serif; /*font usato nella navigation bar*/
 
     /* COLORS */
     --backgroundColor: #181335;
@@ -73,7 +74,7 @@ body {
 
 
 #mainNavigation a {
-    font-family: var(--fontLobsterSansSerif);
+    font-family: var(--fontCabinSansSerif);
     font-size:20px;
     text-transform:uppercase;
     letter-spacing:2px;
@@ -219,7 +220,6 @@ a.dropdown-item:focus {
     height: 35em;
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
 }
 
 .card{
