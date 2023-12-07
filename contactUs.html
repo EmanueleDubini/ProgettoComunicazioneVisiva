@@ -5,6 +5,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Link Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 
@@ -85,8 +87,8 @@
             </div>
         </div>
 
-        <!-- Carousel -->
-        <div class="contenitore">
+        <!-- CAROUSEL -->
+        <!--<div class="contenitore">-->
         <section class="swiper mySwiper">
 
             <div class="swiper-wrapper">
@@ -95,7 +97,6 @@
                     <div class="card__image">
                         <img src="css/img/user1Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Web Designer</span>
                         <span class="card__name">Vanessa Martinez</span>
@@ -104,11 +105,10 @@
                     </div>
                 </div>
 
-                <div class="card swiper-slide">
+                <div class="card swiper-slide swiper-slide-visible">
                     <div class="card__image">
                         <img src="css/img/user2Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Ui Designer</span>
                         <span class="card__name">Sarah Bowen</span>
@@ -121,7 +121,6 @@
                     <div class="card__image">
                         <img src="css/img/user3Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Web Developer</span>
                         <span class="card__name">David Murphy</span>
@@ -130,86 +129,20 @@
                     </div>
                 </div>
 
-                <div class="card swiper-slide">
+                <!--<div class="card swiper-slide">
                     <div class="card__image">
                         <img src="css/img/user4Prova.jpg" alt="card image">
                     </div>
-
                     <div class="card__content">
                         <span class="card__title">Mobile Designer</span>
                         <span class="card__name">Kelsey West</span>
                         <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
                         <button class="card__btn">View More</button>
                     </div>
-                </div>
+                </div>-->
 
             </div>
         </section>
-    </div>
-
-
-
-
-        <!-- old carousel -->
-        <!--
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 my-2">
-                            <div class="card rounded">
-                                <img src="https://i.pravatar.cc/300" class="card-img-top" alt="Image 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card Title 1</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 my-2">
-                            <div class="card rounded">
-                                <img src="https://i.pravatar.cc/300" class="card-img-top rounded" alt="Image 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card Title 2</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 my-2">
-                            <div class="card rounded">
-                                <img src="https://i.pravatar.cc/300" class="card-img-top" alt="Image 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card Title 3</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>-->
-
     </div>
 
     <!-- Swiper JS -->
@@ -217,9 +150,10 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
+            initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
             centeredSlides: true,
             slidesPerView: "auto",
             coverflowEffect: {
