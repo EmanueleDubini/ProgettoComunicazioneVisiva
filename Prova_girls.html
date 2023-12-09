@@ -10,9 +10,8 @@
 
     <title>Home</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- CSS
+    Sto usando un css embedded per non dover sminchiare il css ufficiale, non odiatemi <3 -->
     <style>
         body {
             background-color: #181335;
@@ -47,25 +46,31 @@
             border-radius: 15px;
             font-weight: bold;
             background: #FFE037;
-            padding: 2% 5% 2% 5%;
+            padding: 15px 25px 15px 25px;
         }
 
         .card p {
             color: #120f20;
         }
 
-        .wave {
-            position: sticky;
+        .card{
+            background-color: #fff;
+            border-radius: 2em;
+            box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+            padding: 2rem;
         }
 
     </style>
 </head>
 <body>
 
-<!--codice per la home-->
-<div class="container-fluid my-grid">
-    <div class="row">
+<!--Codice per la HOME-->
+
+<!--Text intro (h2 + p)-->
+<div class="container-fluid">
+    <div class="row g-3">
         <div class="col-sm-12 col-lg-9">
+            <div class="p-5">
             <h2>Dream with us</h2>
             <p>Benvenuto nell'incantevole universo di SerenityDreams Travel, dove ogni viaggio
                 è una poesia di mondi inesplorati e avventure avvolte nella magia.
@@ -74,12 +79,14 @@
                 Abbandona l'ordinario e lasciati trasportare verso destinazioni uniche,
                 dove la magia si fonde con il sogno. Con noi ogni momento è un incantesimo da custodire.
             </p>
+            </div>
         </div>
         <div class="col-sm-0 col-lg-3 offset">
         </div>
     </div>
 </div>
 
+<!--Immy astronauta + 3 sotto-paragrafi e CTA-->
 <div class="container-fluid my-grid">
     <div class="row">
         <div class="col-sm-12 col-lg-6">
@@ -88,7 +95,7 @@
         <div class="col-1 offset">
         </div>
         <div class="col-sm-12 col-lg-5">
-            <div class="row">
+            <div class="row g-2">
                 <div class="col-12">
                     <a href=""><h3>Our story →</h3></a>
                     <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
@@ -112,14 +119,21 @@
     </div>
 </div>
 
+<!--Recensioni (h2 + cards + CTA), ocio però che con lo stile definito nel CSS ufficiale si sminchiano di brutto da mobile,
+ andando sul footer-->
+<!--Come cazz si staccnao tra loro le card con Bootstrap aaaahhhhh
+Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e p, ma santo cielo non ne vuole sapere di staccarle in orizzontale
+(in verticale però funziona da mobile quando si incolonnano gli elementi, gang gang)-->
 <div class="container-fluid">
-    <div class="row">
+
+    <div class="row g-3">
         <div class="col-12 text-center">
             <h3>Dicono di noi</h3>
         </div>
-        <div class="col-12 flex d-flex justify-content-center">
-            <div class="row">
-                <div class="col-4 card text-center">
+
+        <div class="col-12 text-center">
+            <div class="row g-4">
+                <div class="col-sm-12 col-lg-4 card">
                         <div class="col-12">
                             <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                         </div>
@@ -128,7 +142,7 @@
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
-                <div class="col-4 card text-center">
+                <div class="col-sm-12 col-lg-4 card">
                     <div class="col-12">
                         <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                     </div>
@@ -137,7 +151,7 @@
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
-                <div class="col-4 card text-center">
+                <div class="col-sm-12 col-lg-4 card">
                     <div class="col-12">
                         <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                     </div>
@@ -145,8 +159,58 @@
                         <h6 class="card-title">Nome utente</h6>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
+                    </div>
                 </div>
-                </div>
+            </div>
+
+        <div class="col-12 flex d-flex justify-content-center">
+            <button>I NOSTRI BADGE</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- CODICE PER "OUR STORY"-->
+<!--Intro text-->
+<div class="container-fluid">
+    <div class="row g-3">
+        <div class="col-sm-12 col-lg-9">
+            <div class="p-5">
+                <h2>La nostra storia</h2>
+                <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
+                    L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.
+                    Attraverso generazioni, la passione per i viaggi straordinari è stata tramandata e il desiderio di offrire esperienze uniche
+                    ha condotto alla nascita di SerenityDreams Travel. Sin dai suoi inizi, si è evoluta con il tempo mantenendo sempre un
+                    tocco di magia nelle sue proposte di viaggio. Ci impegniamo ogni giorno a trasportare i nostri clienti in avventure indimenticabili,
+                    creando ricordi che resteranno impressi nei loro cuori per sempre
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-0 col-lg-3 offset">
+        </div>
+    </div>
+</div>
+
+<!--Vision e mission -->
+<div class="container-fluid">
+    <div class="row g-3">
+        <div class="col-sm-12 col-lg-6 text-center card">
+            <div class="card-body">
+                <h6 class="card-title">Vision</h6>
+                <p class="card-text">Immaginiamo un futuro in cui il viaggio è una forma d'arte personalizzabile
+                    e aspiriamo ad essere pionieri nell'esplorazione di nuovi orizzonti, offrendo pacchetti di viaggio distintivi
+                    per ogni target che rappresentiamo. La nostra vision è di diventare il punto di riferimento nell’organizzazione
+                    di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici.</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 text-center card">
+            <div class="card-body">
+                <h6 class="card-title">Mission</h6>
+                <p class="card-text">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
+                        offrendo itinerari attentamente curati che catturano la magia e la bellezza di mondi mistici.
+                        Ci impegniamo a creare ricordi indimenticabili, superando le aspettative dei nostri clienti e
+                        ispirando una connessione più profonda con la diversità della nostra galassia.
+                </p>
             </div>
         </div>
     </div>
@@ -156,9 +220,9 @@
 <img src="css/img/Icon/Onda_bianca.svg" alt="Onda" class="wave">
 -->
 
-<!--codice per il footer-->
+<!--Codice per il FOOTER-->
 <div class="container-fluid my-class">
-    <footer class="row align-items-center">
+    <footer class="row g-2 align-items-center">
         <div class="col-sm-12 col-lg-5 nav flex-column">
             <div class="row">
                 <div class="col-sm-8 col-lg-12 flex-column flex-direction-column ">
