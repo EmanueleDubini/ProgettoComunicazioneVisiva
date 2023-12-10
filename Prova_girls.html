@@ -22,7 +22,7 @@
             font-size: 9vh;
         }
 
-        p, h1, h2, h3, li, h6 {
+        p, h1, h2, h3, h4, li, h6 {
             color: white;
         }
 
@@ -36,10 +36,6 @@
 
         .my-class {
             background: #0C0922;
-        }
-
-        .my-grid {
-            padding: 0 5vw 0 5vw;
         }
 
         button {
@@ -86,8 +82,10 @@
     </div>
 </div>
 
+<br> <!--Non ho voglia di mettere css quindi per separare le cose per ora uso il br, don't judge me-->
+
 <!--Immy astronauta + 3 sotto-paragrafi e CTA-->
-<div class="container-fluid my-grid">
+<div class="container-fluid px-5">
     <div class="row">
         <div class="col-sm-12 col-lg-6">
             <img src="css/img/Astronauta.png" alt="Astronauta" class="img-fluid">
@@ -119,13 +117,14 @@
     </div>
 </div>
 
+<br>
+
 <!--Recensioni (h2 + cards + CTA), ocio però che con lo stile definito nel CSS ufficiale si sminchiano di brutto da mobile,
  andando sul footer-->
 <!--Come cazz si staccnao tra loro le card con Bootstrap aaaahhhhh
 Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e p, ma santo cielo non ne vuole sapere di staccarle in orizzontale
 (in verticale però funziona da mobile quando si incolonnano gli elementi, gang gang)-->
 <div class="container-fluid">
-
     <div class="row g-3">
         <div class="col-12 text-center">
             <h3>Dicono di noi</h3>
@@ -133,7 +132,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
 
         <div class="col-12 text-center">
             <div class="row g-4">
-                <div class="col-sm-12 col-lg-4 card">
+                <div class="col-sm-12 col-lg-4 card my-3">
                         <div class="col-12">
                             <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                         </div>
@@ -142,7 +141,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
-                <div class="col-sm-12 col-lg-4 card">
+                <div class="col-sm-12 col-lg-4 card my-3">
                     <div class="col-12">
                         <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                     </div>
@@ -151,7 +150,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4 card">
+                <div class="col-sm-12 col-lg-4 card my-3">
                     <div class="col-12">
                         <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                     </div>
@@ -169,13 +168,13 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
     </div>
 </div>
 
+<br>
 
 <!-- CODICE PER "OUR STORY"-->
 <!--Intro text-->
 <div class="container-fluid">
     <div class="row g-3">
-        <div class="col-sm-12 col-lg-9">
-            <div class="p-5">
+        <div class="col-sm-12 col-lg-9 p-5">
                 <h2>La nostra storia</h2>
                 <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
                     L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.
@@ -184,17 +183,18 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                     tocco di magia nelle sue proposte di viaggio. Ci impegniamo ogni giorno a trasportare i nostri clienti in avventure indimenticabili,
                     creando ricordi che resteranno impressi nei loro cuori per sempre
                 </p>
-            </div>
         </div>
         <div class="col-sm-0 col-lg-3 offset">
         </div>
     </div>
 </div>
 
+<br>
+
 <!--Vision e mission -->
 <div class="container-fluid">
-    <div class="row g-3">
-        <div class="col-sm-12 col-lg-6 text-center card">
+    <div class="row g-3 mx-5">
+        <div class="col-sm-12 col-lg-6 text-center card w-50">
             <div class="card-body">
                 <h6 class="card-title">Vision</h6>
                 <p class="card-text">Immaginiamo un futuro in cui il viaggio è una forma d'arte personalizzabile
@@ -203,7 +203,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                     di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici.</p>
             </div>
         </div>
-        <div class="col-sm-12 col-lg-6 text-center card">
+        <div class="col-sm-12 col-lg-6 text-center card w-50 ">
             <div class="card-body">
                 <h6 class="card-title">Mission</h6>
                 <p class="card-text">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
@@ -215,6 +215,167 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
         </div>
     </div>
 </div>
+
+<br>
+
+<!-- Come lavoriamo-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>Come lavoriamo</h2>
+        </div>
+        <div class="row g-1">
+            <div class="col-sm-12 col-lg-6 px-5">
+                <p>Il nostro staff altamente qualificato presso SerenityDreams Travel è dedicato
+                    a garantire un'esperienza di viaggio senza precedenti.
+                    Il nostro team si impegna a comprendere appieno le aspettative del cliente,
+                    curando ogni dettaglio per assicurare che il viaggio sia impeccabile e
+                    rispecchi fedelmente le sue passioni e interessi.
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-6 px-5">
+                <p>Siamo presenti in ogni fase del viaggio per garantire un supporto continuo.
+                    Ogni membro del team è impegnato nel mettere a proprio agio il cliente fin dal primo contatto,
+                    ascoltando attentamente le loro esigenze e desideri per creare un viaggio su misura.
+                </p>
+            </div>
+
+            <div class="row g-2 text-center">
+                <div class="col-12">
+                <img src="css/img/HelpDesk.png" alt ="Help desk" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!--Premi e riconoscimenti-->
+<div class="container-fluid">
+    <div class="row g-3">
+        <div class="col-sm-12 col-lg-9">
+            <div class="p-5">
+                <h2>Premi e riconoscimenti</h2>
+                <p>SerenityDreams Travel è stata onorata di preziosi riconoscimenti per la qualità
+                    e la diversificazione dei servizi proposti per singolo target, per l'eccellenza del suo
+                    servizio clienti e per l’impeccabile formazione del suo staff.
+                    SerenityDreams Travel si conferma così, anche per quest’anno,
+                    la miglior agenzia di viaggi interstellari 2023/2024.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-0 col-lg-3 offset">
+        </div>
+    </div>
+    <div class="row g-3 justify-content-center px-5">
+        <div class="col-2 mx-4">
+            <img src="css/img/Icon/libro.svg" class="img-fluid">
+        </div>
+        <div class="col-2 mx-4">
+            <img src="css/img/Icon/Bacchetta.svg" class="img-fluid">
+        </div>
+        <div class="col-2 mx-4">
+            <img src="css/img/Icon/nuvola.svg" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!--CODICE PER "FEEL THE MAGIC"-->
+<!--Pianeta-->
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-lg-6 px-5">
+            <img src="css/img/Othania_close_up.png" alt="Scorcio di Othania" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-lg-2 text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Celsius</h4>
+                    <p>32°</p>
+                </div>
+                <div class="col-12">
+                    <h4>Umidità</h4>
+                    <p>10%</p>
+                </div>
+                <div class="col-12">
+                    <h4>Ossigeno</h4>
+                    <p>80%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!--Navicella-->
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center text-center">
+        <div class="col-12 px-5 ">
+            <img src="css/img/Navicella.png" alt="Navicella" class="img-fluid">
+        </div>
+        <div class="col-12 text-center px-5">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Celsius</h4>
+                    <p>32°</p>
+                </div>
+                <div class="col-4">
+                    <h4>Umidità</h4>
+                    <p>10%</p>
+                </div>
+                <div class="col-4">
+                    <h4>Ossigeno</h4>
+                    <p>80%</p>
+                </div>
+                <div class="col-12">
+                    <button>CONTACT US</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!--Preparati a viaggiare con noi-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 px-5">
+            <h2>Preparati a viaggiare con noi</h2>
+        </div>
+        <div class="row g-1">
+            <div class="col-sm-12 col-lg-6 px-5">
+                <p>Prima di intraprendere questo straordinario viaggio, assicuratevi di essere preparati
+                    per l'avventura cosmica che vi attende.
+                    Abbandonate le preoccupazioni terrestri e aprite la vostra mente
+                    al mistero dello spazio profondo.
+                    Indossate l'elmetto stellare che vi proteggerà durante il viaggio e
+                    vi permetterà di respirare l'aria extraterrestre. Assicuratevi di avere con voi
+                    il diario intergalattico per annotare i vostri incontri con le meraviglie aliene.
+                    Prima di salire a bordo, immergetevi nella magia di questo viaggio unico.
+                    Preparatevi a viaggiare con noi, perché il vostro destino cosmico vi aspetta ora!
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-6 px-5">
+                <p>Arrivati a Othania, troverete un pianeta dalle condizioni climatiche paradisiache.
+                    Esplorate boschi eterei e giardini fluttuanti, immergetevi nelle acque cristalline dei laghi
+                    galattici e scoprite la flora e la fauna uniche di questo magico mondo.
+                    La nostra navicella vi accompagnerà in un atterraggio morbido, garantendo un accesso
+                    senza sforzo alle meraviglie di Othania.
+                    Il nostro personale, composto da guide esperte e accoglienti, sarà a vostra disposizione
+                    per garantire che ogni istante del vostro viaggio sia straordinario, siano incontri
+                    con creature aliene affascinanti o momenti di relax sotto cieli stellati.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
 
 <!--My brain is not braining enough to adjuste the fucking position for this motherfucker wave ^^
 <img src="css/img/Icon/Onda_bianca.svg" alt="Onda" class="wave">
@@ -264,6 +425,11 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
         </div>
     </footer>
 </div>
+
+<!--Sto cazzo sto cazzone che mi metto a fare le card sovrapposte alla domenica mattina-->
+
+<!--CODICE PER OTHANIA-->
+
 
 </body>
 </html>
