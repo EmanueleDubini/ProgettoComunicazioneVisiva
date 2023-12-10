@@ -121,9 +121,6 @@
 
 <!--Recensioni (h2 + cards + CTA), ocio però che con lo stile definito nel CSS ufficiale si sminchiano di brutto da mobile,
  andando sul footer-->
-<!--Come cazz si staccnao tra loro le card con Bootstrap aaaahhhhh
-Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e p, ma santo cielo non ne vuole sapere di staccarle in orizzontale
-(in verticale però funziona da mobile quando si incolonnano gli elementi, gang gang)-->
 <div class="container-fluid">
     <div class="row g-3">
         <div class="col-12 text-center">
@@ -131,8 +128,8 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
         </div>
 
         <div class="col-12 text-center">
-            <div class="row g-4">
-                <div class="col-sm-12 col-lg-4 card my-3">
+            <div class="row g-4 mx-1 justify-content-center">
+                <div class="col-sm-12 col-lg-4 mx-1 card w-25">
                         <div class="col-12">
                             <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                         </div>
@@ -141,7 +138,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
-                <div class="col-sm-12 col-lg-4 card my-3">
+                <div class="col-sm-12 col-lg-4 mx-1 card w-25">
                     <div class="col-12">
                         <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                     </div>
@@ -150,7 +147,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4 card my-3">
+                <div class="col-sm-12 col-lg-4 mx-1 card w-25">
                     <div class="col-12">
                         <h4 style="color: #120f20">Qui ci vanno le stelline</h4>
                     </div>
@@ -193,8 +190,8 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
 
 <!--Vision e mission -->
 <div class="container-fluid">
-    <div class="row g-3 mx-5">
-        <div class="col-sm-12 col-lg-6 text-center card w-50">
+    <div class="row g-3 justify-content-center">
+        <div class="col-sm-12 col-lg-6 text-center mx-5 card w-25">
             <div class="card-body">
                 <h6 class="card-title">Vision</h6>
                 <p class="card-text">Immaginiamo un futuro in cui il viaggio è una forma d'arte personalizzabile
@@ -203,7 +200,7 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
                     di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici.</p>
             </div>
         </div>
-        <div class="col-sm-12 col-lg-6 text-center card w-50 ">
+        <div class="col-sm-12 col-lg-6 text-center mx-5 card w-25">
             <div class="card-body">
                 <h6 class="card-title">Mission</h6>
                 <p class="card-text">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
@@ -377,6 +374,28 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
 
 <br>
 
+<!--Sto cazzo sto cazzone che mi metto a fare le card sovrapposte alla domenica mattina-->
+
+<!--CODICE PER OTHANIA-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6 px-5">
+            <h2>Il pianeta</h2>
+            <p>Othania è stata scoperta per caso da un gruppo di esploratori spaziali nel 2019.
+                Inizialmente invisibile ai radar, il pianeta si è rivelato grazie a un'aura magica
+                che nascondeva la sua presenza. La sua storia è avvolta nel mistero, con leggende antiche che
+                suggeriscono la sua origine magica. La flora di Othania è un'opera d'arte vivente.
+                Piante dalle foglie cangianti seguono il ciclo delle stagioni in un'unica giornata,
+                mentre fiori emettono melodie armoniche al tocco. La fauna è altrettanto straordinaria,
+                con creature mistiche a solcare il suo cielo.
+            </p>
+        </div>
+        <div class="col-sm-12 col-lg-6 px-5">
+            <img src="css/img/Othania.png" alt="Othania" class="img-fluid">
+        </div>
+    </div>
+</div>
+
 <!--My brain is not braining enough to adjuste the fucking position for this motherfucker wave ^^
 <img src="css/img/Icon/Onda_bianca.svg" alt="Onda" class="wave">
 -->
@@ -425,10 +444,6 @@ Ho visto che c'è un modo per non usare il CSS, usando le classi predefinite g e
         </div>
     </footer>
 </div>
-
-<!--Sto cazzo sto cazzone che mi metto a fare le card sovrapposte alla domenica mattina-->
-
-<!--CODICE PER OTHANIA-->
 
 
 </body>
