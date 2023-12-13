@@ -29,6 +29,20 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+button {
+    border-radius: 15px;
+    font-weight: bold;
+    background: #FFE037;
+    padding: 15px 25px 15px 25px;
+}
+
+a{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 5px; /* todo capire quando spostare la sottolineatura*/
+}
+
 .section1, .section2 {
     width:100%;
     min-height: 100vh;
@@ -70,6 +84,10 @@ body {
     5px 5px 70px rgba(255,255,255,0.5);
     transform: scale(1,1.1) translate(-50%, 10%);
     text-align: center;
+}
+
+p, h1, h2, h3, h4, li, h6 {
+    color: white;
 }
 
 
@@ -269,6 +287,10 @@ a.dropdown-item:focus {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.card__content p{
+    color: black;
 }
 
 .card__title{
