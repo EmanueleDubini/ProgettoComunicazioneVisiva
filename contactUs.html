@@ -88,44 +88,45 @@
         </div>
 
         <!-- CAROUSEL -->
-        <!--<div class="contenitore">-->
+        <!-- Slider main container -->
         <section class="swiper mySwiper">
-
+            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
 
+                <!-- Slides -->
                 <div class="card swiper-slide">
                     <div class="card__image">
-                        <img src="css/img/user1Prova.jpg" alt="card image">
+                        <img src="css/img/Guide-calysa.png" alt="card image">
                     </div>
                     <div class="card__content">
-                        <span class="card__title">Web Designer</span>
-                        <span class="card__name">Vanessa Martinez</span>
-                        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-                        <button class="card__btn">View More</button>
+                        <span class="card__title">Calysa</span>
+                        <!--<span class="card__name">Vanessa Martinez</span>-->
+                        <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
+                        <!--<button class="card__btn">View More</button>-->
                     </div>
                 </div>
 
                 <div class="card swiper-slide swiper-slide-visible">
                     <div class="card__image">
-                        <img src="css/img/user2Prova.jpg" alt="card image">
+                        <img src="css/img/Guide-zack.png" alt="card image">
                     </div>
                     <div class="card__content">
-                        <span class="card__title">Ui Designer</span>
-                        <span class="card__name">Sarah Bowen</span>
-                        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-                        <button class="card__btn">View More</button>
+                        <span class="card__title">Zack</span>
+                        <!--<span class="card__name">Sarah Bowen</span>-->
+                        <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
+                        <!--<button class="card__btn">View More</button>-->
                     </div>
                 </div>
 
                 <div class="card swiper-slide">
                     <div class="card__image">
-                        <img src="css/img/user3Prova.jpg" alt="card image">
+                        <img src="css/img/Guide-lumara.png" alt="card image">
                     </div>
                     <div class="card__content">
-                        <span class="card__title">Web Developer</span>
-                        <span class="card__name">David Murphy</span>
-                        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-                        <button class="card__btn">View More</button>
+                        <span class="card__title">Lumara</span>
+                        <!--<span class="card__name">David Murphy</span>-->
+                        <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
+                        <!--<button class="card__btn">View More</button>-->
                     </div>
                 </div>
 
@@ -140,8 +141,9 @@
                         <button class="card__btn">View More</button>
                     </div>
                 </div>-->
-
             </div>
+
+            <div class="swiper-pagination"></div> <!-- todo cambiare colore pallini -->
         </section>
     </div>
 
@@ -149,9 +151,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
+    <!-- todo link utile https://uiinitiative.com/catalog/carousel-slider/ -->
     <script>
         const swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
+            // Optional parameters
+            loop: false, // con 'loop: false' il carosello non si ripete all'infinito
+
+            ///spaceBetween: 30,
+
+            effect: "coverflow", // con 'effect: "coverflow"' il carosello scorre con l'effetto coverflow
             grabCursor: true,
             initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
             centeredSlides: true,
@@ -163,9 +171,28 @@
                 modifier: 1,
                 slideShadows: false,
             },
+
             pagination: {
                 el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
             },
+
+            /*autoplay: { // con 'autoplay: true' il carosello scorre automaticamente
+                delay: 5000,
+            },*/
+
+
+            // Navigation arrows
+            /*navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
         });
     </script>
 

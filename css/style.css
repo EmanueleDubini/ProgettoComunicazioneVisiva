@@ -249,18 +249,19 @@ a.dropdown-item:focus {
 }
 
 .card__image{
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
+    width: 12em;
+    height: 12em;
+    border-radius: 20%;
     border: 5px solid var(--carouselColor);
-    padding: 3px;
+    padding: 2px;
+    margin-top: 2em;
     margin-bottom: 2em;
 }
 
 .card__image img{
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
 }
 
@@ -298,6 +299,14 @@ a.dropdown-item:focus {
     border-radius: .5em;
     margin-top: .5em;
     cursor: pointer;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    border: #ffffff solid 1px;
+    background-color: transparent;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffffff;
 }
 
 /* ------------ CAROSELLO contactUs.html END ------------*/
