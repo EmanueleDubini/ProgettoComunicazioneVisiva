@@ -334,5 +334,37 @@ a.dropdown-item:focus {
 /* ------------ CAROSELLO contactUs.html END ------------*/
 
 
+/* ------------ CARD ourStory.html START------------ */
+.card{
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2rem;
+}
+
+.card p {
+    color: #120f20;
+}
+/* ------------ CARD ourStory.html END------------ */
+
+/* ------------ FOOTER START------------ */
+footer {
+    padding: 3vw 5vw 3vw 5vw;
+}
+
+.footer-padding{
+    padding: 0 3% 0 3%;
+}
+
+.myfooter {
+    background: #0C0922;
+}
+
+.myfooter h1{
+    color: white;
+    font-size: 9vh;
+}
+/* ------------ FOOTER END------------ */
+
 
 
