@@ -10,6 +10,8 @@
 
     <title>Home</title>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -81,7 +83,7 @@
             <div class="row g-3">
                 <div class=" col-12"> <!--todo capire se in modalità desktop il paragrafo p si allunga troppo e vadano messi dei bordi oppure col-lg-9-->
                     <div class="mt-5 p-5">
-                        <h2>Dream with us</h2>
+                        <h2 class="text-white">Dream with us</h2>
                         <p class="justify-content-center">Benvenuto nell'incantevole universo di SerenityDreams Travel, dove ogni viaggio
                             è una poesia di mondi inesplorati e avventure avvolte nella magia.
                             Ti invitiamo a sognare con noi attraverso i nostri pacchetti,
@@ -127,6 +129,73 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row mt-5 bg-image white-wave">
+                <div class="col-12 align-self-end">
+                    <h2 class="d-flex justify-content-center">Dicono di noi</h2></div>
+
+                <!-- CAROUSEL -->
+                <!-- Slider main container -->
+                <div class="col-12 swiper mySwiper">
+
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <!-- Slides -->
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="css/img/Guide-calysa.png" alt="card image">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Calysa</span>
+                                    <!--<span class="card__name">Vanessa Martinez</span>-->
+                                    <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
+                                    <!--<button class="card__btn">View More</button>-->
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide swiper-slide-visible">
+                                <div class="card__image">
+                                    <img src="css/img/Guide-zack.png" alt="card image">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Zack</span>
+                                    <!--<span class="card__name">Sarah Bowen</span>-->
+                                    <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
+                                    <!--<button class="card__btn">View More</button>-->
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="css/img/Guide-lumara.png" alt="card image">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Lumara</span>
+                                    <!--<span class="card__name">David Murphy</span>-->
+                                    <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
+                                    <!--<button class="card__btn">View More</button>-->
+                                </div>
+                            </div>
+
+                            <!--<div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="css/img/user4Prova.jpg" alt="card image">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Mobile Designer</span>
+                                    <span class="card__name">Kelsey West</span>
+                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                                    <button class="card__btn">View More</button>
+                                </div>
+                            </div>-->
+                        </div>
+
+                        <div class="swiper-pagination"></div> <!-- todo cambiare colore pallini -->
+                </div>
+                </div>
+
+            </div>
         </div>
 
 
@@ -153,6 +222,54 @@
         };
     </script>
     -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <!--link utile https://uiinitiative.com/catalog/carousel-slider/ -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            // Optional parameters
+            loop: false, // con 'loop: false' il carosello non si ripete all'infinito
+
+            ///spaceBetween: 30,
+
+            effect: "coverflow", // con 'effect: "coverflow"' il carosello scorre con l'effetto coverflow
+            grabCursor: true,
+            initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+
+            /*autoplay: { // con 'autoplay: true' il carosello scorre automaticamente
+                delay: 5000,
+            },*/
+
+
+            // Navigation arrows
+            /*navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
+        });
+    </script>
 
 
 

@@ -40,7 +40,7 @@ button {
 a{
     text-decoration: underline;
     text-decoration-color: white;
-    text-underline-offset: 5px; /* todo capire quando spostare la sottolineatura*/
+    text-underline-offset: 5px; /* todo capire quanto spostare la sottolineatura*/
 }
 
 h3, h4, li, h6 {
@@ -243,7 +243,17 @@ a.dropdown-item:focus {
     margin-left: 0;
 }
 
+/* ----------- index.html.html ------------ */
+.white-wave{
+    background-image: url("../css/img/Onda.png");
+    background-size: cover;
+    min-height: 100vh;
 
+}
+
+.section2 h2{
+    color: var(--backgroundColor);
+}
 /* ----------- CAROSELLO contactUs.html ------------ */
 /* ----------- SLIDER ------------ */
 .swiper{
@@ -336,6 +346,8 @@ a.dropdown-item:focus {
     opacity: 1;
     border: #ffffff solid 1px;
     background-color: transparent;
+    height: 12px;
+    width: 12px;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #ffffff;
