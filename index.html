@@ -10,6 +10,9 @@
 
     <title>Home</title>
 
+    <!-- Font-awesome CDN -->
+    <!-- https://cdnjs.com/libraries/font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- CSS -->
@@ -18,6 +21,7 @@
 
 </head>
 <body>
+
     <!--NAVBAR BOOTSTRAP + CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -70,14 +74,15 @@
     </div>
     <!-- END NAVBAR BOOTSTRAP + CSS -->
 
+    <!-- todo capire e correggere nel codice quando usare <section> e <div> per dare una suddivisione del contenuto della pagina-->
     <!-- todo Un h1 ci deve sempre essere in un sito web anche per questioni SEO
     Penso sia stato messo in un div per gestire il parallasse(?), però è meglio mettere nel div il tag <h1>Serenity Dreams Travel>/h1>
     -->
-    <div class="section1">
+    <section class="section1">
         <div class="text">Serenity Dreams Travel</div>
-    </div>
+    </section>
 
-    <div class="section2">
+    <section class="section2">
         <!--Text intro (h2 + p)-->
         <div class="container-fluid">
             <div class="row g-3">
@@ -132,7 +137,8 @@
 
             <div class="row mt-5 bg-image white-wave">
                 <div class="col-12 align-self-end">
-                    <h2 class="d-flex justify-content-center">Dicono di noi</h2></div>
+                    <h2 class="d-flex justify-content-center">Dicono di noi</h2>
+                </div>
 
                 <!-- CAROUSEL -->
                 <!-- Slider main container -->
@@ -142,65 +148,57 @@
                         <div class="swiper-wrapper">
 
                             <!-- Slides -->
-                            <div class="card swiper-slide">
-                                <div class="card__image">
-                                    <img src="css/img/Guide-calysa.png" alt="card image">
+                            <div class="testimonials-card swiper-slide">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                                 <div class="card__content">
-                                    <span class="card__title">Calysa</span>
-                                    <!--<span class="card__name">Vanessa Martinez</span>-->
-                                    <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
-                                    <!--<button class="card__btn">View More</button>-->
+                                    <span class="name">Orion Blaze</span>
+                                    <p class="card__text">Sono appena tornata da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
                                 </div>
                             </div>
 
-                            <div class="card swiper-slide swiper-slide-visible">
-                                <div class="card__image">
-                                    <img src="css/img/Guide-zack.png" alt="card image">
+                            <div class="testimonials-card swiper-slide">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
                                 </div>
                                 <div class="card__content">
-                                    <span class="card__title">Zack</span>
-                                    <!--<span class="card__name">Sarah Bowen</span>-->
-                                    <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
-                                    <!--<button class="card__btn">View More</button>-->
+                                    <span class="name">Thalassa Nebula</span>
+                                    <p class="card__text">Sono appena tornata da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
                                 </div>
                             </div>
 
-                            <div class="card swiper-slide">
-                                <div class="card__image">
-                                    <img src="css/img/Guide-lumara.png" alt="card image">
+                            <div class="testimonials-card swiper-slide">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
                                 </div>
                                 <div class="card__content">
-                                    <span class="card__title">Lumara</span>
-                                    <!--<span class="card__name">David Murphy</span>-->
-                                    <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
-                                    <!--<button class="card__btn">View More</button>-->
+                                    <span class="name">Elara Cantaluce</span>
+                                    <p class="card__text">Sono appena tornata da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
                                 </div>
                             </div>
-
-                            <!--<div class="card swiper-slide">
-                                <div class="card__image">
-                                    <img src="css/img/user4Prova.jpg" alt="card image">
-                                </div>
-                                <div class="card__content">
-                                    <span class="card__title">Mobile Designer</span>
-                                    <span class="card__name">Kelsey West</span>
-                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-                                    <button class="card__btn">View More</button>
-                                </div>
-                            </div>-->
                         </div>
 
                         <div class="swiper-pagination"></div> <!-- todo cambiare colore pallini -->
                 </div>
-                </div>
-
             </div>
         </div>
 
 
         <a href="Prova_girls.html"><p>Clicca qui per avere le caramelle</p></a>
-    </div>
+    </section>
 
     <!--
     <script>
@@ -270,10 +268,6 @@
             },*/
         });
     </script>
-
-
-
-
 </body>
 </html>
 
@@ -303,7 +297,6 @@
 
 
 <!-- Script per animazione di chiusura del menù in MOBILE -->
-
 <script>
     $(document).ready(function(){
         // Verifica se il contatore è maggiore di 0 e la dimensione della finestra è inferiore o uguale a 768

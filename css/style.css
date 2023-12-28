@@ -271,7 +271,7 @@ a.dropdown-item:focus {
     width: 20em;
     height: 90%;
     background-color: #fff;
-    border-radius: 2em;
+    border-radius: 2em; /*possibile esprimere anche in px*/
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2em 1em;
 
@@ -280,6 +280,47 @@ a.dropdown-item:focus {
     flex-direction: column;
 
     margin: 0 2em;
+}
+
+.testimonials-card{
+    width: 20em;
+    height: 90%;
+    background-color: #352688;
+    border-radius: 2em; /*possibile esprimere anche in px*/
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 2em;
+}
+
+.testimonials-card .rating{
+    margin-top: 15px;
+    font-size: 30px;
+    color: hsl(51, 98%, 60%);
+}
+
+.testimonials-card .name{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    top: .2em;
+}
+
+
+.card__content p{
+    color: black;
+}
+
+.testimonials-card p{
+    margin-top: 20px;
+    color: white;
+    font-size: 0.8rem;
 }
 
 .swiper-slide:not(.swiper-slide-active){
@@ -309,9 +350,6 @@ a.dropdown-item:focus {
     flex-direction: column;
 }
 
-.card__content p{
-    color: black;
-}
 
 .card__title{
     font-size: 1.5rem;
