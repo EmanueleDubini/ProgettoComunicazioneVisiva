@@ -270,14 +270,13 @@ a.dropdown-item:focus {
     width: 20em;
     height: 90%;
     border-radius: 2em; /*possibile esprimere anche in px*/
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2em 1em;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 
-    margin: 0 2em;
+    /*margin: 0 2em; per distanzare le card*/
 }
 .guide-card{
     background-color: #fff;
@@ -286,8 +285,6 @@ a.dropdown-item:focus {
 .guide-card .image{
     width: 12em;
     height: 12em;
-    border-radius: 20%;
-    border: 5px solid var(--carouselColor);
     padding: 2px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -296,7 +293,7 @@ a.dropdown-item:focus {
 .guide-card img{
     width: 100%;
     height: 100%;
-    border-radius: 20%;
+    border-radius: 10%;
     object-fit: cover;
 }
 
@@ -379,15 +376,26 @@ a.dropdown-item:focus {
     margin-top: .5em;
     cursor: pointer;
 }*/
-.swiper-pagination .swiper-pagination-bullet {
+.guide-pagination .swiper-pagination-bullet {
     opacity: 1;
     border: #ffffff solid 1px;
     background-color: transparent;
     height: 12px;
     width: 12px;
 }
-.swiper-pagination .swiper-pagination-bullet-active {
+.guide-pagination .swiper-pagination-bullet-active {
     background-color: #ffffff;
+}
+
+.testimonials-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    border: var(--backgroundColor) solid 1px;
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+}
+.testimonials-pagination .swiper-pagination-bullet-active {
+    background-color: var(--backgroundColor);
 }
 
 /* ------------ CAROSELLO contactUs.html END ------------*/
