@@ -33,6 +33,7 @@ body {
 button {
     border-radius: 15px;
     font-weight: bold;
+    color: black;
     background: #FFE037;
     padding: 15px 25px 15px 25px;
 }
@@ -280,6 +281,25 @@ a.dropdown-item:focus {
 
     /*margin: 0 2em; per distanzare le card*/
 }
+
+.border-relax-pack {
+    border-right: 4px solid #4E7DF8;
+    border-bottom: 4px solid #4E7DF8;
+
+}
+
+.border-adventure-pack {
+    border-right: 4px solid #1DCD9F;
+    border-bottom: 4px solid #1DCD9F;
+
+}
+
+.border-creativity-pack {
+    border-right: 4px solid #F63A99;
+    border-bottom: 4px solid #F63A99;
+
+}
+
 .guide-card{
     background-color: #fff;
 }
@@ -356,9 +376,9 @@ a.dropdown-item:focus {
     top: .2em;
 }
 
-.card__name{
+/*.card__name{
     color: var(--carouselColor);
-}
+}*/
 
 .card__text{
     text-align: center;
