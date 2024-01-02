@@ -285,19 +285,16 @@ a.dropdown-item:focus {
 .border-relax-pack {
     border-right: 4px solid #4E7DF8;
     border-bottom: 4px solid #4E7DF8;
-
 }
 
 .border-adventure-pack {
     border-right: 4px solid #1DCD9F;
     border-bottom: 4px solid #1DCD9F;
-
 }
 
 .border-creativity-pack {
     border-right: 4px solid #F63A99;
     border-bottom: 4px solid #F63A99;
-
 }
 
 .guide-card{
@@ -437,22 +434,39 @@ a.dropdown-item:focus {
 /* ------------ CARD ourStory.html END------------ */
 
 /* ------------ FOOTER START------------ */
+/*todo impostare i font corretti*/
 footer {
     padding: 3vw 5vw 3vw 5vw;
-}
-
-.footer-padding{
-    padding: 0 3% 0 3%;
-}
-
-.myfooter {
     background: #0C0922;
 }
 
-.myfooter h1{
-    color: white;
-    font-size: 9vh;
+.footer h1{
+    font-size: 4vh;
 }
+
+.footer .image{
+    width: 7vh;
+    height: 7vh;
+}
+
+li.nav-item{
+    font-size: 3.5vw;
+}
+/* per spaziare gli elementi dell'elenco*/
+li.nav-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+footer h6{
+    font-size: 3vw;
+}
+
+footer i{
+    color: white;
+    font-size: 3vw;
+}
+
+
 /* ------------ FOOTER END------------ */
 
 
