@@ -35,7 +35,13 @@ button {
     font-weight: bold;
     color: black;
     background: #FFE037;
-    padding: 15px 25px 15px 25px;
+    /*padding: 20px 50px;*/ /*padding di figma*/
+    padding: 15px 40px 15px 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
 }
 
 a{
@@ -333,6 +339,12 @@ a.dropdown-item:focus {
     color: black;
 }
 
+.card__text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+}
+
 .testimonials-card{
     background-color: #352688;
 }
@@ -348,8 +360,7 @@ a.dropdown-item:focus {
     font-weight: 500;
     color: white;
     text-transform: capitalize;
-    position: relative;
-    top: .2em;
+    margin-top: 1.2em;
 }
 
 
@@ -357,6 +368,11 @@ a.dropdown-item:focus {
     margin-top: 20px;
     color: white;
     font-size: 0.8rem;
+    max-width: 240px;
+}
+
+i.fa-star:not(:last-child){
+    margin-right: 7px;
 }
 
 .swiper-slide:not(.swiper-slide-active){
@@ -377,11 +393,6 @@ a.dropdown-item:focus {
     color: var(--carouselColor);
 }*/
 
-.card__text{
-    text-align: center;
-    font-size: 1.1rem;
-    margin: 1em 0;
-}
 
 /*.card__btn{
     background-color: var(--carouselColor);
