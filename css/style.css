@@ -57,6 +57,9 @@ h3, h4, li, h6 {
 h1, h2{
     color: white;
     font-family: var(--fontLobsterSansSerif);
+    font-weight: 400;
+    letter-spacing: 1px;
+
 }
 
 p{
@@ -217,7 +220,7 @@ a.dropdown-item:focus {
     left:0;
     width:100%;
     z-index:123;
-    padding: 20px 0px 20px 0px;
+    /*padding: 20px 0px 20px 0px;*/
 
 }
 
@@ -447,21 +450,23 @@ i.fa-star:not(:last-child){
 /* ------------ FOOTER START------------ */
 /*todo impostare i font corretti*/
 footer {
-    padding: 3vw 5vw 3vw 5vw;
+    padding: 1em 1.8em 1.2em 1.8em; /*i valori sono per il padding top, right, bottom, left*/
     background: #0C0922;
 }
 
 .footer h1{
-    font-size: 4vh;
+    font-size: 2.1rem;
 }
 
 .footer .image{
-    width: 7vh;
-    height: 7vh;
+    width: 4em;
+    height: 4em;
 }
 
 li.nav-item{
-    font-size: 3.5vw;
+    font-size: 0.9rem;
+    /* todo definire il font corretto*/
+    letter-spacing: 0.00625rem;
 }
 /* per spaziare gli elementi dell'elenco*/
 li.nav-item:not(:last-child) {
@@ -469,15 +474,17 @@ li.nav-item:not(:last-child) {
 }
 
 footer h6{
-    font-size: 3vw;
+    font-size: 0.9rem;
+    /* todo definire il font corretto*/
+    letter-spacing: 0.00625rem;
+
 }
 
 footer i{
     color: white;
-    font-size: 3vw;
+    font-size: 1rem;
+    padding: 0;
 }
-
-
 /* ------------ FOOTER END------------ */
 
 
