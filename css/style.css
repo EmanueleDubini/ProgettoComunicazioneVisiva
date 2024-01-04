@@ -450,7 +450,7 @@ i.fa-star:not(:last-child){
 /* ------------ FOOTER START------------ */
 /*todo impostare i font corretti*/
 footer {
-    padding: 1em 1.8em 1.2em 1.8em; /*i valori sono per il padding top, right, bottom, left*/
+    /*padding: 1em 1.8em 0 1.8em; /*i valori sono per il padding top, right, bottom, left*/
     background: #0C0922;
 }
 
