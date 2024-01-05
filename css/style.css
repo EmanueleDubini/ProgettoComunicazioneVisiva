@@ -256,10 +256,10 @@ p{
     padding: 12px;
 }
 
-.navbar.offcanvas{
-    width: 100%;
+#offcanvasNavbar{
+    background-color: #181335;
+    text-align: center;
 }
-
 
 .title{
     font-family: var(--fontLobsterSansSerif);
