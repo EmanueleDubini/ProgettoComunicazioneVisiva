@@ -20,124 +20,154 @@
 </head>
 <body>
 
-    <!-- NAVBAR BOOTSTRAP + CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <div id="mainNavigation" class="nav-transparent">
-        <nav role="navigation">
-        </nav>
-        <div class="navbar-expand-lg">
-            <div class="navbar-dark text-center my-0">
-                <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+<!--NAVBAR BOOTSTRAP + CSS -->
+    <section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg fixed-top nav-transparent" id="mainNavbar">
+            <div class="container-fluid nav-back">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-            <div class="text-center mt-0 collapse navbar-collapse show" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="ourStory.html">Our Story</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="feelTheMagic.html">Feel the magic</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Live your fantasy
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="li-dropdown-item">
-                                <a class="dropdown-item" href="#">Trasure your magic</a>
+                <div class="offcanvas offcanvas-top offcanvas-scrolling " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body mx-0">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Home</a>
                             </li>
-                            <li class="li-dropdown-item">
-                                <a class="dropdown-item" href="#">Explore the unknown</a>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="ourStory.html">Our Story</a>
                             </li>
-                            <li class="li-dropdown-item">
-                                <a class="dropdown-item" href="#">Become a wizard</a>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="feelTheMagic.html">Feel the magic</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Live your fantasy
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="li-dropdown-item">
+                                        <a class="dropdown-item" href="#">Trasure your magic</a>
+                                    </li>
+                                    <li class="li-dropdown-item">
+                                        <a class="dropdown-item" href="#">Explore the unknown</a>
+                                    </li>
+                                    <li class="li-dropdown-item">
+                                        <a class="dropdown-item" href="#">Become a wizard</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="othania.html">Othania</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" href="contactUs.html">Contact Us</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="othania.html">Othania</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contactUs.html">Contact us</a>
-                    </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-                </ul>
+
+        <img src="img/Base.png" id="bg">
+        <img src="img/First%20Layer.png" id="mountain">
+        <h1 id = "text">Contact Us</h1>
+    </section>
+
+    <!-- Script per parallax -->
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let mountain = document.getElementById("mountain");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function (){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            text.style.top = value * 0.4 + 'px';
+        })
+
+    </script>
+
+    <!-- Script per navbar (cambio colore)-->
+    <script>
+        $(document).ready(function (){
+            $(window).scroll(function () {
+                if($(document).scrollTop() > 300) {
+                    $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
+                }else{
+                    $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
+                }
+            });
+        });
+    </script>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12 text-center mt-5">
+                <h1 class="title">Contact Us</h1>
             </div>
         </div>
     </div>
 
-    <!-- END NAVBAR BOOTSTRAP + CSS -->
+    <!-- CAROUSEL -->
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
 
+            <!-- Slides -->
+            <div class="card guide-card border-adventure-pack arrotonda swiper-slide">
+                <div class="image">
+                    <img src="img/Guide-calysa.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">Calysa</span>
+                    <!--<span class="card__name">Vanessa Martinez</span>-->
+                    <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
+                    <!--<button class="card__btn">View More</button>-->
+                </div>
+            </div>
 
-    <div class="section1">
-        <div class="text">Contact us</div>
-    </div>
+            <div class="card guide-card border-relax-pack swiper-slide swiper-slide-visible">
+                <div class="image">
+                    <img src="img/Guide-zyrak.png" alt="card image"> <!--todo  l'immagine di zack, Guide-zack-png, viene mostrata di dimensioni minori, può essere perchè è di minori dimensioni l'immagine originale-->
+                </div>
+                <div class="card__content">
+                    <span class="card__title">Zyrak</span>
+                    <!--<span class="card__name">Sarah Bowen</span>-->
+                    <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
+                    <!--<button class="card__btn">View More</button>-->
+                </div>
+            </div>
 
-    <div class="section2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-12 text-center mt-5">
-                    <h1 class="title">Contact Us</h1>
+            <div class="card guide-card border-creativity-pack swiper-slide">
+                <div class="image">
+                    <img src="img/Guide-lumara.png" alt="card image">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">Lumara</span>
+                    <!--<span class="card__name">David Murphy</span>-->
+                    <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
+                    <!--<button class="card__btn">View More</button>-->
                 </div>
             </div>
         </div>
 
-        <!-- CAROUSEL -->
-        <!-- Slider main container -->
-        <div class="swiper mySwiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+        <div class="swiper-pagination guide-pagination">
 
-                <!-- Slides -->
-                <div class="card guide-card border-adventure-pack arrotonda swiper-slide">
-                    <div class="image">
-                        <img src="img/Guide-calysa.png" alt="card image">
-                    </div>
-                    <div class="card__content">
-                        <span class="card__title">Calysa</span>
-                        <!--<span class="card__name">Vanessa Martinez</span>-->
-                        <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
-                        <!--<button class="card__btn">View More</button>-->
-                    </div>
-                </div>
-
-                <div class="card guide-card border-relax-pack swiper-slide swiper-slide-visible">
-                    <div class="image">
-                        <img src="img/Guide-zyrak.png" alt="card image"> <!--todo  l'immagine di zack, Guide-zack-png, viene mostrata di dimensioni minori, può essere perchè è di minori dimensioni l'immagine originale-->
-                    </div>
-                    <div class="card__content">
-                        <span class="card__title">Zyrak</span>
-                        <!--<span class="card__name">Sarah Bowen</span>-->
-                        <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
-                        <!--<button class="card__btn">View More</button>-->
-                    </div>
-                </div>
-
-                <div class="card guide-card border-creativity-pack swiper-slide">
-                    <div class="image">
-                        <img src="img/Guide-lumara.png" alt="card image">
-                    </div>
-                    <div class="card__content">
-                        <span class="card__title">Lumara</span>
-                        <!--<span class="card__name">David Murphy</span>-->
-                        <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
-                        <!--<button class="card__btn">View More</button>-->
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="swiper-pagination guide-pagination"></div> <!-- todo cambiare colore pallini -->
         </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <!--link utile https://uiinitiative.com/catalog/carousel-slider/ -->
@@ -187,26 +217,6 @@
 
 </body>
 </html>
-
-<!-- Script per animazione di cambio colore dello sfondo della navbar con lo scorrimento-->
-<script>
-    $(document).ready(function(){
-        console.log("Sono entrato");
-
-        $("html, body").on("scroll", function(){
-            console.log("Sono rientrato");
-
-            var scroll = $(this).scrollTop();
-            console.log(scroll);
-
-            if (scroll > 300) {
-                $("#mainNavigation").removeClass("nav-transparent").addClass("nav-colored");
-            } else {
-                $("#mainNavigation").removeClass("nav-colored").addClass("nav-transparent");
-            }
-        });
-    });
-</script>
 
 
 <!-- Script per animazione di chiusura del menù in MOBILE -->

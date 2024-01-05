@@ -15,8 +15,8 @@
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
 
 html{
-    height: 100vh;
-    overflow: hidden;
+    width: 100vw;
+
 }
 
 body {
@@ -24,11 +24,67 @@ body {
     height: 100vh;
     margin:0;
     background: var(--backgroundColor);
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x: hidden;
+    overflow-x: clip;
     overflow-y: scroll;
+
 }
+
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #181335, transparent);
+    z-index: 10000;
+}
+
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text
+{
+    position: relative;
+    color: #fff;
+    font-size: 10vh;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+    5px 5px 70px rgba(255,255,255,0.5);
+    text-align: center;
+    z-index: 1;
+}
+#mountain{
+    z-index: 2;
+}
+
+
 
 button {
     border-radius: 15px;
@@ -67,51 +123,11 @@ p{
     font-family: var(--fontCabinSansSerif);
 }
 
-.section1, .section2 {
-    width:100%;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
-}
-.section1::before {
-    content:"";
-    width:100%;
-    height: 100%;
-    position: absolute;
-    background: url("../img/Base.png") top center;
-    background-size: cover;
-    transform: translateZ(-0.5px) scale(2.2);
-}
-.section1::after {
-    content:"";
-    width:100%;
-    height: 100%;
-    position: absolute;
-    background: url("../img/First Layer.png") top center;
-    background-size: cover;
-}
-.section1 .text {
-    top:25%;
-    transform: translateZ(-0.5px) scale(1.5,1.6) translate(-33%,10%);
-}
-.section2 {
-    background: #120f20;
-}
-.text {
-    top:30%;
-    left:50%;
-    position: absolute;
-    font-family: var(--fontLobsterSansSerif);
-    font-size: 9vw;
-    color:white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-    5px 5px 70px rgba(255,255,255,0.5);
-    transform: scale(1,1.1) translate(-50%, 10%);
-    text-align: center;
+.navbar{
+    z-index: 1000000;
 }
 
-
-#mainNavigation a {
+.navbar a {
     font-family: var(--fontCabinSansSerif);
     font-size:20px;
     text-transform:uppercase;
@@ -119,15 +135,15 @@ p{
     justify-content: space-between;
 }
 
-#mainNavigation a.dropdown-menu {
+.navbar a.dropdown-menu {
     background: #dfdfdf;
 }
 
-#mainNavigation a.dropdown-toggle {
+.navbar a.dropdown-toggle {
     color: #dfdfdf;
 }
 
-#mainNavigation a.dropdown-item {
+.navbar a.dropdown-item {
     color: #0c0725;
     position: relative;
     display: inline-block;
@@ -135,12 +151,16 @@ p{
     padding: 0 0 3px;
 
 }
-#mainNavigation .li-dropdown-item {
+.navbar .li-dropdown-item {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-#mainNavigation .dropdown-menu a::before {
+.navbar .nav-link.active{
+    color: #dfdfdf;
+}
+
+.navbar .dropdown-menu a::before {
     content: "";
     position: absolute;
     width: 0;
@@ -151,14 +171,17 @@ p{
     transition: width 0.3s ease;
 }
 
-#mainNavigation .dropdown-menu a:hover::before,
-#mainNavigation .dropdown-menu a:focus::before {
+.navbar .dropdown-menu a:hover::before,
+.navbar .dropdown-menu a:focus::before {
     width: 100%;
+    background-color: transparent;
+    color: #0c0725;
 }
 
-a.dropdown-item:hover,
-a.dropdown-item:focus {
+.navbar a.dropdown-item:hover,
+.navbar a.dropdown-item:focus {
     background-color: transparent;
+    color: #0c0725;
 }
 
 
@@ -180,7 +203,7 @@ a.dropdown-item:focus {
     transition: width 0.3s ease; /* Imposta la transizione */
 }
 
-#mainNavigation .nav-item a.active::before {
+.navbar .nav-item a.active::before {
     width: 100%;
 }
 
@@ -201,7 +224,7 @@ a.dropdown-item:focus {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    width: 80%; /* <-- Questa è la larghezza della barra: attenti che modifica anche su mobile */
+    width: 100%; /* <-- Questa è la larghezza della barra: attenti che modifica anche su mobile */
 }
 
 .nav-item{
@@ -213,19 +236,9 @@ a.dropdown-item:focus {
     outline: none;
 }
 
-#mainNavigation {
-    /*La barra, in questo modo, rimane fissata, ma gli elementi è come se non considerassero la barra*/
-    position: sticky;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:123;
-    /*padding: 20px 0px 20px 0px;*/
-
-}
-
 .nav-colored{
     background: #181335;
+    transition: background-color 0.7s ease;
 }
 
 .nav-transparent{
@@ -234,15 +247,18 @@ a.dropdown-item:focus {
     background: -webkit-linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    transition: background-color 0.7s ease;
 }
 
-#navbarNavDropdown.collapsing .navbar-nav,
-#navbarNavDropdown.show .navbar-nav{
+.navbar.collapsing .navbar-nav,
+.navbar.show .navbar-nav{
     background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%);
     padding: 12px;
 }
 
-
+.navbar.offcanvas{
+    width: 100%;
+}
 
 
 .title{
