@@ -70,7 +70,7 @@ section img{
     pointer-events: none;
 }
 
-#text
+#text /* todo eliminare, è associato tramite id all' h1 di ogni pagina*/
 {
     position: relative;
     color: #fff;
@@ -260,6 +260,7 @@ p{
     background-color: #181335;
     text-align: center;
 }
+/* ------------ NAVBAR END ------------ */
 
 .title{
     font-family: var(--fontLobsterSansSerif);
@@ -268,6 +269,16 @@ p{
     margin-right: 0;
     margin-left: 0;
 }
+
+/* ------------ HERO START ------------ */
+.hero .image{
+    position: relative;
+    z-index: 1;
+    width: 4.5em;
+    height: 4.5em;
+}
+/* ------------ HERO END ------------ */
+
 
 /* ----------- index.html.html ------------ */
 .white-wave{
@@ -278,7 +289,11 @@ p{
     background-size: cover;
 }
 
-.section2 h2{
+.dimension{
+    max-width: 98%;
+}
+
+.section2 h2{ /*todo questo penso si possa togliere*/
     color: var(--backgroundColor);
 }
 /* ----------- CAROSELLO contactUs.html ------------ */
