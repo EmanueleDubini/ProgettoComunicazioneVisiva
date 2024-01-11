@@ -493,6 +493,16 @@ i.fa-star:not(:last-child){
     background-color: var(--backgroundColor);
 }
 
+
+.mySwiper .swiper-pagination{
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .mySwiper .swiper-pagination {
+        display: block;
+    }
+}
 /*
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
