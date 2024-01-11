@@ -15,12 +15,11 @@
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
 
 html{
-    width: 100vw;
 
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin:0;
     background: var(--backgroundColor);
@@ -70,22 +69,6 @@ section img{
     pointer-events: none;
 }
 
-#text
-{
-    position: relative;
-    color: #fff;
-    font-size: 10vh;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-    5px 5px 70px rgba(255,255,255,0.5);
-    text-align: center;
-    z-index: 1;
-}
-#mountain{
-    z-index: 2;
-}
-
-
-
 button {
     border-radius: 15px;
     font-weight: bold;
@@ -97,7 +80,6 @@ button {
     justify-content: center;
     align-items: center;
     border: none;
-
 }
 
 a{
@@ -260,6 +242,7 @@ p{
     background-color: #181335;
     text-align: center;
 }
+/* ------------ NAVBAR END ------------ */
 
 .title{
     font-family: var(--fontLobsterSansSerif);
@@ -269,16 +252,55 @@ p{
     margin-left: 0;
 }
 
+/* ------------ HERO START ------------ */
+.hero .image{
+    width: 4.5em;
+    height: 4.5em;
+}
+
+#text /* todo eliminare, è associato tramite id all' h1 di ogni pagina*/
+{
+    position: relative;
+    color: #fff;
+    font-size: 10vh;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+    5px 5px 70px rgba(255,255,255,0.5);
+    text-align: center;
+    z-index: 1;
+}
+#mountain{
+    z-index: 2;
+}
+
+#hero-image{
+    z-index: 1;
+}
+/* ------------ HERO END ------------ */
+
+
 /* ----------- index.html.html ------------ */
 .white-wave{
     background-image: url("../img/svg/onda.svg");
-    /*height: 100vh;*/
-    width: 100vw;
+
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.section2 h2{
+.astronaut-img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.astronaut-img:not(:hover){
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.white-wave h2{
+    color: black;
+}
+
+.section2 h2{ /*todo questo penso si possa togliere*/
     color: var(--backgroundColor);
 }
 /* ----------- CAROSELLO contactUs.html ------------ */
@@ -295,9 +317,6 @@ p{
 }
 
 .card{
-    width: 20em;
-    height: 90%;
-    border-radius: 2em; /*possibile esprimere anche in px*/
     padding: 2em 1em;
 
     display: flex;
@@ -323,6 +342,9 @@ p{
 }
 
 .guide-card{
+    width: 20em;
+    height: 90%;
+    border-radius: 2em; /*possibile esprimere anche in px*/
     background-color: #fff;
 }
 
@@ -365,11 +387,14 @@ p{
 }
 
 .testimonials-card{
+    width: 20em;
+    height: 65%;
+    border-radius: 1.5em; /*possibile esprimere anche in px*/
     background-color: #352688;
 }
 
 .testimonials-card .rating{
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 30px;
     color: hsl(51, 98%, 60%);
 }
@@ -394,9 +419,10 @@ i.fa-star:not(:last-child){
     margin-right: 7px;
 }
 
-.swiper-slide:not(.swiper-slide-active){
+/* Se si desidera applicare l'effetto blur sulle card che nono sono in primo piano, lo applica a tutti i caroselli del sito quindi index.html e contactus.html*/
+/*.swiper-slide:not(.swiper-slide-active){
     filter: blur(1px);
-}
+}*/
 
 
 
