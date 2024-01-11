@@ -24,7 +24,7 @@ body {
     height: 100vh;
     margin:0;
     background: var(--backgroundColor);
-    overflow-x: clip;
+    overflow-x: hidden;
     overflow-y: scroll;
 
 }
