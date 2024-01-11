@@ -28,7 +28,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-top h-100 w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -75,7 +75,18 @@
 
         <img src="img/Base.png" id="bg">
         <img src="img/First%20Layer.png" id="mountain">
-        <h1 id = "text">Contact Us</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <img class= "mx-auto" id="hero-image" src="img/Icon/Logo.svg">
+                </div>
+                <div class="col-12">
+                    <h1 id = "text">Contact Us</h1>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Script per parallax -->
@@ -83,12 +94,14 @@
         let bg = document.getElementById("bg");
         let mountain = document.getElementById("mountain");
         let text = document.getElementById("text");
+        let hero_image = document.getElementById("hero-image");
 
         window.addEventListener('scroll', function (){
             var value = window.scrollY;
 
             bg.style.top = value * 0.5 + 'px';
             text.style.top = value * 0.4 + 'px';
+            hero_image.style.top = value * 0.4 + 'px';
         })
 
     </script>

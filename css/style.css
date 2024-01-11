@@ -15,7 +15,8 @@
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
 
 html{
-
+    height: 100vh;
+    width: 100%;
 }
 
 body {
@@ -36,7 +37,7 @@ section:before{
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #181335, transparent);
-    z-index: 10000;
+    z-index: 1;
 }
 
 section:after{
@@ -46,7 +47,7 @@ section:after{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10000;
+    z-index: 1;
 }
 
 
@@ -253,27 +254,43 @@ p{
 }
 
 /* ------------ HERO START ------------ */
-.hero .image{
-    width: 4.5em;
-    height: 4.5em;
+#hero-image{
+    position: relative;
+    max-width: 4.5em;
+    max-height: 4.5em;
+    z-index: 1;
+    display: block;
 }
 
 #text /* todo eliminare, è associato tramite id all' h1 di ogni pagina*/
 {
     position: relative;
     color: #fff;
-    font-size: 10vh;
+    font-size: 5rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
     text-align: center;
     z-index: 1;
 }
-#mountain{
+
+#text2{
+    position: relative;
+    color: #fff;
+    font-size: 3vh;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+    5px 5px 70px rgba(255,255,255,0.5);
+    text-align: center;
+    z-index: 1;
+}
+
+#button_hero{
+    position: relative;
+    display: block;
     z-index: 2;
 }
 
-#hero-image{
-    z-index: 1;
+#mountain{
+    z-index: 3;
 }
 /* ------------ HERO END ------------ */
 
@@ -528,6 +545,4 @@ footer i{
     padding: 0;
 }
 /* ------------ FOOTER END------------ */
-
-
 
