@@ -9,7 +9,9 @@
 
     /* COLORS */
     --backgroundColor: #181335;
+    --footerBackgroundColor: #0C0922;
     --carouselColor: #9176FF;
+    --whiteText: #F6F6F9;
 }
 /* todo UTILIZZARE LE CLASSI DI BOOTSTRAP PER PADDING/MARGIN */
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
@@ -73,7 +75,7 @@ section img{
 button {
     border-radius: 15px;
     font-weight: bold;
-    color: black;
+    color: var(--backgroundColor);
     background: #FFE037;
     /*padding: 20px 50px;*/ /*padding di figma*/
     padding: 15px 40px 15px 40px;
@@ -85,16 +87,16 @@ button {
 
 a{
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: var(--whiteText);
     text-underline-offset: 5px; /* todo capire quanto spostare la sottolineatura*/
 }
 
 h3, h4, li, h6 {
-    color: white;
+    color: var(--whiteText);
 }
 
 h1, h2{
-    color: white;
+    color:var(--whiteText);
     font-family: var(--fontLobsterSansSerif);
     font-weight: 400;
     letter-spacing: 1px;
@@ -102,7 +104,7 @@ h1, h2{
 }
 
 p{
-    color: white;
+    color: var(--whiteText);
     font-family: var(--fontCabinSansSerif);
 }
 
@@ -119,11 +121,11 @@ p{
 }
 
 .navbar a.dropdown-menu {
-    background: #dfdfdf;
+    background: var(--whiteText);
 }
 
 .navbar a.dropdown-toggle {
-    color: #dfdfdf;
+    color: var(--whiteText);
 }
 
 .navbar a.dropdown-item {
@@ -140,7 +142,7 @@ p{
 }
 
 .navbar .nav-link.active{
-    color: #dfdfdf;
+    color: var(--whiteText);
 }
 
 .navbar .dropdown-menu a::before {
@@ -169,7 +171,7 @@ p{
 
 
 .nav-item a{
-    color:#dfdfdf;
+    color: var(--whiteText);
     justify-content: space-between;
     position: relative;
     display: inline-block;
@@ -182,7 +184,7 @@ p{
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--whiteText);
     transition: width 0.3s ease; /* Imposta la transizione */
 }
 
@@ -201,7 +203,7 @@ p{
 }
 
 .nav-item a:hover {
-    color:#fff;
+    color: var(--whiteText);
 }
 
 .navbar-nav {
@@ -211,7 +213,7 @@ p{
 }
 
 .nav-item{
-    color:#fff
+    color: var(--whiteText);
 }
 
 .navbar-toggler{
@@ -220,7 +222,7 @@ p{
 }
 
 .nav-colored{
-    background: #181335;
+    background: var(--backgroundColor);
     transition: background-color 0.7s ease;
 }
 
@@ -240,7 +242,7 @@ p{
 }
 
 #offcanvasNavbar{
-    background-color: #181335;
+    background-color: var(--backgroundColor);
     text-align: center;
 }
 /* ------------ NAVBAR END ------------ */
@@ -248,7 +250,7 @@ p{
 .title{
     font-family: var(--fontLobsterSansSerif);
     font-size:50px;
-    color: #dfdfdf;
+    color: var(--whiteText);
     margin-right: 0;
     margin-left: 0;
 }
@@ -265,7 +267,7 @@ p{
 #text /* todo eliminare, è associato tramite id all' h1 di ogni pagina*/
 {
     position: relative;
-    color: #fff;
+    color: var(--whiteText);
     font-size: 5rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
@@ -275,7 +277,7 @@ p{
 
 #text2{
     position: relative;
-    color: #fff;
+    color: var(--whiteText);
     font-size: 3vh;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
@@ -303,6 +305,7 @@ p{
     background-size: cover;
 }
 
+/*todo togliere hover dal mobile*/
 .astronaut-img:hover{
     transform: scale(1.1);
     transition: transform 0.5s ease;
@@ -314,7 +317,7 @@ p{
 }
 
 .white-wave h2{
-    color: black;
+    color: var(--backgroundColor);
 }
 
 .section2 h2{ /*todo questo penso si possa togliere*/
@@ -362,7 +365,7 @@ p{
     width: 20em;
     height: 90%;
     border-radius: 2em; /*possibile esprimere anche in px*/
-    background-color: #fff;
+    background-color: var(--whiteText);
 }
 
 .guide-card .image{
@@ -394,7 +397,7 @@ p{
 }
 
 .card__content p{
-    color: black;
+    color: var(--backgroundColor);
 }
 
 .card__text{
@@ -419,7 +422,7 @@ p{
 .testimonials-card .name{
     font-size: 1.3rem;
     font-weight: 500;
-    color: white;
+    color: var(--whiteText);
     text-transform: capitalize;
     margin-top: 1.2em;
 }
@@ -427,7 +430,7 @@ p{
 
 .testimonials-card p{
     margin-top: 20px;
-    color: white;
+    color: var(--whiteText);
     font-size: 0.8rem;
     max-width: 240px;
 }
@@ -470,13 +473,13 @@ i.fa-star:not(:last-child){
 }*/
 .guide-pagination .swiper-pagination-bullet {
     opacity: 1;
-    border: #ffffff solid 1px;
+    border: var(--whiteText) solid 1px;
     background-color: transparent;
     height: 12px;
     width: 12px;
 }
 .guide-pagination .swiper-pagination-bullet-active {
-    background-color: #ffffff;
+    background-color: var(--whiteText);
 }
 
 .testimonials-pagination .swiper-pagination-bullet {
@@ -495,14 +498,14 @@ i.fa-star:not(:last-child){
 
 /* ------------ CARD ourStory.html START------------ */
 .guide-card{
-    background-color: #fff;
+    background-color: var(--whiteText);
     border-radius: 2em;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2rem;
 }
 
 .guide-card p {
-    color: #120f20;
+    color: var(--backgroundColor);
 }
 /* ------------ CARD ourStory.html END------------ */
 
@@ -510,7 +513,7 @@ i.fa-star:not(:last-child){
 /*todo impostare i font corretti*/
 footer {
     /*padding: 1em 1.8em 0 1.8em; /*i valori sono per il padding top, right, bottom, left*/
-    background: #0C0922;
+    background: var(--footerBackgroundColor);
 }
 
 .footer h1{
@@ -540,7 +543,7 @@ footer h6{
 }
 
 footer i{
-    color: white;
+    color: var(--whiteText);
     font-size: 1rem;
     padding: 0;
 }
