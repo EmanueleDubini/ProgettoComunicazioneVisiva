@@ -493,6 +493,21 @@ i.fa-star:not(:last-child){
     background-color: var(--backgroundColor);
 }
 
+/*
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mySwiper .swiper-button-prev,
+    .mySwiper .swiper-button-next {
+        display: block;
+    }
+}
+*/
+
+
 /* ------------ CAROSELLO contactUs.html END ------------*/
 
 
