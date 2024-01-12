@@ -325,44 +325,7 @@ p{
 /* ----------- index.html.html END ------------ */
 
 /* ----------- contactUs.html START ------------ */
-.white-box {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-}
 
-.blue-box {
-    background-color: #e6f2ff;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.blue-box form {
-    margin-top: 20px;
-}
-
-.blue-box label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.blue-box input[type="text"],
-.blue-box input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-}
-
-.blue-box button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 
 /* ----------- CAROSELLO contactUs.html ------------ */
