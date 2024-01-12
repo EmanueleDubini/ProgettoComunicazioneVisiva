@@ -115,7 +115,6 @@ p{
 .navbar a {
     font-family: var(--fontCabinSansSerif);
     font-size:20px;
-    text-transform:uppercase;
     letter-spacing:2px;
     justify-content: space-between;
 }
@@ -268,7 +267,7 @@ p{
 {
     position: relative;
     color: var(--whiteText);
-    font-size: 5rem;
+    font-size: 5vw;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
     text-align: center;
@@ -278,7 +277,7 @@ p{
 #text2{
     position: relative;
     color: var(--whiteText);
-    font-size: 3vh;
+    font-size: 3vw;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
     text-align: center;
@@ -533,6 +532,7 @@ i.fa-star:not(:last-child){
 }
 
 /* nel carosello delle recensioni in index.html per fare comparire i dot della paginazione su dispositivi mobili e non mostrarli su desktop*/
+/*
 .mySwiper .testimonials-pagination{
     display: none;
 }
@@ -542,6 +542,8 @@ i.fa-star:not(:last-child){
         display: block;
     }
 }
+*/
+
 /*
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
