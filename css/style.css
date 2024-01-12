@@ -1,11 +1,14 @@
 /* ------------ GOOGLE FONTS ------------ */
+/*
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap');
 
 /* ------------ VARIABLES ------------ */
 :root{
     /* FONT */
     --fontLobsterSansSerif: 'Lobster', sans-serif;
-    --fontCabinSansSerif: 'Cabin', sans-serif; /*font usato nella navigation bar*/ /*todo aggiornare font come su figma*/
+    --fontNunitoSansSerif: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/ /*todo aggiornare font come su figma*/
 
     /* COLORS */
     --backgroundColor: #181335;
@@ -15,6 +18,29 @@
 }
 /* todo UTILIZZARE LE CLASSI DI BOOTSTRAP PER PADDING/MARGIN */
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
+
+h1, h2, h3 {
+    font-family: var(--fontLobsterSansSerif);
+    letter-spacing: 0.12rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.nunito{
+    font-family: var(--fontNunitoSansSerif);
+    letter-spacing: 0.045rem;
+    font-size: 1.5rem;
+}
 
 html{
     height: 100vh;
@@ -91,21 +117,13 @@ a{
     text-underline-offset: 5px; /* todo capire quanto spostare la sottolineatura*/
 }
 
-h3, h4, li, h6 {
+h1, h3, h4, li, h6 {
     color: var(--whiteText);
-}
-
-h1, h2{
-    color:var(--whiteText);
-    font-family: var(--fontLobsterSansSerif);
-    font-weight: 400;
-    letter-spacing: 1px;
-
 }
 
 p{
     color: var(--whiteText);
-    font-family: var(--fontCabinSansSerif);
+    font-family: var(--fontNunitoSansSerif);
 }
 
 .navbar{
@@ -113,7 +131,7 @@ p{
 }
 
 .navbar a {
-    font-family: var(--fontCabinSansSerif);
+    font-family: var(--fontNunitoSansSerif);
     font-size:20px;
     letter-spacing:2px;
     justify-content: space-between;
@@ -546,7 +564,7 @@ footer {
 }
 
 .footer h1{
-    font-size: 2.1rem;
+    font-size: 4rem;
 }
 
 .footer .image{
