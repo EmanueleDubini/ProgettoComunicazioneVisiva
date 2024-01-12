@@ -121,61 +121,95 @@
 
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12 text-center mt-5">
-                <h1 class="title">Contact Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/Razzo.png" alt="Rocket Image">
+            </div>
+            <div class="col-md-6">
+                <div class="white-box">
+                    <h2>Titolo del Rettangolo Bianco</h2>
+                    <p>Testo del Rettangolo Bianco</p>
+                </div>
+                <div class="blue-box">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome-Cognome</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">INVIA</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- CAROUSEL -->
-    <!-- Slider main container -->
-    <div class="swiper mySwiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
 
-            <!-- Slides -->
-            <div class="card guide-card border-adventure-pack arrotonda swiper-slide">
-                <div class="image">
-                    <img src="img/Guide-calysa.png" alt="card image">
-                </div>
-                <div class="card__content">
-                    <span class="card__title">Calysa</span>
-                    <!--<span class="card__name">Vanessa Martinez</span>-->
-                    <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
-                    <!--<button class="card__btn">View More</button>-->
-                </div>
-            </div>
 
-            <div class="card guide-card border-relax-pack swiper-slide swiper-slide-visible">
-                <div class="image">
-                    <img src="img/Guide-zyrak.png" alt="card image"> <!--todo  l'immagine di zack, Guide-zack-png, viene mostrata di dimensioni minori, può essere perchè è di minori dimensioni l'immagine originale-->
-                </div>
-                <div class="card__content">
-                    <span class="card__title">Zyrak</span>
-                    <!--<span class="card__name">Sarah Bowen</span>-->
-                    <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
-                    <!--<button class="card__btn">View More</button>-->
-                </div>
-            </div>
 
-            <div class="card guide-card border-creativity-pack swiper-slide">
-                <div class="image">
-                    <img src="img/Guide-lumara.png" alt="card image">
-                </div>
-                <div class="card__content">
-                    <span class="card__title">Lumara</span>
-                    <!--<span class="card__name">David Murphy</span>-->
-                    <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
-                    <!--<button class="card__btn">View More</button>-->
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mt-5 mb-3">
+                <h2>Our Team</h2>
+                <p class="text-center mt-3">Scopri di più sulle guide che<br> ti accompagneranno alla<br> scoperta di Othania!</p>
             </div>
         </div>
 
-        <div class="swiper-pagination guide-pagination">
+        <div class="row justify-content-center mb-5">
+            <!-- CAROUSEL -->
+            <!-- Slider main container -->
+            <div class="col-12 swiper mySwiper mb-5">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
 
+                    <!-- Slides -->
+                    <div class="card guide-card border-adventure-pack arrotonda swiper-slide">
+                        <div class="image">
+                            <img src="img/Guide-calysa.png" alt="card image">
+                        </div>
+                        <div class="card__content">
+                            <span class="card__title">Calysa</span>
+                            <!--<span class="card__name">Vanessa Martinez</span>-->
+                            <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
+                            <!--<button class="card__btn">View More</button>-->
+                        </div>
+                    </div>
+
+                    <div class="card guide-card border-relax-pack swiper-slide swiper-slide-visible">
+                        <div class="image">
+                            <img src="img/Guide-zyrak.png" alt="card image"> <!--todo  l'immagine di zack, Guide-zack-png, viene mostrata di dimensioni minori, può essere perchè è di minori dimensioni l'immagine originale-->
+                        </div>
+                        <div class="card__content">
+                            <span class="card-title">Zyrak</span>
+                            <!--<span class="card__name">Sarah Bowen</span>-->
+                            <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
+                            <!--<button class="card__btn">View More</button>-->
+                        </div>
+                    </div>
+
+                    <div class="card guide-card border-creativity-pack swiper-slide">
+                        <div class="image">
+                            <img src="img/Guide-lumara.png" alt="card image">
+                        </div>
+                        <div class="card__content">
+                            <span class="card__title">Lumara</span>
+                            <!--<span class="card__name">David Murphy</span>-->
+                            <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
+                            <!--<button class="card__btn">View More</button>-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination guide-pagination"></div>
+            </div>
         </div>
     </div>
+
+
+
 
 
 

@@ -297,7 +297,7 @@ p{
 /* ------------ HERO END ------------ */
 
 
-/* ----------- index.html.html ------------ */
+/* ----------- index.html.html START ------------ */
 .white-wave{
     background-image: url("../img/svg/onda.svg");
 
@@ -323,8 +323,50 @@ p{
 .section2 h2{ /*todo questo penso si possa togliere*/
     color: var(--backgroundColor);
 }
+/* ----------- index.html.html END ------------ */
+
+/* ----------- contactUs.html START ------------ */
+.white-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blue-box {
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blue-box form {
+    margin-top: 20px;
+}
+
+.blue-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.blue-box input[type="text"],
+.blue-box input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.blue-box button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 /* ----------- CAROSELLO contactUs.html ------------ */
-/* ----------- SLIDER ------------ */
 .swiper{
     width: 100%;
 }
@@ -396,14 +438,18 @@ p{
     flex-direction: column;
 }
 
-.card__content p{
-    color: var(--backgroundColor);
-}
-
-.card__text{
+.guide-card p{
     text-align: center;
     font-size: 1.1rem;
     margin: 1em 0;
+    color: var(--backgroundColor);
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
 }
 
 .testimonials-card{
@@ -429,10 +475,11 @@ p{
 
 
 .testimonials-card p{
+    text-align: center;
     margin-top: 20px;
     color: var(--whiteText);
-    font-size: 0.8rem;
-    max-width: 240px;
+    font-size: 0.85rem;
+    max-width: 265px;
 }
 
 i.fa-star:not(:last-child){
@@ -444,15 +491,6 @@ i.fa-star:not(:last-child){
     filter: blur(1px);
 }*/
 
-
-
-
-.card__title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: relative;
-    top: .2em;
-}
 
 /*.card__name{
     color: var(--carouselColor);
@@ -471,6 +509,7 @@ i.fa-star:not(:last-child){
     margin-top: .5em;
     cursor: pointer;
 }*/
+
 .guide-pagination .swiper-pagination-bullet {
     opacity: 1;
     border: var(--whiteText) solid 1px;
@@ -493,13 +532,13 @@ i.fa-star:not(:last-child){
     background-color: var(--backgroundColor);
 }
 
-
-.mySwiper .swiper-pagination{
+/* nel carosello delle recensioni in index.html per fare comparire i dot della paginazione su dispositivi mobili e non mostrarli su desktop*/
+.mySwiper .testimonials-pagination{
     display: none;
 }
 
 @media (max-width: 992px) {
-    .mySwiper .swiper-pagination {
+    .mySwiper .testimonials-pagination {
         display: block;
     }
 }
