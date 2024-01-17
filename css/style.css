@@ -141,6 +141,15 @@ p{
     justify-content: space-between;
 }
 
+/* Colore per l'icona hambirger menu */
+.navbar-toggler .fa-bars {
+    color: white; /* Imposta il colore dell'icona su bianco */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .navbar a.dropdown-menu {
     background: var(--whiteText);
 }
