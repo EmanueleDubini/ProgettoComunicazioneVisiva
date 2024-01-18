@@ -294,6 +294,7 @@ button {
 }
 /* ------------ NAVBAR END ------------ */
 
+
 .title{
     font-family: var(--fontLobster);
     font-size:50px;
@@ -376,14 +377,7 @@ button {
 
 /* ----------- contactUs.html START ------------ */
 
-.bg-image-index{
-    background-image: url('');
-    height: 100vh
-}
-
-
-
-/* ----------- CAROSELLO contactUs.html ------------ */
+/* CAROSELLO contactUs.html */
 .swiper{
     width: 100%;
 }
