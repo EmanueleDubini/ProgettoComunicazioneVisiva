@@ -7,8 +7,8 @@
 /* ------------ VARIABLES ------------ */
 :root{
     /* FONT */
-    --fontLobsterSansSerif: 'Lobster', sans-serif;
-    --fontNunitoSansSerif: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/
+    --fontLobster: 'Lobster', sans-serif;
+    --fontNunito: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/
 
     /* COLORS */
     --backgroundColor: #181335;
@@ -21,37 +21,42 @@
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
 
 h1, h2, h3 {
-    font-family: var(--fontLobsterSansSerif);
-    letter-spacing: 0.12rem;
+    font-family: var(--fontLobster);
+    /* letter-spacing: 0.12rem; Non va bene assegnarlo a tutti e tre, perchè se vedete su Figma il letter spacing dipende dalla dimensione del testo, quindi è diverso tra h1, h2 e h3*/
 }
 
 h1{
     /* impostato come dimensione minima 32px e massima 64px */
     font-size: clamp(2.133rem, 4vw + 1rem, 4.267rem); /* https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/ */
+    letter-spacing: 0.12rem;
 }
 
 h2{
     /* impostato come dimensione minima 28px e massima 40px */
     font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+    letter-spacing: 0.075rem;
 }
 
 h3{
     /* impostato come dimensione minima 24px e massima 32px */
     font-size: clamp(2rem, 2vw + 1rem, 2.667rem);
+    letter-spacing: 0.06rem;
 }
 
-h1, h3, h6, p, li, a{
+h1, h3, h6, p, li, a{ /*Non abbiamo un h6 in Figma, perchè le voci di footer hanno le stesse dimensiondi quelle della navbar*/
     color: var(--whiteText);
 }
 
 p{
-    font-family: var(--fontNunitoSansSerif);
+    font-family: var(--fontNunito);
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.5rem); /*stavo facendo una prova, ma non so nemmeno io in base a che criterio*/
     /* todo definire font size */
 }
 
 a{
-    font-family: var(--fontNunitoSansSerif);
+    font-family: var(--fontNunito);
     /* todo definire font size */
+    /*In realtà al link non va asseganta la dimensione, perchè tanto se la piglia a seconda del tag in cui viene inserito (se h1, p, etc)*/
     text-decoration: underline;
     /*text-decoration-color: var(--whiteText); /*Creare una classe che applichi color: white, font-size e weight ai link della navbar, allo slogan e alle voci di footer
     Controllare di non avere link che devono essere su sfondo bianco, sennò poi spariscono*/
@@ -59,27 +64,26 @@ a{
 }
 
 /* todo POI RIMUOVERE classe css che definisce i parametri di stile da settare per i componenti che usano font Nunito Sans*/
-.nunito{
-    font-family: var(--fontNunitoSansSerif);
+/*.nunito{
+    font-family: var(--fontNunito);
     letter-spacing: 0.045rem;
     font-size: 1.5rem;
-}
+}*/
 
-html{
+/*html{
     height: 100vh;
     width: 100%;
-}
+} Non serve specificarlo (?)*/
 
 body {
     /*Perchè specificare width e heigh per il body se è di defaul al 100%?
     Anche il margin a 0 andrebbe tolto e vedere che succede, ma penso non ci siano problemi*/
-    width: 100%;
+    /*width: 100%;
     height: 100vh;
-    margin:0;
+    margin:0;*/
     background: var(--backgroundColor);
-    overflow-x: hidden;
-    overflow-y: scroll;
-
+    /*overflow-x: hidden;
+    overflow-y: scroll;*/
 }
 
 
@@ -113,6 +117,7 @@ section{
     justify-content: center;
     align-items: center;
 }
+
 section img{
     position: absolute;
     top: 0;
@@ -137,9 +142,10 @@ button {
 }
 
 .navbar{
-    z-index: 1000000;
+    z-index: 1000000; /*????*/
 }
 
+/*todo TOGLIERE questa regola dopo aver definito una classe con lo stile di testo per voci di menu e footer*/
 .navbar a {
     font-size:20px;
     letter-spacing:2px;
@@ -159,6 +165,7 @@ button {
     background: var(--whiteText);
 }
 
+/*todo TOGLIERE sempre dopo aver definito una classe unica*/
 .navbar a.dropdown-toggle {
     color: var(--whiteText);
 }
@@ -284,7 +291,7 @@ button {
 /* ------------ NAVBAR END ------------ */
 
 .title{
-    font-family: var(--fontLobsterSansSerif);
+    font-family: var(--fontLobster);
     font-size:50px;
     color: var(--whiteText);
     margin-right: 0;
