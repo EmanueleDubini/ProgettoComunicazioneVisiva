@@ -12,8 +12,6 @@
     <title>Our Story</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
 </head>
 
 <body>
@@ -71,50 +69,17 @@
             </div>
         </nav>
 
-
-        <img src="img/Base.png" id="bg">
-        <img src="img/First%20Layer.png" id="mountain">
+        <img src="img/Clouds_base.png"> <!--L'altezza deve essere ridotta, ma mettendo la class bs "w" taglia la parte sotto, perdendo il gradente e creando la linea di separazione
+        Bisogna inpltre in questo caso creare un id che faccia sì che la posizione dell'h1 sia ravvicinata nella parte top-->
         <h1 id = "text">Our Story</h1>
     </section>
-
-    <!-- Script per parallax -->
-    <script type="text/javascript">
-        let bg = document.getElementById("bg");
-        let mountain = document.getElementById("mountain");
-        let text = document.getElementById("text");
-
-        window.addEventListener('scroll', function (){
-            var value = window.scrollY;
-
-            bg.style.top = value * 0.5 + 'px';
-            text.style.top = value * 0.4 + 'px';
-        })
-
-    </script>
-
-    <!-- Script per navbar (cambio colore)-->
-    <script>
-        $(document).ready(function (){
-            $(window).scroll(function () {
-                if($(document).scrollTop() > 300) {
-                    $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
-                }else{
-                    $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
-                }
-            });
-        });
-    </script>
-
-
-
     <!-- END NAVBAR BOOTSTRAP + CSS -->
-
 
 
     <!--Intro text-->
     <div class="container-fluid">
         <div class="row g-3">
-            <div class="col-12 col-lg-9 p-5">
+            <div class="col-12 col-lg-9 px-5">
                 <h2>La nostra storia</h2>
                 <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
                     L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.
@@ -219,41 +184,32 @@
 
     <!-- FOOTER START -->
     <footer class="container-fluid footer">
-
         <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
-
-            <div class="col-12 col-lg-4">
-
-                <div class="row g-3  pt-1 mb-4 pt-lg-4">
+            <div class="col-12 col-lg-5">
+                <div class="row g-3 my-4">
                     <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
-                        <h1 class="text-upper-case font-weight-bold">Serenity Dreams <br>Travel</h1>
+                        <h1>Serenity Dreams <br>Travel</h1>
                     </div>
-
                     <div class="col-2 pt-2">
                         <img class="image" src="img/Icon/Logo.svg" alt="Logo Serenity Dreams Travel">
                     </div>
                 </div>
-
-
             </div>
 
-
-            <div class="col-12 col-lg-6"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
-
+            <div class="col-12 col-lg-5 mb-4"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
                 <div class="row justify-content-around justify-content-lg-end">
-                    <div class="col-7 col-lg-4">
+                    <div class="col-7 col-lg-6">
                         <ul class="nav flex-column">
-                            <li class="nav-item">serenity.dreams@gmail.com</li>
-                            <li class="nav-item">0321 0508 9921</li>
-                            <li class="nav-item">Plana Zebra fucsia, 99 <br>
-                                (Othania)</li>
+                            <li class="nav-item menu_footer mb-2">serenity.dreams@gmail.com</li>
+                            <li class="nav-item menu_footer mb-2">0321 0508 9921</li>
+                            <li class="nav-item menu_footer">Plana Zebra fucsia, 99 <br>(Othania)</li>
                         </ul>
                     </div>
 
                     <div class="col-5">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <h6 class="text-center">Seguici sui social</h6>
+                                <p class="text-center menu_footer">Seguici sui social</p>
                             </div>
                         </div>
                         <div class="row justify-content-around justify-content-md-center">

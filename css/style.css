@@ -4,115 +4,81 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap');
 
-/* ------------ VARIABLES ------------ */
+/* ------------ CUSTOM PROPERTIES ------------ */
 :root{
     /* FONT */
     --fontLobster: 'Lobster', sans-serif;
     --fontNunito: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/
 
     /* COLORS */
-    --backgroundColor: #181335;
-    --footerBackgroundColor: #0C0922;
-    --carouselColor: #9176FF;
-    --whiteText: #F6F6F9;
+    --PrimaryColor: #181335;
+    --SecondaryColor: #FFE037;
+    --TertiaryLightBlue: #4C7CF8;
+    --TertiraryGreen: #1DCD9F;
+    --TertiaryPink: #F63A99;
+    --White: #F6F6F9;
+
+    --carouselColor: #9176FF; /*Se un valore viene usato una sola volta, non serve crare una custom property, infatti ho tolto quella per il colore sfondo del footer */
 }
+
 /* todo UTILIZZARE LE CLASSI DI BOOTSTRAP PER PADDING/MARGIN */
 /* todo SOSTITUIRE UNITA' DI MISURA ASSOLUTE IN RELATIVE*/
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
 
-h1, h2, h3 {
-    font-family: var(--fontLobster);
-    /* letter-spacing: 0.12rem; Non va bene assegnarlo a tutti e tre, perchè se vedete su Figma il letter spacing dipende dalla dimensione del testo, quindi è diverso tra h1, h2 e h3*/
+/* ------------ FONTS ------------ */
+html {
+    font-family: var(--fontNunito);
 }
 
-h1{
-    /* impostato come dimensione minima 32px e massima 64px */
-    font-size: clamp(2.133rem, 4vw + 1rem, 4.267rem); /* https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/ */
+h1, h2, h3 {
+    font-family: var(--fontLobster);
+}
+
+h1, h2, h3, h4, p, li, a{
+    color: var(--White);
+}
+
+h1 {
+    font-size: clamp(2.133rem, 4vw + 1rem, 4.267rem);
     letter-spacing: 0.12rem;
 }
 
-h2{
-    /* impostato come dimensione minima 28px e massima 40px */
+h2 {
     font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
     letter-spacing: 0.075rem;
 }
 
-h3{
-    /* impostato come dimensione minima 24px e massima 32px */
-    font-size: clamp(2rem, 2vw + 1rem, 2.667rem);
+h3 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
     letter-spacing: 0.06rem;
 }
 
-h1, h2, h3, h6, p, li, a{ /*Non abbiamo un h6 in Figma, perchè le voci di footer hanno le stesse dimensiondi quelle della navbar*/
-    color: var(--whiteText);
+p, h4, .menu_footer {
+    font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
 }
 
-p{
-    font-family: var(--fontNunito);
-    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.5rem); /*stavo facendo una prova, ma non so nemmeno io in base a che criterio*/
-    /* todo definire font size */
+p {
+    letter-spacing: 0.00875rem;
 }
 
 .menu_footer {
-    color: var(--whiteText);
+    font-weight: 400;
+    color: var(--White);
+}
+
+.h3_Nunito {
     font-family: var(--fontNunito);
-    /*da definire la font-size con funzione clamp*
 }
 
 a{
-    font-family: var(--fontNunito);
-    /* todo definire font size */
-    /*In realtà al link non va asseganta la dimensione, perchè tanto se la piglia a seconda del tag in cui viene inserito (se h1, p, etc)*/
     text-decoration: underline;
-    /*text-decoration-color: var(--whiteText); /*Creare una classe che applichi color: white, font-size e weight ai link della navbar, allo slogan e alle voci di footer
-    Controllare di non avere link che devono essere su sfondo bianco, sennò poi spariscono*/
     text-underline-offset: 5px; /* todo capire quanto spostare la sottolineatura*/
 }
 
-/* todo POI RIMUOVERE classe css che definisce i parametri di stile da settare per i componenti che usano font Nunito Sans*/
-/*.nunito{
-    font-family: var(--fontNunito);
-    letter-spacing: 0.045rem;
-    font-size: 1.5rem;
-}*/
-
-/*html{
-    height: 100vh;
-    width: 100%;
-} Non serve specificarlo (?)*/
 
 body {
-    /*Perchè specificare width e heigh per il body se è di defaul al 100%?
-    Anche il margin a 0 andrebbe tolto e vedere che succede, ma penso non ci siano problemi*/
-    /*width: 100%;
-    height: 100vh;
-    margin:0;*/
-    background: var(--backgroundColor);
-    /*overflow-x: hidden;
-    overflow-y: scroll;*/
+    background: var(--PrimaryColor);
 }
-
-
-section:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #181335, transparent);
-    z-index: 1;
-}
-
-section:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
 
 section{
     position: relative;
@@ -135,27 +101,15 @@ section img{
 }
 
 button {
-    border-radius: 15px;
-    font-weight: bold;
-    color: var(--backgroundColor);
-    background: #FFE037;
-    /*padding: 20px 50px;*/ /*padding di figma*/
-    padding: 15px 40px 15px 40px; /*Sostituire e mettere unità di misura relativa, creando una classe per il text_button e mettere un padding a quello*/
-    display: inline-flex;
+    color: var(--PrimaryColor);
+    background: var(--SecondaryColor);
+    padding: 1.25rem 3.125rem;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    font-weight: bold;
+    display: inline-flex;
     border: none;
-}
-
-.navbar{
-    z-index: 1000000; /*????*/
-}
-
-/*todo TOGLIERE questa regola dopo aver definito una classe con lo stile di testo per voci di menu e footer*/
-.navbar a {
-    font-size:20px;
-    letter-spacing:2px;
-    justify-content: space-between;
 }
 
 /* Colore per l'icona hambirger menu */
@@ -168,12 +122,12 @@ button {
 }
 
 .navbar a.dropdown-menu {
-    background: var(--whiteText);
+    background: var(--White);
 }
 
 /*todo TOGLIERE sempre dopo aver definito una classe unica*/
 .navbar a.dropdown-toggle {
-    color: var(--whiteText);
+    color: var(--White);
 }
 
 .navbar a.dropdown-item {
@@ -185,7 +139,7 @@ button {
 }
 
 .navbar .nav-link.active{
-    color: var(--whiteText);
+    color: var(--White);
 }
 
 .navbar .dropdown-menu a::before {
@@ -213,7 +167,7 @@ button {
 
 
 .nav-item a{
-    color: var(--whiteText);
+    color: var(--White);
     justify-content: space-between;
     position: relative;
     display: inline-block;
@@ -226,7 +180,7 @@ button {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: var(--whiteText);
+    background-color: var(--White);
     transition: width 0.3s ease; /* Imposta la transizione */
 }
 
@@ -235,7 +189,7 @@ button {
 }
 
 #navbarDropdownMenuLink:focus{
-    color: var(--whiteText);
+    color: var(--White);
 }
 
 .nav-item a:focus::before,
@@ -248,7 +202,7 @@ button {
 }
 
 .nav-item a:hover {
-    color: var(--whiteText);
+    color: var(--White);
 }
 
 .navbar-nav {
@@ -258,11 +212,11 @@ button {
 }
 
 .nav-item{
-    color: var(--whiteText);
+    color: var(--White);
 }
 
 .navbar-nav .nav-link-show{
-    color: var(--whiteText);
+    color: var(--White);
 }
 
 .navbar-toggler{
@@ -271,7 +225,7 @@ button {
 }
 
 .nav-colored{
-    background: var(--backgroundColor);
+    background: var(--PrimaryColor);
     transition: background-color 0.7s ease;
 }
 
@@ -291,7 +245,7 @@ button {
 }
 
 #offcanvasNavbar{
-    background-color: var(--backgroundColor);
+    background-color: var(--PrimaryColor);
     text-align: center;
 }
 /* ------------ NAVBAR END ------------ */
@@ -300,7 +254,7 @@ button {
 .title{
     font-family: var(--fontLobster);
     font-size:50px;
-    color: var(--whiteText);
+    color: var(--White);
     margin-right: 0;
     margin-left: 0;
 }
@@ -314,25 +268,16 @@ button {
     display: block;
 }
 
-#text /* todo eliminare, è associato tramite id all' h1 di ogni pagina*/
+#text
 {
     position: relative;
-    color: var(--whiteText);
-    /*font-size: 5vw;*/
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-    5px 5px 70px rgba(255,255,255,0.5);
     text-align: center;
-    z-index: 1;
 }
 
-#text2{
+h4{
     position: relative;
-    color: var(--whiteText);
-    /*font-size: 3vw;*/
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-    5px 5px 70px rgba(255,255,255,0.5);
     text-align: center;
-    z-index: 1;
+
 }
 
 #button_hero{
@@ -369,12 +314,12 @@ button {
 }
 
 .white-wave h2{
-    color: var(--backgroundColor);
+    color: var(--PrimaryColor);
 }
 
 
 .section2 h2{ /*todo questo penso si possa togliere*/
-    color: var(--backgroundColor);
+    color: var(--PrimaryColor);
 }
 /* ----------- index.html.html END ------------ */
 
@@ -425,7 +370,7 @@ button {
     width: 20em;
     height: 90%;
     border-radius: 2em; /*possibile esprimere anche in px*/
-    background-color: var(--whiteText);
+    background-color: var(--White);
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2rem;
 }
@@ -462,7 +407,7 @@ button {
     text-align: center;
     font-size: 1.1rem;
     margin: 1em 0;
-    color: var(--backgroundColor);
+    color: var(--PrimaryColor);
 }
 
 .card-title{
@@ -488,7 +433,7 @@ button {
 .testimonials-card .name{
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--whiteText);
+    color: var(--White);
     text-transform: capitalize;
     margin-top: 1.2em;
 }
@@ -497,7 +442,7 @@ button {
 .testimonials-card p{
     text-align: center;
     margin-top: 20px;
-    color: var(--whiteText);
+    color: var(--White);
     font-size: 0.85rem;
     max-width: 265px;
 }
@@ -533,24 +478,24 @@ i.fa-star:not(:last-child){
 
 .guide-pagination .swiper-pagination-bullet {
     opacity: 1;
-    border: var(--whiteText) solid 1px;
+    border: var(--White) solid 1px;
     background-color: transparent;
     height: 12px;
     width: 12px;
 }
 .guide-pagination .swiper-pagination-bullet-active {
-    background-color: var(--whiteText);
+    background-color: var(--White);
 }
 
 .testimonials-pagination .swiper-pagination-bullet {
     opacity: 1;
-    border: var(--backgroundColor) solid 1px;
+    border: var(--PrimaryColor) solid 1px;
     background-color: transparent;
     height: 12px;
     width: 12px;
 }
 .testimonials-pagination .swiper-pagination-bullet-active {
-    background-color: var(--backgroundColor);
+    background-color: var(--PrimaryColor);
 }
 
 /* nel carosello delle recensioni in index.html per fare comparire i dot della paginazione su dispositivi mobili e non mostrarli su desktop*/
@@ -588,51 +533,35 @@ i.fa-star:not(:last-child){
     background-color: #352688;;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2rem;
-    border-right: 8px solid #FFE037;
-    border-bottom: 8px solid #FFE037;
+    border-right: 5px solid #FFE037;
+    border-bottom: 5px solid #FFE037;
 }
 /* ------------ CARD ourStory.html END------------ */
 
 
 .guide-card p {
-    color: var(--backgroundColor);
+    color: var(--PrimaryColor);
 }
 
 /* ------------ FOOTER START------------ */
 /*todo impostare i font corretti*/
 footer {
     /*padding: 1em 1.8em 0 1.8em; /*i valori sono per il padding top, right, bottom, left*/
-    background: var(--footerBackgroundColor);
+    background: #0C0922;
 }
 
 /*.footer h1{
     font-size: 4rem;
 }*/
 
-.footer .image{
+.footer img{
     width: 4.5em;
     height: 4.5em;
 }
 
-li.nav-item{
-    font-size: 0.9rem;
-    /* todo definire il font corretto*/
-    letter-spacing: 0.00625rem;
-}
-/* per spaziare gli elementi dell'elenco*/
-li.nav-item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-footer h6{
-    font-size: 0.9rem;
-    /* todo definire il font corretto*/
-    letter-spacing: 0.00625rem;
-
-}
 
 footer i{
-    color: var(--whiteText);
+    color: #0C0922;
     font-size: 1rem;
     padding: 0;
 }

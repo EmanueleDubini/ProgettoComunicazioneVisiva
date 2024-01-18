@@ -88,7 +88,10 @@
                     <h1 id = "text">Serenity Dreams Travel</h1>
                 </div>
                 <div class="col-12 justify-content-center">
-                    <h2 id = "text2">Travel toward your dreams </h2>
+                    <h4 class="menu_footer" id ="text2">Travel toward your dreams </h4>
+                    <!--PR0BLEMA CHE AHAHAHAHAHA praticamente ho messo allo slogan la class menu_footer e ok
+                    Ho rimosso dal css l'id text2, semplicemente assegnando la stessa regola all'h4, ma se tolgo l'id dall'html si sminchia il parallasse
+                    Ceh in realtà l'effetto è giusto, perchè così slogan e testo vanno sopra a Serenity Drrams travel, però dato che la nuvoletta è più in basso l'effetto visivo è nammerda ahahah-->
                 </div>
                 <div class="col-12 justify-content-center">
                     <button class="mx-auto" id="button_hero">DREAM ABOUT</button> <!--todo capire se usare gli id o le classi per il css-->
@@ -139,21 +142,17 @@
     <!-- END NAVBAR BOOTSTRAP + CSS -->
 
     <!-- todo capire e correggere nel codice quando usare <section> e <div> per dare una suddivisione del contenuto della pagina-->
-    <!-- todo Un h1 ci deve sempre essere in un sito web anche per questioni SEO
-    Penso sia stato messo in un div per gestire il parallasse(?), però è meglio mettere nel div il tag <h1>Serenity Dreams Travel>/h1>
-    -->
 
 
     <!--Text intro (h2 + p)-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-lg-6 px-5 py-2"> <!--todo capire se in modalità desktop il paragrafo p si allunga troppo e vadano messi dei bordi oppure col-lg-8. se si desidera che si alluga totalmente allora togliere justify-content-lg-start e col-lg-8-->
-
+            <div class="col-12 col-lg-7 px-5 py-2">
                 <h2>Dream with us</h2>
                     <p class="mt-3">Benvenuto nell'incantevole universo di SerenityDreams Travel, dove ogni viaggio
                         è una poesia di mondi inesplorati e avventure avvolte nella magia.
                         Ti invitiamo a sognare con noi attraverso i nostri pacchetti,
-                        che trasformeranno la tua vacanza in un'esperienza straordinaria.<br class="d-md-none"><br class="d-md-none">
+                        che trasformeranno la tua vacanza in un'esperienza straordinaria. </br><br class=" d-md-none">
                         Abbandona l'ordinario e lasciati trasportare verso destinazioni uniche,
                         dove la magia si fonde con il sogno. Con noi ogni momento è un incantesimo da custodire.
                     </p>
@@ -163,27 +162,27 @@
 
     <!--Immy astronauta + 3 sotto-paragrafi e CTA-->
     <div class="container-fluid">
-        <div class="row mb-lg-4 justify-content-around">
-            <div class="col-12 col-lg-5">
-                <img src="img/Astronauta.png" alt="Astronauta" class="img-fluid astronaut-img">
-            </div>
+        <div class="row mb-lg-4 justify-content-lg-around">
+            <div class="col-12 col-lg-5 text-center">
+                <img src="img/Astronauta.png" alt="Astronauta" class="img-fluid astronaut-img"> <!--Non è cosa tanto buona assegnare una classe all'immagine-->
+            </div>e
             <!--<div class="col-1 offset">
             </div>-->
             <div class="col-12 col-lg-5">
                 <div class="row g-2 mt-4 mt-lg-0">
                     <div class="px-5">
                         <div class="col-12">
-                            <a href="ourStory.html"><h3>Our story →</h3></a>
+                            <a href="ourStory.html"><h3 class="h3_Nunito">Our story →</h3></a>
                             <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
                                 Scegli SerenityDreams Travel e immergiti nelle nostre radici di passione e scoperta.</p>
                         </div>
                         <div class="col-12 mt-4">
-                            <a href="feelTheMagic.html"><h3>Feel the magic →</h3></a>
+                            <a href="feelTheMagic.html"><h3 class="h3_Nunito">Feel the magic →</h3></a>
                             <p>Scopri la nostra navicella magica e preparati a emozionanti scoperte.
                                 Ricorda di portare con te tutto l'occorrente per vivere un'avventura unica!</p>
                         </div>
                         <div class="col-12 mt-4">
-                            <a href="othania.html"><h3>Othania →</h3></a>
+                            <a href="othania.html"><h3 class="h3_Nunito">Othania →</h3></a>
                             <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
                                 Scegli SerenityDreams Travel e immergiti nelle nostre radici di passione e scoperta.</p>
                         </div>
@@ -265,41 +264,32 @@
 
     <!-- FOOTER START -->
     <footer class="container-fluid footer">
-
         <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
-
-            <div class="col-12 col-lg-4">
-
-                <div class="row g-3  pt-1 mb-4 pt-lg-4">
+            <div class="col-12 col-lg-6"> <!--Questo figlio di puttana non funziona da tablet, dovrebbe pigliarsi 12 colonne per h1 e logo e altre 12 per i testi sotto, ma si piglia le dimensioni di lg-->
+                <div class="row g-3 my-3">
                     <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
-                        <h1 class="text-upper-case font-weight-bold">Serenity Dreams <br>Travel</h1>
+                        <h1>Serenity Dreams <br>Travel</h1>
                     </div>
-
                     <div class="col-2 pt-2">
                         <img class="image" src="img/Icon/Logo.svg" alt="Logo Serenity Dreams Travel">
                     </div>
                 </div>
-
-
             </div>
 
-
-            <div class="col-12 col-lg-6"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
-
+            <div class="col-12 col-lg-5 mb-4"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
                 <div class="row justify-content-around justify-content-lg-end">
-                    <div class="col-7 col-lg-4">
+                    <div class="col-7 col-lg-6">
                         <ul class="nav flex-column">
-                            <li class="nav-item">serenity.dreams@gmail.com</li>
-                            <li class="nav-item">0321 0508 9921</li>
-                            <li class="nav-item">Plana Zebra fucsia, 99 <br>
-                                (Othania)</li>
+                            <li class="nav-item menu_footer mb-2">serenity.dreams@gmail.com</li>
+                            <li class="nav-item menu_footer mb-2">0321 0508 9921</li>
+                            <li class="nav-item menu_footer">Plana Zebra fucsia, 99 <br>(Othania)</li>
                         </ul>
                     </div>
 
                     <div class="col-5">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <h6 class="text-center">Seguici sui social</h6>
+                                <p class="text-center menu_footer">Seguici sui social</p>
                             </div>
                         </div>
                         <div class="row justify-content-around justify-content-md-center">
