@@ -114,7 +114,7 @@
     <!--Intro text-->
     <div class="container-fluid">
         <div class="row g-3">
-            <div class="col-sm-12 col-lg-9 p-5">
+            <div class="col-12 col-lg-9 p-5">
                 <h2>La nostra storia</h2>
                 <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
                     L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.
@@ -124,7 +124,7 @@
                     creando ricordi che resteranno impressi nei loro cuori per sempre
                 </p>
             </div>
-            <div class="col-sm-0 col-lg-3 offset">
+            <div class="col-0 col-lg-3 offset">
             </div>
         </div>
     </div>
@@ -132,7 +132,7 @@
     <!--Vision e mission -->
     <div class="container-fluid">
         <div class="row g-3 justify-content-center">
-            <div class="col-sm-12 col-lg-6 text-center mx-5 guide-card w-25">
+            <div class="col-12 col-lg-6 text-center mx-5 guide-card">
                 <div class="card-body">
                     <h6 class="card-title">Vision</h6>
                     <p class="card-text">Immaginiamo un futuro in cui il viaggio è una forma d'arte personalizzabile
@@ -141,7 +141,7 @@
                         di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici.</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-6 text-center mx-5 guide-card w-25">
+            <div class="col-12 col-lg-6 text-center mx-5 guide-card">
                 <div class="card-body">
                     <h6 class="card-title">Mission</h6>
                     <p class="card-text">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
@@ -154,6 +154,8 @@
         </div>
     </div>
 
+
+
     <!-- Come lavoriamo-->
     <div class="container-fluid">
         <div class="row">
@@ -161,7 +163,7 @@
                 <h2>Come lavoriamo</h2>
             </div>
             <div class="row g-1">
-                <div class="col-sm-12 col-lg-6 px-5">
+                <div class="col-12 col-lg-6 px-5">
                     <p>Il nostro staff altamente qualificato presso SerenityDreams Travel è dedicato
                         a garantire un'esperienza di viaggio senza precedenti.
                         Il nostro team si impegna a comprendere appieno le aspettative del cliente,
@@ -169,7 +171,7 @@
                         rispecchi fedelmente le sue passioni e interessi.
                     </p>
                 </div>
-                <div class="col-sm-12 col-lg-6 px-5">
+                <div class="col-12 col-lg-6 px-5">
                     <p>Siamo presenti in ogni fase del viaggio per garantire un supporto continuo.
                         Ogni membro del team è impegnato nel mettere a proprio agio il cliente fin dal primo contatto,
                         ascoltando attentamente le loro esigenze e desideri per creare un viaggio su misura.
@@ -215,54 +217,62 @@
         </div>
     </div>
 
-    <!--Codice per il FOOTER-->
-    <div class="container-fluid my-footer">
-        <footer class="row g-2 align-items-center">
-            <div class="col-sm-12 col-lg-5 nav flex-column">
-                <div class="row">
-                    <div class="col-sm-8 col-lg-12 flex-column flex-direction-column ">
-                        <h1>Serenity Dreams Travel</h1> <!-- todo mettere font-size 9vh nel css dove c'è .footer h1 -->
+    <!-- FOOTER START -->
+    <footer class="container-fluid footer">
+
+        <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
+
+            <div class="col-12 col-lg-4">
+
+                <div class="row g-3  pt-1 mb-4 pt-lg-4">
+                    <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
+                        <h1 class="text-upper-case font-weight-bold">Serenity Dreams <br>Travel</h1>
                     </div>
-                    <div class = "col-sm-4 col-lg-12 d-flex align-items-center">
-                        <img style="width: 75px; height: 75px" src="img/Icon/Logo.svg" alt="Logo">
+
+                    <div class="col-2 pt-2">
+                        <img class="image" src="img/Icon/Logo.svg" alt="Logo Serenity Dreams Travel">
                     </div>
                 </div>
+
+
             </div>
 
-            <div class="col-1 offset">
-            </div>
 
-            <div class="col-lg-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item">serenity.dreams@gmail.com</li>
-                    <li class="nav-item">0321 0508 9921</li>
-                    <li class="nav-item">Plana Zebra fucsia, 99
-                        (Othania)</li>
-                </ul>
+            <div class="col-12 col-lg-6"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
+
+                <div class="row justify-content-around justify-content-lg-end">
+                    <div class="col-7 col-lg-4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">serenity.dreams@gmail.com</li>
+                            <li class="nav-item">0321 0508 9921</li>
+                            <li class="nav-item">Plana Zebra fucsia, 99 <br>
+                                (Othania)</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <h6 class="text-center">Seguici sui social</h6>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around justify-content-md-center">
+                            <div class="col-1 text-center"> <i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="col-1 mx-md-4 text-center"> <i class="fa-brands fa-x-twitter"></i></div>
+                            <div class="col-1 text-center"> <i class="fa-brands fa-tiktok"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="col-1 offset">
-            </div>
-            <div class="col-sm-12 col-lg-2">
-                <h6>Seguici sui social</h6>
-                <div class="row"></div>
-                <ul class="nav flex-row">
-                    <li class="col-auto nav-item">
-                        <img style="width: 24px; height: 24px" src="img/Icon/Facebook.svg" alt="Icona Facebook">
-                    </li>
-                    <li class="col-auto nav-item footer-padding">
-                        <img style="width: 24px; height: 24px" src="img/Icon/Twitter.svg" alt="Icona Twitter">
-                    </li>
-                    <li class="col-auto nav-item">
-                        <img style="width: 24px; height: 24px" src="img/Icon/TikTok.svg" alt="Icona TikTok">
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
 
 </body>
 </html>
+
 
 
 <!-- Script per animazione di chiusura del menù in MOBILE -->

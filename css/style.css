@@ -8,7 +8,7 @@
 :root{
     /* FONT */
     --fontLobsterSansSerif: 'Lobster', sans-serif;
-    --fontNunitoSansSerif: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/ /*todo aggiornare font come su figma*/
+    --fontNunitoSansSerif: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/
 
     /* COLORS */
     --backgroundColor: #181335;
@@ -26,14 +26,17 @@ h1, h2, h3 {
 }
 
 h1{
+    /* impostato come dimensione minima 32px e massima 64px */
     font-size: clamp(2.133rem, 4vw + 1rem, 4.267rem); /* https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/ */
 }
 
 h2{
+    /* impostato come dimensione minima 28px e massima 40px */
     font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
 }
 
 h3{
+    /* impostato come dimensione minima 24px e massima 32px */
     font-size: clamp(2rem, 2vw + 1rem, 2.667rem);
 }
 
@@ -242,6 +245,10 @@ button {
 }
 
 .nav-item{
+    color: var(--whiteText);
+}
+
+.navbar-nav .nav-link-show{
     color: var(--whiteText);
 }
 
