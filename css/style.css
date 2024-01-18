@@ -202,7 +202,6 @@ button {
 .navbar .dropdown-menu a:hover::before,
 .navbar .dropdown-menu a:focus::before {
     width: 100%;
-    background-color: transparent;
     color: #0c0725;
 }
 
@@ -235,6 +234,9 @@ button {
     width: 100%;
 }
 
+#navbarDropdownMenuLink:focus{
+    color: var(--whiteText);
+}
 
 .nav-item a:focus::before,
 .nav-item a:hover::before {
