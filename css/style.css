@@ -43,7 +43,7 @@ h3{
     letter-spacing: 0.06rem;
 }
 
-h1, h3, h6, p, li, a{ /*Non abbiamo un h6 in Figma, perchè le voci di footer hanno le stesse dimensiondi quelle della navbar*/
+h1, h2, h3, h6, p, li, a{ /*Non abbiamo un h6 in Figma, perchè le voci di footer hanno le stesse dimensiondi quelle della navbar*/
     color: var(--whiteText);
 }
 
@@ -178,7 +178,6 @@ button {
     padding: 0 0 3px;
 
 }
-
 
 .navbar .nav-link.active{
     color: var(--whiteText);
@@ -421,6 +420,8 @@ button {
     height: 90%;
     border-radius: 2em; /*possibile esprimere anche in px*/
     background-color: var(--whiteText);
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2rem;
 }
 
 .guide-card .image{
@@ -577,12 +578,7 @@ i.fa-star:not(:last-child){
 
 
 /* ------------ CARD ourStory.html START------------ */
-.guide-card{
-    background-color: var(--whiteText);
-    border-radius: 2em;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-    padding: 2rem;
-}
+
 
 .guide-card p {
     color: var(--backgroundColor);
