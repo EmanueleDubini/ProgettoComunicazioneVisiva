@@ -579,12 +579,20 @@ i.fa-star:not(:last-child){
 
 
 /* ------------ CARD ourStory.html START------------ */
+.brand-card{
+    border-radius: 2em; /*possibile esprimere anche in px*/
+    background-color: #352688;;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2rem;
+    border-right: 8px solid #FFE037;
+    border-bottom: 8px solid #FFE037;
+}
+/* ------------ CARD ourStory.html END------------ */
 
 
 .guide-card p {
     color: var(--backgroundColor);
 }
-/* ------------ CARD ourStory.html END------------ */
 
 /* ------------ FOOTER START------------ */
 /*todo impostare i font corretti*/
@@ -625,4 +633,6 @@ footer i{
     padding: 0;
 }
 /* ------------ FOOTER END------------ */
+
+
 
