@@ -372,6 +372,7 @@ button {
     color: var(--backgroundColor);
 }
 
+
 .section2 h2{ /*todo questo penso si possa togliere*/
     color: var(--backgroundColor);
 }
@@ -379,7 +380,11 @@ button {
 
 /* ----------- contactUs.html START ------------ */
 
-/* CAROSELLO contactUs.html */
+
+
+/* ----------- contactUs.html END ------------ */
+
+/* ------------ CAROSELLO index.html & contactUs.html END ------------*/
 .swiper{
     width: 100%;
 }
@@ -501,6 +506,7 @@ i.fa-star:not(:last-child){
     margin-right: 7px;
 }
 
+
 /* Se si desidera applicare l'effetto blur sulle card che nono sono in primo piano, lo applica a tutti i caroselli del sito quindi index.html e contactus.html*/
 /*.swiper-slide:not(.swiper-slide-active){
     filter: blur(1px);
@@ -573,9 +579,7 @@ i.fa-star:not(:last-child){
     }
 }
 */
-
-
-/* ------------ CAROSELLO contactUs.html END ------------*/
+/* ------------ CAROSELLO index.html & contactUs.html END ------------*/
 
 
 /* ------------ CARD ourStory.html START------------ */
