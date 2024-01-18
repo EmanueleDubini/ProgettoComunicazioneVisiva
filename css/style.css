@@ -336,15 +336,17 @@ p{
     background-size: cover;
 }
 
-/*todo togliere hover dal mobile*/
-.astronaut-img:hover{
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-}
+/* media query per applicare in seguito all'hover l'effetto di ingrandimento sull'astronauta solo su desktop */
+@media(hover: hover) and (pointer: fine) {
+    .astronaut-img:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+    }
 
-.astronaut-img:not(:hover){
-    transform: scale(1);
-    transition: transform 0.5s ease;
+    .astronaut-img:not(:hover){
+        transform: scale(1);
+        transition: transform 0.5s ease;
+    }
 }
 
 .white-wave h2{
@@ -357,6 +359,11 @@ p{
 /* ----------- index.html.html END ------------ */
 
 /* ----------- contactUs.html START ------------ */
+
+.bg-image-index{
+    background-image: url('');
+    height: 100vh
+}
 
 
 
