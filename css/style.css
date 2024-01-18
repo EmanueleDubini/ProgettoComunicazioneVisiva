@@ -243,6 +243,10 @@ p{
     color: var(--whiteText);
 }
 
+.navbar-nav .nav-link-show{
+    color: var(--whiteText);
+}
+
 .navbar-toggler{
     border: none;
     outline: none;
