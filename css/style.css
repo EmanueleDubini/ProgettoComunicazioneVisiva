@@ -53,6 +53,12 @@ p{
     /* todo definire font size */
 }
 
+.menu_footer {
+    color: var(--whiteText);
+    font-family: var(--fontNunito);
+    /*da definire la font-size con funzione clamp*
+}
+
 a{
     font-family: var(--fontNunito);
     /* todo definire font size */
@@ -176,7 +182,6 @@ button {
     display: inline-block;
     width: auto;
     padding: 0 0 3px;
-
 }
 
 
