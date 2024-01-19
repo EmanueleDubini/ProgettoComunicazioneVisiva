@@ -80,7 +80,7 @@ body {
     background: var(--PrimaryColor);
 }
 
-section{
+header{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -90,7 +90,7 @@ section{
     align-items: center;
 }
 
-section img{
+header img{
     position: absolute;
     top: 0;
     left: 0;
@@ -113,8 +113,8 @@ button {
 }
 
 /* Colore per l'icona hambirger menu */
-.navbar-toggler .fa-bars {
-    color: white; /* Imposta il colore dell'icona su bianco */
+.navbar-toggler .fa-bars, .navbar a.dropdown-toggle, .navbar .nav-link.active {
+    color: var(--White);
 }
 
 .navbar-toggler:focus {
@@ -125,21 +125,12 @@ button {
     background: var(--White);
 }
 
-/*todo TOGLIERE sempre dopo aver definito una classe unica*/
-.navbar a.dropdown-toggle {
-    color: var(--White);
-}
-
 .navbar a.dropdown-item {
     color: #0c0725;
     position: relative;
     display: inline-block;
     width: auto;
-    padding: 0 0 3px;
-}
-
-.navbar .nav-link.active{
-    color: var(--White);
+    padding: 8px;
 }
 
 .navbar .dropdown-menu a::before {
@@ -149,7 +140,7 @@ button {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #0c0725;
+    background-color: var(--PrimaryColor);
     transition: width 0.3s ease;
 }
 
@@ -162,13 +153,11 @@ button {
 .navbar a.dropdown-item:hover,
 .navbar a.dropdown-item:focus {
     background-color: transparent;
-    color: #0c0725;
+    color: var(--PrimaryColor);
 }
-
 
 .nav-item a{
     color: var(--White);
-    justify-content: space-between;
     position: relative;
     display: inline-block;
 }
@@ -184,14 +173,11 @@ button {
     transition: width 0.3s ease; /* Imposta la transizione */
 }
 
-.navbar .nav-item a.active::before {
-    width: 100%;
-}
-
 #navbarDropdownMenuLink:focus{
     color: var(--White);
 }
 
+.navbar .nav-item a.active::before,
 .nav-item a:focus::before,
 .nav-item a:hover::before {
     width: 100%; /* Fai espandere la sottolineatura al 100% */
@@ -251,14 +237,6 @@ button {
 /* ------------ NAVBAR END ------------ */
 
 
-.title{
-    font-family: var(--fontLobster);
-    font-size:50px;
-    color: var(--White);
-    margin-right: 0;
-    margin-left: 0;
-}
-
 /* ------------ HERO START ------------ */
 #hero-image{
     position: relative;
@@ -268,8 +246,7 @@ button {
     display: block;
 }
 
-#text
-{
+#brand_name {
     position: relative;
     text-align: center;
 }
@@ -277,7 +254,6 @@ button {
 h4{
     position: relative;
     text-align: center;
-
 }
 
 #button_hero{
@@ -286,7 +262,7 @@ h4{
     z-index: 2;
 }
 
-#mountain{
+#cloud{
     z-index: 3;
 }
 /* ------------ HERO END ------------ */
@@ -295,7 +271,6 @@ h4{
 /* ----------- index.html.html START ------------ */
 .white-wave{
     background-image: url("../img/svg/onda.svg");
-
     background-repeat: no-repeat;
     background-size: cover;
 }
