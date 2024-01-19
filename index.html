@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,8 @@
     <!-- Font-awesome CDN -->
     <!-- https://cdnjs.com/libraries/font-awesome-->
     <!-- per scegliere le icone https://fontawesome.com/search-->
+
+    <!--todo → Le icone esterne poi le leviamo e incorporiamo quelle svg che salviamo nella cartella icons, così alleggeriamo il sito e i caricamenti esterni-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
@@ -21,10 +23,12 @@
 
 </head>
 <body>
-<main>
+
+<!-- todo Usare sempre la struttura header main e footer nelle pagine, perchè vanno a identificare semanticamente le sezioni
+ed è più corretto nella strutturazione del codice e aiuta poi a creare le regole CSS senza creare classi-->
 
     <!--NAVBAR BOOTSTRAP + CSS -->
-    <section>
+    <header>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <nav class="navbar navbar-expand-lg fixed-top nav-transparent" id="mainNavbar">
             <div class="container-fluid">
@@ -75,38 +79,33 @@
             </div>
         </nav>
 
-
         <img src="img/Clouds_base.png" id="bg">
         <img src="img/Clouds_bottom.png" id="cloud">
 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <img class= "mx-auto" id="hero-image" src="img/Icon/Logo.svg" alt="">
+                    <img class= "mx-auto" id="logo" src="img/Icon/Logo.svg" alt="">
                 </div>
                 <div class="col-12">
                     <h1 id ="brand_name">Serenity Dreams Travel</h1>
                 </div>
                 <div class="col-12 justify-content-center">
-                    <h4 class="menu_footer" id ="slogan">Travel toward your dreams </h4>
-                    <!--PR0BLEMA CHE AHAHAHAHAHA praticamente ho messo allo slogan la class menu_footer e ok
-                    Ho rimosso dal css l'id text2, semplicemente assegnando la stessa regola all'h4, ma se tolgo l'id dall'html si sminchia il parallasse
-                    Ceh in realtà l'effetto è giusto, perchè così slogan e testo vanno sopra a Serenity Drrams travel, però dato che la nuvoletta è più in basso l'effetto visivo è nammerda ahahah-->
+                    <h4 class="menu_footer" id ="slogan">Travel toward your dreams </h4> <!--L'id serve per forza per richiamare l'elemento nello script-->
                 </div>
                 <div class="col-12 justify-content-center">
-                    <button class="mx-auto" id="button_hero">DREAM ABOUT</button> <!--todo capire se usare gli id o le classi per il css-->
+                    <button class="mx-auto" id="button_hero">Dream about</button> <!--todo capire se usare gli id o le classi per il css-->
                 </div>
             </div>
         </div>
-
-    </section>
+    </header>
 
     <!-- Script per parallax -->
     <script type="text/javascript">
         let bg = document.getElementById("bg");
         let cloud = document.getElementById("cloud");
         let brand_name = document.getElementById("brand_name");
-        let hero_image = document.getElementById("hero-image");
+        let logo = document.getElementById("logo");
         let slogan = document.getElementById("slogan");
         let button_hero = document.getElementById("button_hero");
 
@@ -114,7 +113,7 @@
             var value = window.scrollY;
             bg.style.top = value * 0.5 + 'px';
             brand_name.style.top = value * 0.4 + 'px';
-            hero_image.style.top = value * 0.4 + 'px';
+            logo.style.top = value * 0.4 + 'px';
             slogan.style.top = value * 0.4 + 'px';
             button_hero.style.top = value * 0.4 + 'px';
         })
@@ -139,7 +138,9 @@
     <!-- todo capire e correggere nel codice quando usare <section> e <div> per dare una suddivisione del contenuto della pagina-->
 
 
-    <!--Text intro (h2 + p)-->
+<main>
+    <section>
+    <!--TEXT INTRO-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-7 px-5 py-2">
@@ -155,41 +156,61 @@
         </div>
     </div>
 
-    <!--Img astronauta + 3 sotto-paragrafi e CTA-->
+    <!--LINK OTHER PAGES-->
     <div class="container-fluid">
         <div class="row mb-lg-4 justify-content-lg-around">
             <div class="col-12 col-lg-5 text-center">
                 <img src="img/Astronauta.png" alt="Astronauta" class="img-fluid astronaut-img"> <!--Non è cosa tanto buona assegnare una classe all'immagine-->
-            </div>e
-            <!--<div class="col-1 offset">
-            </div>-->
+            </div>
+
             <div class="col-12 col-lg-5">
-                <div class="row g-2 mt-4 mt-lg-0">
-                    <div class="px-5">
+                <div class="row g-2 mt-4 mt-lg-0 px-5">
+                    <div class="col-12">
+                        <div class="row">
+                           <div class="col-9"><h3 class="h3_Nunito">Our story</h3><</div>
+                            <div class="col-xs-12 col-3"><p class="small_copy"><a href="ourStory.html">Esplora</a></p></div>
+                        </div>
+                        <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
+                            Scegli SerenityDreams Travel e immergiti nelle nostre radici di passione e scoperta.</p>
+                    </div>
+
+                    <div class="col-12 mt-4">
                         <div class="col-12">
-                            <a href="ourStory.html"><h3 class="h3_Nunito">Our story →</h3></a>
+                            <div class="row">
+                                <div class="col-9"><h3 class="h3_Nunito">Feel the magic</h3><</div>
+                                <div class="col-xs-12 col-3"><p class="small_copy"><a href="feelTheMagic.html">Esplora</a></p></div>
+                            </div>
                             <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
                                 Scegli SerenityDreams Travel e immergiti nelle nostre radici di passione e scoperta.</p>
                         </div>
-                        <div class="col-12 mt-4">
-                            <a href="feelTheMagic.html"><h3 class="h3_Nunito">Feel the magic →</h3></a>
-                            <p>Scopri la nostra navicella magica e preparati a emozionanti scoperte.
-                                Ricorda di portare con te tutto l'occorrente per vivere un'avventura unica!</p>
-                        </div>
-                        <div class="col-12 mt-4">
-                            <a href="othania.html"><h3 class="h3_Nunito">Othania →</h3></a>
+                        <p>Scopri la nostra navicella magica e preparati a emozionanti scoperte.
+                            Ricorda di portare con te tutto l'occorrente per vivere un'avventura unica!</p>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-9"><h3 class="h3_Nunito">Othania</h3><</div>
+                                <div class="col-xs-12 col-3"><p class="small_copy"><a href="othania.html">Esplora</a></p></div>
+                            </div>
                             <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
                                 Scegli SerenityDreams Travel e immergiti nelle nostre radici di passione e scoperta.</p>
                         </div>
-                        <div class="col-12 mt-5">
-                            <button>CONTACT US</button>
-                        </div>
+                        <p>SerenityDreams Travel è nata nel 2013 da una forte passione per l'avventura e l’esplorazione di mondi mistici.
+                            Scegli SerenityDreams Travel e immergiti nelle nostre radici di passione e scoperta.</p>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <button>Contact us</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- RECENSIONI -->
+    </section>
+
+    <!-- RECENSIONI -->
+    <section>
+        <div class="container-fluid">
         <div class="row bg-image justify-content-center white-wave">
             <div class="col-12 align-self-end mt-5 pt-5">
                 <h2 class="mt-5 pt-5 d-flex justify-content-center">Dicono di noi</h2>
@@ -197,12 +218,13 @@
 
             <!-- CAROUSEL -->
             <!-- Slider main container -->
-            <div class="col-12 swiper mySwiper testimon">
+            <div class="col-12 swiper mySwiper">
 
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
 
                         <!-- Slides --> <!--todo capire se aggiungere le frecce di navigazione tra le slide-->
+                        <!-- CARD -->
                         <div class="card testimonials-card swiper-slide">
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -213,10 +235,11 @@
                             </div>
                             <div class="card__content">
                                 <span class="name">Orion Blaze</span>
-                                <p>Sono appena tornata da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
+                                <p>Sono appena tornato da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
                             </div>
                         </div>
 
+                        <!-- CARD -->
                         <div class="card testimonials-card swiper-slide">
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -227,10 +250,11 @@
                             </div>
                             <div class="card__content">
                                 <span class="name">Thalassa Nebula</span>
-                                <p>Sono appena tornata da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
+                                <p>Sono ancora piena di adrenalina dopo il mio incredibile viaggio con il pacchetto Adventure! è stato oltre ogni aspettativa. Dai paesaggi mozzafiato alle attività avventurose, ogni momento è stato un'emozione intensa. Gli istruttori esperti hanno reso ogni attività sicura e entusiasmante. Consiglio vivamente a chi cerca un'esperienza unica e indimenticabile. Grazie!</p>
                             </div>
                         </div>
 
+                        <!-- CARD -->
                         <div class="card testimonials-card swiper-slide">
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -241,25 +265,28 @@
                             </div>
                             <div class="card__content">
                                 <span class="name">Elara Cantaluce</span>
-                                <p>Sono appena tornata da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
+                                <p>Ho creato il mio pacchetto personalizzato mescolando i pacchetti 'Creativity' e ‘Relax'. Gli aspetti creativi mi hanno regalato momenti unici e stimolanti, mentre le opzioni di relax hanno permesso di ristabilire un equilibrio perfetto. Ho assegnato 4.5 stelle a causa di un piccolo contrattempo organizzativo, ma nonostante ciò, la mia vacanza è stata indimenticabile. </p>
                             </div>
                         </div>
                     </div>
 
                    <div class="swiper-pagination testimonials-pagination"></div>
-                    <!--<div class="swiper-button-prev"></div>
+                    <!--<div class="swiper-button-prev"></div>   → Frecce di navigazione
                     <div class="swiper-button-next"></div>-->
             </div>
 
             <div class="col-12 d-flex justify-content-center mb-5 pb-5">
-                <button>I NOSTRI PREMI</button>
+                <button>I nostri premi</button>
             </div>
         </div>
     </div>
+    </section>
 
 </main>
 
     <!-- FOOTER START -->
+<!-- todo sistemare il footer perchè mi sta facendo impazzire
+In linea di massima funziona, ma non è del tutto responsive (soprattutto su tablet → seguici sui social si sovrappone alle info) e da mobile gli spazi non sono simmetrici AAAAHHHHH-->
     <footer class="container-fluid footer">
         <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
             <div class="col-12 col-lg-6"> <!--Questo figlio di puttana non funziona da tablet, dovrebbe pigliarsi 12 colonne per h1 e logo e altre 12 per i testi sotto, ma si piglia le dimensioni di lg-->
@@ -289,20 +316,17 @@
                                 <p class="text-center menu_footer">Seguici sui social</p>
                             </div>
                         </div>
-                        <div class="row justify-content-around justify-content-md-center">
-                            <div class="col-1 text-center"> <i class="fa-brands fa-facebook-f"></i></div>
-                            <div class="col-1 mx-md-4 text-center"> <i class="fa-brands fa-x-twitter"></i></div>
-                            <div class="col-1 text-center"> <i class="fa-brands fa-tiktok"></i></div>
+                        <div class="row justify-content-center">
+                            <div class="col-1"> <i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="col-1 mx-md-4"> <i class="fa-brands fa-x-twitter"></i></div>
+                            <div class="col-1"> <i class="fa-brands fa-tiktok"></i></div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </footer>
     <!-- FOOTER END -->
-
 
     <!--
     <script>
