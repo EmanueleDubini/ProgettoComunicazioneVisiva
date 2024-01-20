@@ -45,6 +45,7 @@ h1, h2, h3, h4, p, li, a{
 h1 {
     font-size: clamp(2.133rem, 4vw + 1rem, 4.267rem);
     letter-spacing: 0.12rem;
+    text-transform: capitalize;
 }
 
 h2 {
@@ -72,6 +73,10 @@ p {
 
 .small_copy {
     font-size: clamp(0.5rem, 2vw + 1rem, 1rem);
+}
+
+.strong_copy {
+    font-weight: bold;
 }
 
 .h3_Nunito {
