@@ -28,8 +28,10 @@ html {
 }
 
 a{
-    text-decoration: underline;
-    text-underline-offset: 5px; /* todo capire quanto spostare la sottolineatura*/
+    text-decoration: none;
+    /* rimosso sottolibneatura per i link come quelli in index.html*/
+    /*text-decoration: underline;
+    text-underline-offset: 5px; !* todo capire quanto spostare la sottolineatura*!*/
 }
 
 h1, h2, h3 {
@@ -74,7 +76,6 @@ p {
 
 .h3_Nunito {
     font-family: var(--fontNunito);
-    /* prova */
 }
 
 body {
