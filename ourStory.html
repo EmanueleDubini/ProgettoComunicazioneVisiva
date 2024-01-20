@@ -79,54 +79,59 @@
     </header>
     <!-- END NAVBAR BOOTSTRAP + CSS -->
 
+    <!-- Script per navbar (cambio colore)-->
+    <script>
+        $(document).ready(function (){
+            $(window).scroll(function () {
+                if($(document).scrollTop() > 300) {
+                    $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
+                }else{
+                    $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
+                }
+            });
+        });
+    </script>
+
 <main>
-    <!--Intro text-->
+
+    <!-- STORY OF THE BRAND -->
+    <section class="mb-5">
     <div class="container-fluid">
-        <div class="row g-3">
-            <div class="col-12 mt-5 px-5">
+        <div class="row px-5">
+            <div class="col-12 mb-3">
                 <h2>La nostra storia</h2>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 px-5">
-                    <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
-                        L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.
-
-                    </p>
-                    <p>Attraverso generazioni, la passione per i viaggi straordinari è stata tramandata e il desiderio di offrire esperienze uniche
-                        ha condotto alla nascita di SerenityDreams Travel.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 px-5">
-                    <p> Sin dai suoi inizi, si è evoluta con il tempo mantenendo sempre un
-                        tocco di magia nelle sue proposte di viaggio.
-                    </p>
-                    <p>Ci impegniamo ogni giorno a trasportare i nostri clienti in avventure indimenticabili,
-                        creando ricordi che resteranno impressi nei loro cuori per sempre
-                    </p>
-                </div>
+            <div class="col-12 col-lg-6">
+                <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
+                    L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.<br><br>
+                    Attraverso generazioni, la passione per i viaggi straordinari è stata tramandata e il desiderio di offrire esperienze uniche ha condotto alla nascita di SerenityDreams Travel.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p>Sin dai suoi inizi, si è evoluta con il tempo mantenendo sempre un tocco di magia nelle sue proposte di viaggio.<br><br>
+                    Ci impegniamo ogni giorno a trasportare i nostri clienti in avventure indimenticabili, creando ricordi che resteranno impressi nei loro cuori per sempre.
+                </p>
             </div>
         </div>
     </div>
 
-    <!--Vision e mission -->
+    <!--VISION E MISSION -->
     <div class="container-fluid">
         <div class="row g-3 justify-content-center">
             <!--todo verificare altezza e larghezza su desktop non prende bootstrap -->
-            <div class="col-9 col-lg-4 text-center mx-5 brand-card">
+            <div class="col-9 col-lg-4 mx-5 brand-card">
                 <div class="card-body">
-                    <h3>Vision</h3>
-                    <p class="card-text">Immaginiamo un futuro in cui il viaggio è una forma d'arte personalizzabile
-                        e aspiriamo ad essere pionieri nell'esplorazione di nuovi orizzonti, offrendo pacchetti di viaggio distintivi
-                        per ogni target che rappresentiamo. La nostra vision è di diventare il punto di riferimento nell’organizzazione
-                        di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici.</p>
+                    <h3 class="text-center">Vision</h3>
+                    <p class="card-text px-3">Immaginiamo un futuro in cui il viaggio è una forma d'arte e aspiriamo ad essere pionieri nell'esplorazione di nuovi orizzonti, offrendo pacchetti di viaggio distintivi per i nostri clienti.<br><br>
+                        La nostra vision è di diventare il punto di riferimento nell’organizzazione di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici. </p>
                 </div>
             </div>
             <!--todo verificare altezza e larghezza su desktop non prende bootstrap -->
-            <div class="col-9 col-lg-4 text-center mx-5 brand-card">
+            <div class="col-9 col-lg-4 mx-5 brand-card">
                 <div class="card-body">
-                    <h3>Mission</h3>
-                    <p class="card-text">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
-                        offrendo itinerari attentamente curati che catturano la magia e la bellezza di mondi mistici.
+                    <h3 class="text-center">Mission</h3>
+                    <p class="card-text px-3">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
+                        offrendo itinerari attentamente curati che catturano la magia e la bellezza di mondi mistici.<br><br>
                         Ci impegniamo a creare ricordi indimenticabili, superando le aspettative dei nostri clienti e
                         ispirando una connessione più profonda con la diversità della nostra galassia.
                     </p>
@@ -134,63 +139,57 @@
             </div>
         </div>
     </div>
+    </section>
 
-    <!-- Come lavoriamo-->
-    <div class="container-fluid">
-        <div class="row g-3">
-            <div class="col-12 mt-5 px-5">
+
+    <!-- HOW WE WORK -->
+    <section class="mb-2">
+    <div class="container-fluid mb-2">
+        <div class="row px-5">
+            <div class="col-12 mb-3">
                 <h2>Come lavoriamo</h2>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 px-5">
-                    <p>Il nostro staff altamente qualificato presso SerenityDreams Travel è dedicato
-                        a garantire un'esperienza di viaggio senza precedenti.
-                        Il nostro team si impegna a comprendere appieno le aspettative del cliente,
-                        curando ogni dettaglio per assicurare che il viaggio sia impeccabile e
-                        rispecchi fedelmente le sue passioni e interessi.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 px-5">
-                    <p>Siamo presenti in ogni fase del viaggio per garantire un supporto continuo.
-                        Ogni membro del team è impegnato nel mettere a proprio agio il cliente fin dal primo contatto,
-                        ascoltando attentamente le loro esigenze e desideri per creare un viaggio su misura.
-                    </p>
-                </div>
-
-                <div class="row g-2 text-center">
-                    <div class="col-12">
-                        <img src="img/HelpDesk.png" alt ="Help desk" class="img-fluid">
-                    </div>
-                </div>
+            <div class="col-12 col-lg-6">
+                <p>Il nostro staff altamente qualificato presso SerenityDreams Travel è dedicato a garantire un'esperienza di viaggio senza precedenti.<br><br>
+                    Il nostro team si impegna a comprendere appieno le aspettative del cliente, curando ogni dettaglio per assicurare che il viaggio sia impeccabile e rispecchi fedelmente le sue passioni e interessi.
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p>Siamo presenti in ogni fase del viaggio per garantire un supporto continuo.<br><br>
+                    Ogni membro del team è impegnato nel mettere a proprio agio il cliente fin dal primo contatto, ascoltando attentamente le loro esigenze e desideri per creare un viaggio su misura.
+                </p>
             </div>
         </div>
     </div>
+    </section>
 
-    <!--Premi e riconoscimenti-->
+
+    <!-- AWARDS -->
     <div class="container-fluid">
-        <div class="row g-3">
-            <div class="col-12 col-lg-8">
-                <div class="p-5">
-                    <h2>Premi e riconoscimenti</h2>
-                    <p>SerenityDreams Travel è stata onorata di preziosi riconoscimenti per la qualità
-                        e la diversificazione dei servizi proposti per singolo target, per l'eccellenza del suo
-                        servizio clienti e per l’impeccabile formazione del suo staff.
-                    </p>
-                    <p>SerenityDreams Travel si conferma così, anche per quest’anno,
-                        la miglior agenzia di viaggi interstellari 2023/2024.
-                    </p>
+        <div class="row g-3 px-5">
+            <div class="col-12 col-lg-6">
+                <h2 class="mb-3">Premi e riconoscimenti</h2>
+                <p>SerenityDreams Travel è stata onorata di preziosi riconoscimenti per la qualità e la diversificazione dei servizi proposti per singolo target,
+                    per l'eccellenza del suo servizio clienti e per l’impeccabile formazione del suo staff.<br><br>
+                    SerenityDreams Travel si conferma così, anche per quest’anno, la miglior agenzia di viaggi interstellari 2023/2024.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="img/Icon/nuvola.svg" alt="">
+                    </div>
+                    <div clss="col-12">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <img src="img/Icon/nuvola.svg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/Icon/nuvola.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="col-2 col-lg-1 py-5">
-                <img src="img/Icon/libro.svg" class="img-fluid">
-            </div>
-            <div class="col-2 col-lg-1 mx-4 py-5">
-                <img src="img/Icon/Bacchetta.svg" class="img-fluid">
-            </div>
-            <div class="col-2 col-lg-1 mx-4 py-5">
-                <img src="img/Icon/nuvola.svg" class="img-fluid">
-            </div>
-            <div class="col-sm-0 col-lg-3 offset">
             </div>
         </div>
     </div>
