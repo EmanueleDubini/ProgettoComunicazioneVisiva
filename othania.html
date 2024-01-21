@@ -1,13 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Othania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
+
+<!--NAVBAR BOOTSTRAP + CSS -->
+<header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg fixed-top nav-transparent" id="mainNavbar">
+        <div class="container-fluid p-2">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation" aria-expanded="true" >
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mx-0">
+                    <ul class="navbar-nav justify-content-evenly mx-xl-5 px-lx-5 flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ourStory.html">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feelTheMagic.html">Feel the magic</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Live your fantasy
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="li-dropdown-item px-2">
+                                    <a class="dropdown-item" href="#">Trasure your magic</a>
+                                </li>
+                                <li class="li-dropdown-item px-2">
+                                    <a class="dropdown-item" href="#">Explore the unknown</a>
+                                </li>
+                                <li class="li-dropdown-item px-2">
+                                    <a class="dropdown-item" href="#">Become a wizard</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="othania.html">Othania</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <img src="img/Clouds_base.png" class="img-fluid">
+
+    <div class="container">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-12">
+                <h1 id ="brand_name" class="page_title">Othania</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END NAVBAR BOOTSTRAP + CSS -->
+
+<!-- Script per navbar (cambio colore)-->
+<script>
+    $(document).ready(function (){
+        $(window).scroll(function () {
+            if($(document).scrollTop() > 300) {
+                $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
+            }else{
+                $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
+            }
+        });
+    });
+</script>
+
+<main>
+
+    <!-- OTHANIA -->
+    <!--Mancano da inserire le icone e centarre la parte di Othania ma è quasi l'1 di notte e il mio cervello non regge-->
+    <section>
+        <div class="container-fluid mb-5">
+            <div class="row px-5 g-4">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-3">Benvenuti ad Othania</h2>
+                    <p>
+                        Othania è stata scoperta per caso da un gruppo di esploratori spaziali nel 2019. Inizialmente invisibile ai radar, il pianeta si è rivelato grazie a un'aura magica che nascondeva la sua presenza.
+                        La sua storia è avvolta nel mistero, con leggende antiche che suggeriscono la sua origine magica.<br><br>
+                        La flora di Othania è un'opera d'arte vivente. Piante dalle foglie cangianti seguono il ciclo delle stagioni in un'unica giornata,
+                        mentre fiori emettono melodie armoniche al tocco. La fauna è altrettanto straordinaria, con creature mistiche a solcare il suo cielo.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="img/Othania.png" alt="Foto satellitare di Othania" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUNALUMUS -->
+    <section>
+        <div class="container-fluid d-flex py-4">
+            <div class="row px-5">
+                <div class="col-12 col-lg-6 order-lg-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="h3_Nunito pb-3">Lunalumus</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 order-lg-2">
+                        <p>Il vostro comfort è la nostra priorità. Le cabine spaziose sono dotate delle più moderne tecnologie di anti-gravità,
+                            garantendo una piacevole esperienza di viaggio senza sentirsi vincolati dalla forza di gravità.<br><br>
+                            Rilassatevi su poltrone ergonomiche che si adattano al vostro corpo, mentre le finestre panoramiche vi offriranno viste spettacolari
+                            durante il viaggio interplanetario.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 order-lg-1 g-4 mx-auto my-auto">
+                    <img src="img/Lunalumus.png" alt="Navicella Lunalumus per il viaggio" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-3">
+                    <p class="strong_copy">Motore</p>
+                    <p>10000 kW</p>
+                </div>
+                <div class="col-3">
+                    <p class="strong_copy">Velocità</p>
+                    <p>53mila km/h</p>
+                </div>
+                <div class="col-3">
+                    <p class="strong_copy">Carburante</p>
+                    <p>Lunar Surge</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12 d-flex justify-content-center">
+                    <button>Contact us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row bg-image white-wave px-5 py-5">
+                <div class="col-12 mt-5">
+                    <h2 class="mt-5  pt-5 mb-3">Preparati a viaggiare con noi</h2>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="p-purple">Prima di intraprendere questo straordinario viaggio, assicuratevi di essere preparati per l'avventura cosmica che vi attende.
+                        Abbandonate le preoccupazioni terrestri e aprite la vostra mente al mistero dello spazio profondo.
+                        Indossate l'elmetto stellare che vi proteggerà durante il viaggio e vi permetterà di respirare l'aria extraterrestre.<br><br>
+                        Assicuratevi di avere con voi il diario intergalattico per annotare i vostri incontri con le meraviglie aliene.
+                        Prima di salire a bordo, immergetevi nella magia di questo viaggio unico. Preparatevi a viaggiare con noi, perché il vostro destino cosmico vi aspetta ora!
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 pb-5">
+                    <p class="p-purple">Arrivati a Othania, troverete un pianeta dalle condizioni climatiche paradisiache.
+                        Esplorate boschi eterei e giardini fluttuanti, immergetevi nelle acque cristalline dei laghi galattici e scoprite la flora e la fauna uniche di questo magico mondo.<br><br>
+                        La nostra navicella vi accompagnerà in un atterraggio morbido, garantendo un accesso senza sforzo alle meraviglie di Othania.
+                        Il nostro personale, composto da guide esperte e accoglienti, sarà a vostra disposizione per garantire che ogni istante del vostro viaggio sia straordinario, siano incontri con creature aliene affascinanti o momenti di relax sotto cieli stellati.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- FOOTER START -->
+<footer class="container-fluid footer">
+    <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
+        <div class="col-12 col-lg-6"> <!--Questo figlio di puttana non funziona da tablet, dovrebbe pigliarsi 12 colonne per h1 e logo e altre 12 per i testi sotto, ma si piglia le dimensioni di lg-->
+            <div class="row g-3 my-3">
+                <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
+                    <h1>Serenity Dreams <br>Travel</h1>
+                </div>
+                <div class="col-2 pt-2">
+                    <img class="image" src="img/Icon/Logo.svg" alt="Logo Serenity Dreams Travel">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-5 mb-4"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
+            <div class="row justify-content-around justify-content-lg-end">
+                <div class="col-7 col-lg-6">
+                    <ul class="nav flex-column">
+                        <li class="nav-item menu_footer mb-2">serenity.dreams@gmail.com</li>
+                        <li class="nav-item menu_footer mb-2">0321 0508 9921</li>
+                        <li class="nav-item menu_footer">Plana Zebra fucsia, 99 <br>(Othania)</li>
+                    </ul>
+                </div>
+
+                <div class="col-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p class="text-center menu_footer">Seguici sui social</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1"> <i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="col-1 mx-md-4"> <i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="col-1"> <i class="fa-brands fa-tiktok"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
+
 
 
 <!-- Script per animazione di chiusura del menù in MOBILE -->
