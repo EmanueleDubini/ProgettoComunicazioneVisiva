@@ -75,6 +75,10 @@ p {
     font-size: clamp(0.5rem, 2vw + 1rem, 1rem);
 }
 
+.small_copy a:hover {
+    text-decoration: underline;
+}
+
 .strong_copy {
     font-weight: bold;
 }
