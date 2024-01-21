@@ -38,7 +38,7 @@ h1, h2, h3 {
     font-family: var(--fontLobster);
 }
 
-h1, h2, h3, h4, p, li, a{
+h1, h2, h3, h4, h5, p, li, a{
     color: var(--White);
 }
 
@@ -60,6 +60,10 @@ h3 {
 
 p, h4, .menu_footer {
     font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
+}
+
+h5 {
+    font-weight: normal;
 }
 
 p {
@@ -98,7 +102,6 @@ body {
 .fa-brands {
     color: var(--White);
 }
-
 
 /* ------------ HEADER ------------ */
 
