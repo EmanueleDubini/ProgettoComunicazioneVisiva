@@ -77,6 +77,10 @@ p {
     font-weight: bold;
 }
 
+.p-purple {
+    color: var(--PrimaryColor);
+}
+
 .h3_Nunito {
     font-family: var(--fontNunito);
     /* prova */
