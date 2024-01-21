@@ -407,10 +407,19 @@ h4{
     background-color: #352688;
 }
 
-.testimonials-card .rating{
+.testimonials-card .rating{ /* todo una volta che si sono inserite le stelline con gli svg questa classe si potrebbe togliere (teoricamente)*/
     margin-top: 5px;
     font-size: 30px;
     color: hsl(51, 98%, 60%);
+}
+
+.testimonials-card img{
+    width: 2.3rem;
+    height: auto;
+}
+
+.testimonials-card img:not(:last-child){
+    margin-right: 6px;
 }
 
 .testimonials-card .name{

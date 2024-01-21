@@ -211,77 +211,76 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
     <!-- REVIEWS -->
     <section>
         <div class="container-fluid">
-        <div class="row bg-image justify-content-center white-wave">
-            <div class="col-12 align-self-end mt-5 pt-5">
-                <h2 class="mt-5 pt-5 d-flex justify-content-center">Dicono di noi</h2>
-            </div>
+            <div class="row bg-image justify-content-center white-wave">
+                <div class="col-12 align-self-end mt-5 pt-5">
+                    <h2 class="mt-5 pt-5 d-flex justify-content-center">Dicono di noi</h2>
+                </div>
 
-            <!-- CAROUSEL -->
-            <!-- Slider main container -->
-            <div class="col-12 swiper mySwiper">
+                <!-- CAROUSEL -->
+                <!-- Slider main container -->
+                <div class="col-12 swiper mySwiper">
 
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
 
-                        <!-- Slides --> <!--todo capire se aggiungere le frecce di navigazione tra le slide-->
-                        <!-- CARD -->
-                        <div class="card testimonials-card swiper-slide">
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                            <!-- Slides --> <!--todo capire se aggiungere le frecce di navigazione tra le slide-->
+                            <!-- CARD -->
+                            <div class="card testimonials-card swiper-slide">
+                                <div class="rating">
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                </div>
+                                <div class="card__content">
+                                    <span class="name">Orion Blaze</span>
+                                    <p>Sono appena tornato da una meravigliosa vacanza con il pacchetto 'Relax'. È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
+                                </div>
                             </div>
-                            <div class="card__content">
-                                <span class="name">Orion Blaze</span>
-                                <p>Sono appena tornato da una meravigliosa vacanza con il pacchetto 'Relax' . È stata un'esperienza straordinaria! Dal momento in cui sono atterrata in quel mondo incantato, ogni dettaglio era curato con attenzione. Gli scenari mozzafiato e l'atmosfera rilassante mi hanno permesso di staccare completamente dalla routine quotidiana.</p>
+
+                            <!-- CARD -->
+                            <div class="card testimonials-card swiper-slide">
+                                <div class="rating">
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                </div>
+                                <div class="card__content">
+                                    <span class="name">Thalassa Nebula</span>
+                                    <p>Sono ancora piena di adrenalina dopo il mio incredibile viaggio con il pacchetto Adventure! è stato oltre ogni aspettativa. Dai paesaggi mozzafiato alle attività avventurose, ogni momento è stato un'emozione intensa. Gli istruttori esperti hanno reso ogni attività sicura e entusiasmante. Consiglio vivamente a chi cerca un'esperienza unica e indimenticabile. Grazie!</p>
+                                </div>
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card testimonials-card swiper-slide">
+                                <div class="rating">
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" />
+                                    <img src="img/Icon/Star.svg" alt="Star" /> <!--todo capire come mettere la mezza stella, su figma la mezza stella è formata da una stella intera con un effetto applicato, inserire svg che rappresenta la mezza stella-->
+                                </div>
+                                <div class="card__content">
+                                    <span class="name">Elara Cantaluce</span>
+                                    <p>Ho creato il mio pacchetto personalizzato mescolando i pacchetti 'Creativity' e ‘Relax'. Gli aspetti creativi mi hanno regalato momenti unici e stimolanti, mentre le opzioni di relax hanno permesso di ristabilire un equilibrio perfetto. Ho assegnato 4.5 stelle a causa di un piccolo contrattempo organizzativo, ma nonostante ciò, la mia vacanza è stata indimenticabile. </p>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- CARD -->
-                        <div class="card testimonials-card swiper-slide">
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="card__content">
-                                <span class="name">Thalassa Nebula</span>
-                                <p>Sono ancora piena di adrenalina dopo il mio incredibile viaggio con il pacchetto Adventure! è stato oltre ogni aspettativa. Dai paesaggi mozzafiato alle attività avventurose, ogni momento è stato un'emozione intensa. Gli istruttori esperti hanno reso ogni attività sicura e entusiasmante. Consiglio vivamente a chi cerca un'esperienza unica e indimenticabile. Grazie!</p>
-                            </div>
-                        </div>
+                       <div class="swiper-pagination testimonials-pagination"></div>
+                        <!--<div class="swiper-button-prev"></div>   → Frecce di navigazione
+                        <div class="swiper-button-next"></div>-->
+                </div>
 
-                        <!-- CARD -->
-                        <div class="card testimonials-card swiper-slide">
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i> <!--todo capire come mettere la mezza stella, alternativa <i class="fa-solid fa-star-half"></i>-->
-                            </div>
-                            <div class="card__content">
-                                <span class="name">Elara Cantaluce</span>
-                                <p>Ho creato il mio pacchetto personalizzato mescolando i pacchetti 'Creativity' e ‘Relax'. Gli aspetti creativi mi hanno regalato momenti unici e stimolanti, mentre le opzioni di relax hanno permesso di ristabilire un equilibrio perfetto. Ho assegnato 4.5 stelle a causa di un piccolo contrattempo organizzativo, ma nonostante ciò, la mia vacanza è stata indimenticabile. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                   <div class="swiper-pagination testimonials-pagination"></div>
-                    <!--<div class="swiper-button-prev"></div>   → Frecce di navigazione
-                    <div class="swiper-button-next"></div>-->
-            </div>
-
-            <div class="col-12 d-flex justify-content-center mb-5 pb-5">
-                <button>I nostri premi</button>
+                <div class="col-12 d-flex justify-content-center mb-5 pb-5">
+                    <button>I nostri premi</button>
+                </div>
             </div>
         </div>
-    </div>
     </section>
-
 </main>
 
     <!-- FOOTER START -->
