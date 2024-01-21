@@ -139,6 +139,10 @@ button {
     border: none;
 }
 
+button a {
+    color:var(--PrimaryColor);
+}
+
 /* ------------ NAVBAR ------------ */
 
 .navbar-toggler .fa-bars, .navbar a.dropdown-toggle, .navbar .nav-link.active {
@@ -295,6 +299,34 @@ h4{
 }
 /* ------------ HERO END ------------ */
 
+
+/* ------------ TRAVEL BOUNDLE ------------ */
+.travel_boundle {
+    background: var(--White);
+    padding: 15% 5% 5% 5%;
+    border-radius: 1.25rem;
+    margin-top: -10%;
+    z-index:0;
+}
+
+.travel_boundle p, .travel_boundle h3 {
+    color: var(--PrimaryColor);
+}
+
+.boundle_img {
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+    .travel_boundle {
+        z-index: 1;
+        padding-top: 5%;
+    }
+
+    .boundle_img {
+        z-index: 0;
+    }
+}
 
 /* ----------- ONDA SVG ------------ */
 .white-wave{
