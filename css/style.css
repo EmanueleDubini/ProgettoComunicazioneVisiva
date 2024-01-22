@@ -566,6 +566,17 @@ i.fa-star:not(:last-child){
     background-color: var(--PrimaryColor);
 }
 
+/* per vedere come modificare le due freccie https://dev.to/ivadyhabimana/customizing-swiperjs-prevnext-arrow-buttons-and-pagination-bullets-in-react-3gkh*/
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: var(--White);
+    padding: 1.875rem 1.875rem;
+    border-radius: 100%;
+    /*border: 2px solid var(--PrimaryColor);*/
+    color: var(--PrimaryColor);
+}
+
+
 /* nel carosello delle recensioni in index.html per fare comparire i dot della paginazione su dispositivi mobili e non mostrarli su desktop*/
 /*
 .mySwiper .testimonials-pagination{
