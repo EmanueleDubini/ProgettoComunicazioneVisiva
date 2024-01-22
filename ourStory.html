@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="author" content ="Bancora Davide, Dubini Emanuela, Guida Lavinia Maria, Renda Aurora, Sibio Valentina, Stella Angela">
     <meta name="description" content="Serenity Dreams Travel è un'azienda di viaggi interstellari nata per offrire emozioni ed esperienze uniche ai suoi clienti">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -80,19 +79,6 @@
         </div>
     </header>
     <!-- END NAVBAR BOOTSTRAP + CSS -->
-
-    <!-- Script per navbar (cambio colore)-->
-    <script>
-        $(document).ready(function (){
-            $(window).scroll(function () {
-                if($(document).scrollTop() > 300) {
-                    $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
-                }else{
-                    $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
-                }
-            });
-        });
-    </script>
 
 <main>
 
@@ -248,37 +234,3 @@
 <script src="js/navbar.js"></script>
 </body>
 </html>
-
-
-
-<!-- Script per animazione di chiusura del menù in MOBILE
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Esegui il codice solo se la larghezza della finestra è inferiore a 768 pixel (mobile)
-        if (window.innerWidth < 768) {
-            var offcanvasNavbar = new bootstrap.Offcanvas(document.getElementById('offcanvasNavbar'));
-            var navbarToggler = document.querySelector('.navbar-toggler');
-
-            // Apri la barra laterale senza animazione
-            offcanvasNavbar._element.style.transitionProperty = 'none';
-            offcanvasNavbar._element.style.transform = 'translateX(0)';
-            offcanvasNavbar.show();
-
-            // Imposta aria-expanded su "true"
-            navbarToggler.setAttribute('aria-expanded', 'true');
-
-            // Chiudi la barra laterale dopo 2 secondi (puoi regolare il tempo a tuo piacimento)
-            setTimeout(function() {
-                // Rimuovi stili inline che disabilitano l'animazione di apertura
-                offcanvasNavbar._element.style.transition = '';
-                offcanvasNavbar._element.style.transform = '';
-
-                offcanvasNavbar.hide();
-
-                // Imposta aria-expanded su "false" dopo la chiusura
-                navbarToggler.setAttribute('aria-expanded', 'false');
-            }, 500);
-        }
-    });
-</script>
--->

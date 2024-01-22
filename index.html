@@ -122,19 +122,6 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
 
     </script>
 
-    <!-- Script per navbar (cambio colore)-->
-    <script>
-        $(document).ready(function (){
-            $(window).scroll(function () {
-                if($(document).scrollTop() > 300) {
-                    $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
-                }else{
-                    $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
-                }
-            });
-        });
-    </script>
-
     <!-- END NAVBAR BOOTSTRAP + CSS -->
 
     <!-- todo capire e correggere nel codice quando usare <section> e <div> per dare una suddivisione del contenuto della pagina-->
@@ -332,27 +319,6 @@ In linea di massima funziona, ma non è del tutto responsive (soprattutto su tab
         </div>
     </footer>
     <!-- FOOTER END -->
-
-    <!--
-    <script>
-        const nav = document.getElementById('mainNavigation');
-        console.log("Ho cairicato")
-        console.log(nav)
-        window.onscroll = () => {
-            console.log(window.screenY)
-            if (window.scrollY >= 300 ) {
-                nav.classList.remove("nav-transparent");
-                nav.classList.add("nav-colored");
-                console.log("Ho cambiato colore")
-            }
-            else {
-                nav.classList.remove("nav-colored");
-                nav.classList.add("nav-transparent");
-                console.log("Non ho cambiato colore")
-            }
-        };
-    </script>
-    -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
