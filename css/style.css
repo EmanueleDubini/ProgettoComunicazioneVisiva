@@ -143,6 +143,10 @@ button a {
     color:var(--PrimaryColor);
 }
 
+button:hover, button:active {
+    background: #8090E7;
+}
+
 /* ------------ NAVBAR ------------ */
 
 .navbar-toggler .fa-bars, .navbar a.dropdown-toggle, .navbar .nav-link.active {
@@ -301,10 +305,12 @@ button a {
 
 
 /* ------------ TRAVEL BOUNDLE ------------ */
+
 .travel_boundle {
     background: var(--White);
     padding: 15% 5% 5% 5%;
     border-radius: 1.25rem;
+    border: 0.3em solid;
     margin-top: -10%;
     z-index:0;
 }
@@ -317,6 +323,18 @@ button a {
     z-index: 1;
 }
 
+#relax .travel_boundle {
+    border-color: var(--TertiaryLightBlue);
+}
+
+#adventure .travel_boundle {
+    border-color: var(--TertiraryGreen);
+}
+
+#creativity .travel_boundle {
+    border-color: var(--TertiaryPink);
+}
+
 @media only screen and (min-width: 1200px) {
 
     .travel_boundle {
@@ -324,12 +342,24 @@ button a {
         padding-top: 5%;
         margin-left: -15%;
         margin-top: 0;
+        border-top: none;
+        border-left: none;
     }
 
     .boundle_img {
         position: relative;
+        right: 0px;
         z-index: 0;
     }
+
+    #adventure .travel_boundle {
+        margin-left: 0;
+        margin-right: -10%;
+        border-top: none;
+        border-right: none;
+        border-left: 0.3em solid var(--TertiraryGreen);
+    }
+
 }
 
 /* ----------- ONDA SVG ------------ */
@@ -346,13 +376,13 @@ button a {
 /* ----------- SCRIPT IMG ------------ */
 
 /* media query per applicare in seguito all'hover l'effetto di ingrandimento sull'astronauta solo su desktop */
-@media(hover: hover) and (pointer: fine) {
-    .astronaut-img:hover{
+@media(hover: hover) and (pointer: fine) and (min-width: 1200px) {
+    .img-grow:hover{
         transform: scale(1.1);
         transition: transform 0.5s ease;
     }
 
-    .astronaut-img:not(:hover){
+    .img-grow:not(:hover){
         transform: scale(1);
         transition: transform 0.5s ease;
     }
@@ -567,12 +597,11 @@ i.fa-star:not(:last-child){
 
 /* ------------ CARD ourStory.html START------------ */
 .brand-card{
-    border-radius: 2em; /*possibile esprimere anche in px*/
+    border-radius: 2em;
     background-color: #352688;;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 2rem;
-    border-right: 5px solid #FFE037;
-    border-bottom: 5px solid #FFE037;
+    border-right: 0.5em solid #FFE037;
+    border-bottom: 0.5em solid #FFE037;
 }
 /* ------------ CARD ourStory.html END------------ */
 

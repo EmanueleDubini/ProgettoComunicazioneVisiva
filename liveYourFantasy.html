@@ -88,11 +88,13 @@
     <!--SANTODDIO NON SO COME MA FUNZIONA AAAAHHHH
         Quando si va in modalità responsive con ispeziona da browser in realtà a 1200px si sminchia,
         quindi bisognerebbe cercare  di ottimizzarlo ancora un pochetto, però in linea di massima ci siamo-->
-    <section>
-        <div class="container-fluid">
+    <section id="relax">
+        <div class="container-fluid pb-5">
             <div class="row px-5 d-flex justify-content-center">
                 <div class="col-8 col-xl-6 boundle_img">
-                    <img src="img/Prova.png" class="img-fluid">
+                    <img srcset="img/Small/Pacchetto_Relax_small.png 254w, img/Large/Pacchetto_Relax_large.png 1060w"
+                         sizes ="(max-width: 768px) 500px, 1200px"
+                         src="img/Small/Pacchetto_Relax_small.png" class="img-fluid">
                 </div>
                 <div class="col-10 col-xl-6 travel_boundle my-xl-auto">
                     <h3>Relax</h3>
@@ -101,13 +103,53 @@
                         vi potrete immergere in un lusso avvolgente.<br><br>
                         Tenetevi pronti per scoprire il lusso del relax e a lasciarvi trasportare in un mondo di benessere.
                     </p>
-                    <button class="mt-3"><a href="treasureYourMagic.html">Esplora</a></button>
+                    <button class="mt-3"><a href="exploreTheUnknown.html">Esplora</a></button>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="adventure">
+        <div class="container-fluid my-5 py-5">
+            <div class="row px-5 d-flex justify-content-center">
+                <div class="col-8 col-xl-6 boundle_img order-xl-2">
+                    <img srcset="img/Small/Pacchetto_Adventure_small.png 254w, img/Large/Pacchetto_Adventure_large.png 1060w"
+                         sizes ="(max-width: 768px) 500px, 1200px"
+                         src="img/Small/Pacchetto_Adventure_small.png" class="img-fluid">
+                </div>
+                <div class="col-10 col-xl-6 travel_boundle my-xl-auto order-xl-1">
+                    <h3>Adventure</h3>
+                    <p class="mt-3">
+                        Benvenuti in un viaggio emozionante, dove natura e avventura si abbracciano.<br><br>
+                        Questo pacchetto è pensato per coloro che cercano una connessione autentica con la terra
+                        e desiderano scoprire la bellezza nascosta di ogni passo.
+                    </p>
+                    <button class="mt-3"><a href="becomeAWizard.html">Esplora</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="creativity">
+        <div class="container-fluid py-5">
+            <div class="row px-5 d-flex justify-content-center">
+                <div class="col-8 col-xl-6 boundle_img">
+                    <img srcset="img/Small/Pacchetto_Creativity_small.png 254w, img/Large/Pacchetto_Creativity_large.png 1060w"
+                         sizes ="(max-width: 768px) 500px, 1200px"
+                         src="img/Small/Pacchetto_Creativity_small.png" class="img-fluid">
+                </div>
+                <div class="col-10 col-xl-6 travel_boundle my-xl-auto">
+                    <h3>Creativity</h3>
+                    <p class="mt-3">
+                        Esperienza unica tra i laboratori ricreativi che vi consentiranno di esplorare l’arte con materie prime diverse
+                        e la sperimentazione gastronomica con ingredienti locali e artistiche, invitandovi a immergervi completamente nell'arte
+                        e nella cultura del luogo.
+                    </p>
+                    <button class="mt-3"><a href="treasureYourMagic.html">Esplora</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 
@@ -120,7 +162,7 @@
                     <h1>Serenity Dreams <br>Travel</h1>
                 </div>
                 <div class="col-2 pt-2">
-                    <img class="image" src="img/Icon/Logo.svg" alt="Logo Serenity Dreams Travel">
+                    <img class="image" src="img/svg/Logo.svg" alt="Logo Serenity Dreams Travel">
                 </div>
             </div>
         </div>
