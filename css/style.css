@@ -595,7 +595,7 @@ i.fa-star:not(:last-child){
 /* ------------ CAROSELLO index.html & contactUs.html END ------------*/
 
 
-/* ------------ CARD ourStory.html START------------ */
+/* ------------ BRAND CARD ------------ */
 .brand-card{
     border-radius: 2em;
     background-color: #352688;;
@@ -603,7 +603,7 @@ i.fa-star:not(:last-child){
     border-right: 0.5em solid #FFE037;
     border-bottom: 0.5em solid #FFE037;
 }
-/* ------------ CARD ourStory.html END------------ */
+/* ------------ GUIDE CARD ------------ */
 
 
 .guide-card p {
@@ -617,22 +617,10 @@ footer {
     background: #0C0922;
 }
 
-/*.footer h1{
-    font-size: 4rem;
-}*/
-
 .footer img{
     width: 4.5em;
     height: 4.5em;
 }
-
-
-footer i{
-    color: #0C0922;
-    font-size: 1rem;
-    padding: 0;
-}
-/* ------------ FOOTER END------------ */
 
 
 
