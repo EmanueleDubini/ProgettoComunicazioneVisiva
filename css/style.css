@@ -332,6 +332,21 @@ button:hover, button:active {
     z-index: 1;
 }
 
+.single_boundle {
+    background-color: var(--White);
+}
+
+.single_boundle .boundle_img {
+    z-index: 0;
+}
+
+.single_boundle .travel_boundle {
+    z-index: 1;
+    padding: 5%;
+    border:none;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 #relax .travel_boundle {
     border-color: var(--TertiaryLightBlue);
 }
