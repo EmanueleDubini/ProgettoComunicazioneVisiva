@@ -87,54 +87,59 @@
 
 <main>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12 text-center mt-5 mb-3">
                 <h2>Our Team</h2>
-                <p class="text-center mt-3">Scopri di più sulle guide che<br> ti accompagneranno alla<br> scoperta di Othania!</p>
+                <div class="col-4 mx-auto">
+                <p class="mt-3">Scopri di più sugli esperti che ti guideranno alla scoperta di Othania!</p>
+                </div>
             </div>
         </div>
 
         <div class="row justify-content-center mb-5">
-            <!-- CAROUSEL -->
+            <!-- GUIDE CARD -->
             <!-- Slider main container -->
             <div class="col-12 swiper mySwiper mb-5">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
 
                     <!-- Slides -->
-                    <div class="card guide-card border-adventure-pack arrotonda swiper-slide">
-                        <div class="image">
-                            <img src="img/Guide-calysa.png" alt="card image">
-                        </div>
-                        <div class="card__content">
-                            <span class="card__title">Calysa</span>
-                            <!--<span class="card__name">Vanessa Martinez</span>-->
-                            <p class="card__text">Dotata di un'incredibile creatività e conoscenza, Lumara gestisce il pacchetto ...</p>
-                            <!--<button class="card__btn">View More</button>-->
+                    <div class="card guide-card swiper-slide" id="card_Calysa">
+                            <img srcset="img/Small/Guida_Calysa_small.png 133w, img/Large/Guida_Calysa_large.png 308w"
+                                 sizes="(max-width:768px) 150px, 400px"
+                                 src="img/Small/Guida_Calysa_small.png"
+                                 alt="Foto della guida Calysa">
+                        <div class="text-center">
+                            <span class="card-title">Calysa</span>
+                            <p class="card__text">Calysa è la guida del pacchetto “Explore the unknown”, adatto agli avventurieri.
+                                Esperta conoscitrice delle terre selvagge e dei segreti nascosti del pianeta.</p>
                         </div>
                     </div>
 
-                    <div class="card guide-card border-relax-pack swiper-slide swiper-slide-visible">
-                        <div class="image">
-                            <img src="img/Guide-zyrak.png" alt="card image"> <!--todo  l'immagine di zack, Guide-zack-png, viene mostrata di dimensioni minori, può essere perchè è di minori dimensioni l'immagine originale-->
-                        </div>
-                        <div class="card__content">
+                    <div class="card guide-card swiper-slide swiper-slide-visible" id="card_Zyrak">
+                            <img srcset="img/Small/Guida_Zyrak_small.png 133w, img/Large/Guida_Zyrak_large.png 308w"
+                                 sizes="(max-width:768px) 150px, 400px"
+                                 src="img/Small/Guida_Zyrak_small.png"
+                                 alt="Foto della guida Zyrak">
+
+                        <div class="text-center">
                             <span class="card-title">Zyrak</span>
-                            <!--<span class="card__name">Sarah Bowen</span>-->
-                            <p class="card__text">Zack è la guida del pacchetto “Explore the unknown”. Esperto conoscitore delle terre selvagge e dei segreti nascosti del pianeta.</p>
-                            <!--<button class="card__btn">View More</button>-->
+                            <p class="card__text">Zyrak gestisce il pacchetto “Treasure your magic” e  accompagna i visitatori
+                                attraverso sorgenti e giardini incantati, offrendo un'esperienza
+                                di completo benessere. </p>
                         </div>
                     </div>
 
-                    <div class="card guide-card border-creativity-pack swiper-slide">
-                        <div class="image">
-                            <img src="img/Guide-lumara.png" alt="card image">
-                        </div>
-                        <div class="card__content">
-                            <span class="card__title">Lumara</span>
-                            <!--<span class="card__name">David Murphy</span>-->
-                            <p class="card__text">Con la sua aura di serenità e la profonda comprensione dei luoghi ...</p>
-                            <!--<button class="card__btn">View More</button>-->
+                    <div class="card guide-card swiper-slide" id="card_Lumara">
+                            <img srcset="img/Small/Guida_Lumara_small.png 133w, img/Large/Guida_Lumara_large.png 308w"
+                                 sizes="(max-width:768px) 150px, 400px"
+                                 src="img/Small/Guida_Lumara_small.png"
+                                 alt="Foto della guida Lumara">
+                        <div class="text-center">
+                            <span class="card-title">Lumara</span>
+                            <p class="card__text">Dotata di un'incredibile creatività, Lumara gestisce il pacchetto
+                                “Become a Wizard” e guida gli artisti attraverso i paesaggi surreali
+                                e le ispirazioni uniche di Othania.</p>
                         </div>
                     </div>
                 </div>
