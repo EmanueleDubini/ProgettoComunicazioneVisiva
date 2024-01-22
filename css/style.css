@@ -53,13 +53,17 @@ h2 {
     letter-spacing: 0.075rem;
 }
 
-h3 {
+h3, h4 {
     font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
     letter-spacing: 0.06rem;
 }
 
-p, h4, .menu_footer {
+p, .menu_footer {
     font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
+}
+
+h4 {
+    font-family: var(--fontNunito);
 }
 
 h5 {
@@ -89,10 +93,6 @@ p {
 
 .p-purple {
     color: var(--PrimaryColor);
-}
-
-.h3_Nunito {
-    font-family: var(--fontNunito);
 }
 
 body {
@@ -283,7 +283,7 @@ button a {
     text-align: center;
 }
 
-h4{
+#slogan {
     position: relative;
     text-align: center;
 }
@@ -318,12 +318,16 @@ h4{
 }
 
 @media only screen and (min-width: 1200px) {
+
     .travel_boundle {
         z-index: 1;
         padding-top: 5%;
+        margin-left: -15%;
+        margin-top: 0;
     }
 
     .boundle_img {
+        position: relative;
         z-index: 0;
     }
 }
