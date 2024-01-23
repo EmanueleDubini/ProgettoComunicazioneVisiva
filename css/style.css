@@ -129,7 +129,7 @@ header{
     background-image: url("../img/Clouds_base.png");
     background-position: center bottom;
     background-size: cover;
-    height: 40vh;
+    height: fit-content;
     position: relative;
 }
 
@@ -137,13 +137,6 @@ header{
     margin-top: 10%;
     text-align: center;
     z-index: 1;
-}
-
-header img {
-    width: 100%;
-    height: fit-content;
-    z-index: 0;
-    margin-top: -10%;
 }
 
 .color_wave_upsidedown {
