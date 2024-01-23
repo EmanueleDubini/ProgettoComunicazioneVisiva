@@ -105,7 +105,7 @@ body {
 
 /* ------------ HEADER ------------ */
 
-header {
+#header_parallax {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -115,7 +115,7 @@ header {
     align-items: center;
 }
 
-header img {
+#header_parallax img {
     position: absolute;
     top: 0;
     left: 0;
@@ -123,6 +123,70 @@ header img {
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+}
+
+header{
+    background-image: url("../img/Clouds_base.png");
+    background-position: center bottom;
+    background-size: cover;
+    height: fit-content;
+    position: relative;
+}
+
+#brand_name {
+    margin-top: 15%;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.color_wave_upsidedown {
+    background-image: none;
+    background-color: var(--TertiaryLightBlue);
+    mask-image: url("../img/svg/Wave_upside_down.svg");
+    mask-position: center bottom;
+    mask-size: cover;
+    fill: var(--TertiaryPink);
+    height: 20em;
+    position: relative;
+}
+
+#adventure_boundle .color_wave_upsidedown {
+    background-color: var(--TertiraryGreen);
+}
+
+#creativity_boundle .color_wave_upsidedown {
+    background-color: var(--TertiaryPink);
+}
+
+#relax_boundle main {
+    margin-top: -17%;
+}
+
+#adventure_boundle main {
+    margin-top: -17%;
+}
+
+#creativity_boundle main {
+    margin-top: -17%;
+}
+
+@media only screen and (min-width: 768px) {
+    .color_wave_upsidedown {
+        height: 25em;
+    }
+
+    #relax_boundle main {
+        margin-top: -5%;
+    }
+
+    #adventure_boundle main {
+        margin-top: -5%;
+    }
+
+    #creativity_boundle main {
+        margin-top: -5%;
+    }
 }
 
 /* ------------ CTA ------------ */
@@ -153,6 +217,15 @@ button:hover, button:active {
     color: var(--White); /* Colore per l'icona hamburger menu */
 }
 
+/* utile per rimuovere il colore di sfondo del bottone close della barra mobile quando tieni premuto*/
+.btn-close-white:hover {
+    background-color: transparent;
+}
+/* utile per rimuovere il colore di sfondo del bottone hamburger della barra mobile quando tieni premuto*/
+.navbar-toggler:hover {
+    background-color: transparent;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -162,6 +235,7 @@ button:hover, button:active {
 }
 
 .navbar a.dropdown-item {
+    background-color: transparent;
     color: #0c0725;
     position: relative;
     display: inline-block;
@@ -274,7 +348,7 @@ button:hover, button:active {
 
 
 /* ------------ HERO START ------------ */
-#logo{
+#header_parallax #logo{
     position: relative;
     max-width: 4.5em;
     max-height: 4.5em;
@@ -282,9 +356,10 @@ button:hover, button:active {
     display: block;
 }
 
-#brand_name {
+#header_parallax #brand_name {
     position: relative;
     text-align: center;
+    margin-top: 0;
 }
 
 #slogan {
@@ -304,7 +379,7 @@ button:hover, button:active {
 /* ------------ HERO END ------------ */
 
 
-/* ------------ TRAVEL BOUNDLE ------------ */
+/* ------------ TRAVEL BOUNDLE AND SINGLE PAGE ------------ */
 
 .travel_boundle {
     background: var(--White);
@@ -320,6 +395,34 @@ button:hover, button:active {
 }
 
 .boundle_img {
+    z-index: 1;
+}
+
+.single_boundle {
+    background-color: var(--White);
+}
+
+.single_boundle main p{
+    color: var(--PrimaryColor);
+}
+
+.single_boundle .boundle_img {
+    z-index: 0;
+}
+
+.single_boundle .travel_boundle {
+    z-index: 1;
+    padding: 5%;
+    border:none;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.guide_card_boundle .travel_boundle {
+    z-index: 0;
+    padding-top: 15%;
+}
+
+.guide_card_boundle .boundle_img {
     z-index: 1;
 }
 
@@ -348,8 +451,15 @@ button:hover, button:active {
 
     .boundle_img {
         position: relative;
-        right: 0px;
+        right: 0;
         z-index: 0;
+        margin-left: -15%;
+    }
+
+    .boundle_img img{
+        width: auto;
+        height: 100%;
+
     }
 
     #adventure .travel_boundle {
@@ -360,11 +470,26 @@ button:hover, button:active {
         border-left: 0.3em solid var(--TertiraryGreen);
     }
 
+    .single_boundle #adventure .travel_boundle {
+        border:none;
+        margin-left: -10%;
+    }
+
+    #relax, #creativity, #adventure {
+        padding-left: 8%;
+    }
+
+    .guide_card_boundle .travel_boundle {
+        margin-left: 0;
+        margin-right: -10%;
+        padding-top: 5%;
+        padding-right: 15%;
+    }
 }
 
 /* ----------- ONDA SVG ------------ */
 .white-wave{
-    background-image: url("../img/svg/onda.svg");
+    background-image: url("../img/svg/Wave.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -373,7 +498,37 @@ button:hover, button:active {
     color: var(--PrimaryColor);
 }
 
-/* ----------- SCRIPT IMG ------------ */
+.color_wave {
+    mask: url("../img/svg/Wave.svg") no-repeat;
+    mask-size: cover;
+    z-index:0;
+}
+
+.color_wave .row {
+    padding-top: 80%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width:576px) {
+    .color_wave .row {
+        padding-top: 10%;
+    }
+}
+
+#relax_boundle .color_wave {
+    background-color: var(--TertiaryLightBlue);
+}
+
+#adventure_boundle .color_wave {
+    background-color: var(--TertiraryGreen);
+}
+
+#creativity_boundle .color_wave {
+    background-color: var(--TertiaryPink);
+}
+
+
+/* ----------- IMG GROW ON HOVER------------ */
 
 /* media query per applicare in seguito all'hover l'effetto di ingrandimento sull'astronauta solo su desktop */
 @media(hover: hover) and (pointer: fine) and (min-width: 1200px) {
@@ -388,7 +543,16 @@ button:hover, button:active {
     }
 }
 
-/* ------------ IMAGES SIZING ------------ */
+/* ------------ BRAND CARD ------------ */
+.brand-card{
+    border-radius: 2em;
+    background-color: #352688;;
+    padding: 2rem;
+    border-right: 0.5em solid #FFE037;
+    border-bottom: 0.5em solid #FFE037;
+}
+
+/* ------------ GUIDE CARD ------------ */
 
 .swiper{
     width: 100%;
@@ -396,76 +560,51 @@ button:hover, button:active {
 
 .swiper-wrapper{
     width: 100%;
-    height: 35em;
     display: flex;
     align-items: center;
 }
 
 .card{
     padding: 2em 1em;
-
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    /*margin: 0 2em; per distanzare le card*/
 }
 
-.border-relax-pack {
-    border-right: 4px solid #4E7DF8;
-    border-bottom: 4px solid #4E7DF8;
+#card_Zyrak {
+    border-right: .3rem solid var(--TertiaryLightBlue);
+    border-bottom: .3rem solid var(--TertiaryLightBlue);
 }
 
-.border-adventure-pack {
-    border-right: 4px solid #1DCD9F;
-    border-bottom: 4px solid #1DCD9F;
+#card_Lumara {
+    border-right: .3rem solid var(--TertiraryGreen);
+    border-bottom: .3rem solid var(--TertiraryGreen);
 }
 
-.border-creativity-pack {
-    border-right: 4px solid #F63A99;
-    border-bottom: 4px solid #F63A99;
+#card_Calysa {
+    border-right: .3rem solid var(--TertiaryPink);
+    border-bottom: .3rem solid var(--TertiaryPink);
 }
 
 .guide-card{
     width: 20em;
-    height: 90%;
-    border-radius: 2em; /*possibile esprimere anche in px*/
+    height: 35em;
+    border-radius: 2em;
     background-color: var(--White);
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-    padding: 2rem;
-}
-
-.guide-card .image{
-    width: 12em;
-    height: 12em;
-    padding: 2px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 1.5rem;
 }
 
 .guide-card img{
-    width: 100%;
-    height: 100%;
     border-radius: 10%;
     object-fit: cover;
-}
-
-.guide-card .title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: relative;
-    top: .2em;
-}
-
-.card__content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    width: 12em;
+    height: 12em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .guide-card p{
-    text-align: center;
-    font-size: 1.1rem;
     margin: 1em 0;
     color: var(--PrimaryColor);
 }
@@ -476,6 +615,8 @@ button:hover, button:active {
     position: relative;
     top: .2em;
 }
+
+/* ------------ TESTIMONIAL CARD ------------ */
 
 .testimonials-card{
     width: 20em;
@@ -637,26 +778,9 @@ i.fa-star:not(:last-child){
     }
 }
 */
-/* ------------ CAROSELLO index.html & contactUs.html END ------------*/
 
 
-/* ------------ BRAND CARD ------------ */
-.brand-card{
-    border-radius: 2em;
-    background-color: #352688;;
-    padding: 2rem;
-    border-right: 0.5em solid #FFE037;
-    border-bottom: 0.5em solid #FFE037;
-}
-/* ------------ GUIDE CARD ------------ */
-
-
-.guide-card p {
-    color: var(--PrimaryColor);
-}
-
-/* ------------ FOOTER START------------ */
-/*todo impostare i font corretti*/
+/* ------------ FOOTER ------------ */
 footer {
     /*padding: 1em 1.8em 0 1.8em; /*i valori sono per il padding top, right, bottom, left*/
     background: #0C0922;

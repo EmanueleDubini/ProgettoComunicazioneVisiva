@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="author" content ="Bancora Davide, Dubini Emanuela, Guida Lavinia Maria, Renda Aurora, Sibio Valentina, Stella Angela">
     <meta name="description" content="Serenity Dreams Travel è un'azienda di viaggi interstellari nata per offrire emozioni ed esperienze uniche ai suoi clienti">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -70,9 +69,8 @@
             </div>
         </nav>
 
-        <img src="img/Clouds_base.png" class="img-fluid">
 
-        <div class="container">
+        <div class="container py-5">
             <div class="row justify-content-center align-content-center">
                 <div class="col-12">
                     <h1 id ="brand_name" class="page_title">Our Story</h1>
@@ -82,204 +80,156 @@
     </header>
     <!-- END NAVBAR BOOTSTRAP + CSS -->
 
-    <!-- Script per navbar (cambio colore)-->
-    <script>
-        $(document).ready(function (){
-            $(window).scroll(function () {
-                if($(document).scrollTop() > 300) {
-                    $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
-                }else{
-                    $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
-                }
-            });
-        });
-    </script>
-
-<main>
-
-    <!-- STORY OF THE BRAND -->
- <section class="mb-5">
-    <div class="container-fluid">
-        <div class="row px-5">
-            <div class="col-12 mb-3">
-                <h2>La nostra storia</h2>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
-                    L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.<br><br>
-                    Attraverso generazioni, la passione per i viaggi straordinari è stata tramandata e il desiderio di offrire esperienze uniche ha condotto alla nascita di SerenityDreams Travel.
-                </p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p>Sin dai suoi inizi, si è evoluta con il tempo mantenendo sempre un tocco di magia nelle sue proposte di viaggio.<br><br>
-                    Ci impegniamo ogni giorno a trasportare i nostri clienti in avventure indimenticabili, creando ricordi che resteranno impressi nei loro cuori per sempre.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!--VISION E MISSION -->
-    <div class="container-fluid mt-4">
-        <div class="row g-3 justify-content-center">
-            <!--todo verificare altezza e larghezza su desktop non prende bootstrap -->
-            <div class="col-9 col-lg-4 mx-5 brand-card">
-                <div class="card-body">
-                    <h3 class="text-center">Vision</h3>
-                    <p class="card-text px-3">Immaginiamo un futuro in cui il viaggio è una forma d'arte e aspiriamo ad essere pionieri nell'esplorazione di nuovi orizzonti, offrendo pacchetti di viaggio distintivi per i nostri clienti.<br><br>
-                        La nostra vision è di diventare il punto di riferimento nell’organizzazione di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici. </p>
+    <main>
+        <!-- STORY OF THE BRAND -->
+     <section class="my-5">
+        <div class="container-fluid">
+            <div class="row px-5">
+                <div class="col-12 mb-3">
+                    <h2>La nostra storia</h2>
                 </div>
-            </div>
-
-            <div class="col-9 col-lg-4 mx-5 brand-card">
-                <div class="card-body">
-                    <h3 class="text-center">Mission</h3>
-                    <p class="card-text px-3">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
-                        offrendo itinerari attentamente curati che catturano la magia e la bellezza di mondi mistici.<br><br>
-                        Ci impegniamo a creare ricordi indimenticabili, superando le aspettative dei nostri clienti e
-                        ispirando una connessione più profonda con la diversità della nostra galassia.
+                <div class="col-12 col-lg-6">
+                    <p>SerenityDreams Travel è nata nel 2013 dalla passione per l'avventura e l’esplorazione di mondi mistici.
+                        L’agenzia affonda le sue radici in una famiglia di viaggiatori che, da più di 20 anni, ha intrapreso viaggi in luoghi remoti e affascinanti.<br><br>
+                        Attraverso generazioni, la passione per i viaggi straordinari è stata tramandata e il desiderio di offrire esperienze uniche ha condotto alla nascita di SerenityDreams Travel.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p>Sin dai suoi inizi, si è evoluta con il tempo mantenendo sempre un tocco di magia nelle sue proposte di viaggio.<br><br>
+                        Ci impegniamo ogni giorno a trasportare i nostri clienti in avventure indimenticabili, creando ricordi che resteranno impressi nei loro cuori per sempre.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-  </section>
 
-
-    <!-- HOW WE WORK -->
-    <section>
-    <div class="container-fluid py-5">
-        <div class="row px-5">
-            <div class="col-12 mb-3">
-                <h2>Come lavoriamo</h2>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p>Il nostro staff altamente qualificato presso SerenityDreams Travel è dedicato a garantire un'esperienza di viaggio senza precedenti.<br><br>
-                    Il nostro team si impegna a comprendere appieno le aspettative del cliente, curando ogni dettaglio per assicurare che il viaggio sia impeccabile e rispecchi fedelmente le sue passioni e interessi.
-                </p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p>Siamo presenti in ogni fase del viaggio per garantire un supporto continuo.<br><br>
-                    Ogni membro del team è impegnato nel mettere a proprio agio il cliente fin dal primo contatto, ascoltando attentamente le loro esigenze e desideri per creare un viaggio su misura.
-                </p>
-            </div>
-        </div>
-        <div class="col-12 text-center mt-4 px-5">
-            <img srcset="img/Small/Il_nostro_team_small.png 390w, img/Large/Il_nostro_team_large.png 1278w"
-                 sizes="(max-width: 768px) 700px, 2000px"
-                 src="img/Small/Il_nostro_team_small.png" class="img-fluid"
-                 alt="Help desk con il nostro team al lavoro">
-        </div>
-    </div>
-    </section>
-
-
-    <!-- AWARDS -->
-    <div class="container-fluid mb-5 py-5">
-        <div class="row g-3 px-5">
-            <div class="col-12 col-lg-6">
-                <h2 class="mb-3">Premi e riconoscimenti</h2>
-                <p>SerenityDreams Travel è stata onorata di preziosi riconoscimenti per la qualità e la diversificazione dei servizi proposti per singolo target,
-                    per l'eccellenza del suo servizio clienti e per l’impeccabile formazione del suo staff.<br><br>
-                    SerenityDreams Travel si conferma così, anche per quest’anno, la miglior agenzia di viaggi interstellari 2023/2024.</p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="img/svg/Premio_Miglior_Servizio_Clienti.svg" alt="Coccarda per il servizio clienti offerto" class="img-fluid">
+        <!--VISION E MISSION -->
+        <div class="container-fluid mt-4">
+            <div class="row g-3 justify-content-center">
+                <!--todo verificare altezza e larghezza su desktop non prende bootstrap -->
+                <div class="col-9 col-lg-4 mx-5 brand-card">
+                    <div class="card-body">
+                        <h3 class="text-center">Vision</h3>
+                        <p class="card-text px-3">Immaginiamo un futuro in cui il viaggio è una forma d'arte e aspiriamo ad essere pionieri nell'esplorazione di nuovi orizzonti, offrendo pacchetti di viaggio distintivi per i nostri clienti.<br><br>
+                            La nostra vision è di diventare il punto di riferimento nell’organizzazione di viaggi spaziali personalizzati, aprendo le porte dell'ignoto e ispirando una generazione di esploratori cosmici. </p>
                     </div>
-                    <div class="col-12">
-                        <div class="row text-center">
-                            <div class="col-6">
-                                <img src="img/svg/Premio_Mondo_Magico.svg"
-                                     alt="Coccarda per l'atmosfera magica delle nostre destinazioni">
-                            </div>
-                            <div class="col-6">
-                                <img src="img/svg/Premio_Migliori_Avventure.svg"
-                                     alt="Coccarda per la qualità delle avventure offerte">
+                </div>
+
+                <div class="col-9 col-lg-4 mx-5 brand-card">
+                    <div class="card-body">
+                        <h3 class="text-center">Mission</h3>
+                        <p class="card-text px-3">La nostra mission è di trasformare ogni viaggio in un'esperienza straordinaria,
+                            offrendo itinerari attentamente curati che catturano la magia e la bellezza di mondi mistici.<br><br>
+                            Ci impegniamo a creare ricordi indimenticabili, superando le aspettative dei nostri clienti e
+                            ispirando una connessione più profonda con la diversità della nostra galassia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+        <!-- HOW WE WORK -->
+        <section>
+            <div class="container-fluid py-5">
+                <div class="row px-5">
+                    <div class="col-12 mb-3">
+                        <h2>Come lavoriamo</h2>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>Il nostro staff altamente qualificato presso SerenityDreams Travel è dedicato a garantire un'esperienza di viaggio senza precedenti.<br><br>
+                            Il nostro team si impegna a comprendere appieno le aspettative del cliente, curando ogni dettaglio per assicurare che il viaggio sia impeccabile e rispecchi fedelmente le sue passioni e interessi.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>Siamo presenti in ogni fase del viaggio per garantire un supporto continuo.<br><br>
+                            Ogni membro del team è impegnato nel mettere a proprio agio il cliente fin dal primo contatto, ascoltando attentamente le loro esigenze e desideri per creare un viaggio su misura.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-4 px-5">
+                    <img srcset="img/Small/Il_nostro_team_small.png 390w, img/Large/Il_nostro_team_large.png 1278w"
+                         sizes="(max-width: 768px) 700px, 2000px"
+                         src="img/Small/Il_nostro_team_small.png" class="img-fluid"
+                         alt="Help desk con il nostro team al lavoro">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- AWARDS -->
+        <div class="container-fluid mb-5 py-5">
+            <div class="row g-3 px-5">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-3">Premi e riconoscimenti</h2>
+                    <p>SerenityDreams Travel è stata onorata di preziosi riconoscimenti per la qualità e la diversificazione dei servizi proposti per singolo target,
+                        per l'eccellenza del suo servizio clienti e per l’impeccabile formazione del suo staff.<br><br>
+                        SerenityDreams Travel si conferma così, anche per quest’anno, la miglior agenzia di viaggi interstellari 2023/2024.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="img/svg/Premio_Miglior_Servizio_Clienti.svg" alt="Coccarda per il servizio clienti offerto" class="img-fluid">
+                        </div>
+                        <div class="col-12">
+                            <div class="row text-center">
+                                <div class="col-6">
+                                    <img src="img/svg/Premio_Mondo_Magico.svg"
+                                         alt="Coccarda per l'atmosfera magica delle nostre destinazioni">
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/svg/Premio_Migliori_Avventure.svg"
+                                         alt="Coccarda per la qualità delle avventure offerte">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
     <!-- FOOTER START -->
-<footer class="container-fluid footer">
-    <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
-        <div class="col-12 col-lg-6"> <!--Questo figlio di puttana non funziona da tablet, dovrebbe pigliarsi 12 colonne per h1 e logo e altre 12 per i testi sotto, ma si piglia le dimensioni di lg-->
-            <div class="row g-3 my-3">
-                <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
-                    <h1>Serenity Dreams <br>Travel</h1>
-                </div>
-                <div class="col-2 pt-2">
-                    <img class="image" src="img/svg/Logo.svg" alt="Logo Serenity Dreams Travel">
+    <footer class="container-fluid footer">
+        <div class="row justify-content-start justify-content-lg-around align-items-lg-center">
+            <div class="col-12 col-lg-6"> <!--Questo figlio di puttana non funziona da tablet, dovrebbe pigliarsi 12 colonne per h1 e logo e altre 12 per i testi sotto, ma si piglia le dimensioni di lg-->
+                <div class="row g-3 my-3">
+                    <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
+                        <h1>Serenity Dreams <br>Travel</h1>
+                    </div>
+                    <div class="col-2 pt-2">
+                        <img class="image" src="img/svg/Logo.svg" alt="Logo Serenity Dreams Travel">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 col-lg-5 mb-4"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
-            <div class="row justify-content-around justify-content-lg-end">
-                <div class="col-7 col-lg-6">
-                    <ul class="nav flex-column">
-                        <li class="nav-item menu_footer mb-2">serenity.dreams@gmail.com</li>
-                        <li class="nav-item menu_footer mb-2">0321 0508 9921</li>
-                        <li class="nav-item menu_footer">Plana Zebra fucsia, 99 <br>(Othania)</li>
-                    </ul>
-                </div>
+            <div class="col-12 col-lg-5 mb-4"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
+                <div class="row justify-content-around justify-content-lg-end">
+                    <div class="col-7 col-lg-6">
+                        <ul class="nav flex-column">
+                            <li class="nav-item menu_footer mb-2">serenity.dreams@gmail.com</li>
+                            <li class="nav-item menu_footer mb-2">0321 0508 9921</li>
+                            <li class="nav-item menu_footer">Plana Zebra fucsia, 99 <br>(Othania)</li>
+                        </ul>
+                    </div>
 
-                <div class="col-5">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <p class="text-center menu_footer">Seguici sui social</p>
+                    <div class="col-5">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="text-center menu_footer">Seguici sui social</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-evenly justify-content-lg-center">
+                            <div class="col-1"> <i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="col-1 mx-md-4"> <i class="fa-brands fa-x-twitter"></i></div>
+                            <div class="col-1"> <i class="fa-brands fa-tiktok"></i></div>
                         </div>
                     </div>
-                    <div class="row justify-content-evenly justify-content-lg-center">
-                        <div class="col-1"> <i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="col-1 mx-md-4"> <i class="fa-brands fa-x-twitter"></i></div>
-                        <div class="col-1"> <i class="fa-brands fa-tiktok"></i></div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 <script src="js/navbar.js"></script>
 </body>
 </html>
-
-
-
-<!-- Script per animazione di chiusura del menù in MOBILE
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Esegui il codice solo se la larghezza della finestra è inferiore a 768 pixel (mobile)
-        if (window.innerWidth < 768) {
-            var offcanvasNavbar = new bootstrap.Offcanvas(document.getElementById('offcanvasNavbar'));
-            var navbarToggler = document.querySelector('.navbar-toggler');
-
-            // Apri la barra laterale senza animazione
-            offcanvasNavbar._element.style.transitionProperty = 'none';
-            offcanvasNavbar._element.style.transform = 'translateX(0)';
-            offcanvasNavbar.show();
-
-            // Imposta aria-expanded su "true"
-            navbarToggler.setAttribute('aria-expanded', 'true');
-
-            // Chiudi la barra laterale dopo 2 secondi (puoi regolare il tempo a tuo piacimento)
-            setTimeout(function() {
-                // Rimuovi stili inline che disabilitano l'animazione di apertura
-                offcanvasNavbar._element.style.transition = '';
-                offcanvasNavbar._element.style.transform = '';
-
-                offcanvasNavbar.hide();
-
-                // Imposta aria-expanded su "false" dopo la chiusura
-                navbarToggler.setAttribute('aria-expanded', 'false');
-            }, 500);
-        }
-    });
-</script>
--->

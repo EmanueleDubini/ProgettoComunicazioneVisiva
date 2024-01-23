@@ -72,9 +72,7 @@
         </div>
     </nav>
 
-    <img src="img/Clouds_base.png" class="img-fluid">
-
-    <div class="container">
+    <div class="container py-5">
         <div class="row justify-content-center align-content-center">
             <div class="col-12">
                 <h1 id ="brand_name" class="page_title">Live your fantasy</h1>
@@ -85,13 +83,9 @@
 <!-- END NAVBAR BOOTSTRAP + CSS -->
 
 <main>
-
-    <!--SANTODDIO NON SO COME MA FUNZIONA AAAAHHHH
-        Quando si va in modalità responsive con ispeziona da browser in realtà a 1200px si sminchia,
-        quindi bisognerebbe cercare  di ottimizzarlo ancora un pochetto, però in linea di massima ci siamo-->
-    <section id="relax">
+    <section id="relax mt-5">
         <div class="container-fluid pb-5">
-            <div class="row px-5 d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
                 <div class="col-8 col-xl-6 boundle_img">
                     <img srcset="img/Small/Pacchetto_Relax_small.png 254w, img/Large/Pacchetto_Relax_large.png 1060w"
                          sizes ="(max-width: 768px) 500px, 1200px"
@@ -112,7 +106,7 @@
 
     <section id="adventure">
         <div class="container-fluid my-5 py-5">
-            <div class="row px-5 d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
                 <div class="col-8 col-xl-6 boundle_img order-xl-2">
                     <img srcset="img/Small/Pacchetto_Adventure_small.png 254w, img/Large/Pacchetto_Adventure_large.png 1060w"
                          sizes ="(max-width: 768px) 500px, 1200px"
@@ -133,7 +127,7 @@
 
     <section id="creativity">
         <div class="container-fluid py-5">
-            <div class="row px-5 d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
                 <div class="col-8 col-xl-6 boundle_img">
                     <img srcset="img/Small/Pacchetto_Creativity_small.png 254w, img/Large/Pacchetto_Creativity_large.png 1060w"
                          sizes ="(max-width: 768px) 500px, 1200px"
@@ -151,6 +145,41 @@
             </div>
         </div>
     </section>
+
+    <form>
+        <div class="card">
+            <input type="radio" id="opzione1-1" name="selezione1" value="opzione1">
+            <label for="opzione1-1">Opzione 1</label><br>
+            <input type="radio" id="opzione1-2" name="selezione1" value="opzione2">
+            <label for="opzione1-2">Opzione 2</label><br>
+            <input type="radio" id="opzione1-3" name="selezione1" value="opzione3">
+            <label for="opzione1-3">Opzione 3</label>
+        </div>
+
+        <div class="card">
+            <input type="radio" id="opzione2-1" name="selezione2" value="opzione1">
+            <label for="opzione2-1">Opzione 1</label><br>
+            <input type="radio" id="opzione2-2" name="selezione2" value="opzione2">
+            <label for="opzione2-2">Opzione 2</label><br>
+            <input type="radio" id="opzione2-3" name="selezione2" value="opzione3">
+            <label for="opzione2-3">Opzione 3</label>
+        </div>
+
+        <div class="card">
+            <input type="radio" id="opzione3-1" name="selezione3" value="opzione1">
+            <label for="opzione3-1">Opzione 1</label><br>
+            <input type="radio" id="opzione3-2" name="selezione3" value="opzione2">
+            <label for="opzione3-2">Opzione 2</label><br>
+            <input type="radio" id="opzione3-3" name="selezione3" value="opzione3">
+            <label for="opzione3-3">Opzione 3</label>
+        </div>
+
+        <button type="submit">Invia</button>
+    </form>
+
+
+
+
 </main>
 
 
