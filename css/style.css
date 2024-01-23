@@ -125,29 +125,37 @@ body {
     pointer-events: none;
 }
 
-header {
-    background-image: url("img/Clouds_base.png");
-    background-position: center;
+header{
+    background-image: url("../img/Clouds_base.png");
+    background-position: center bottom;
     background-size: cover;
+    height: 60vh;
     position: relative;
+}
+
+#brand_name {
+    margin-top: 5%;
+    text-align: center;
+    display: inline;
+    z-index: 1;
 }
 
 header img {
     width: 100%;
     height: fit-content;
     z-index: 0;
-    margin-top: -30%;
-    display: inline;
-}
-
-.white-wave h2{
-    color: var(--PrimaryColor);
+    margin-top: -10%;
 }
 
 .color_wave_upsidedown {
-    width: 100%;
-    height: fit-content;
-    display: flex;
+    mask: url("../img/svg/Wave_upside_down.svg") no-repeat;
+    mask-size: cover;
+}
+
+/*
+.color_wave .row {
+    padding-top: 80%;
+    padding-bottom: 5%;
 }
 
 /* ------------ CTA ------------ */
