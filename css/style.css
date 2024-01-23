@@ -575,6 +575,40 @@ i.fa-star:not(:last-child){
     /*border: 2px solid var(--PrimaryColor);*/
     color: var(--PrimaryColor);
 }
+/*todo mettere nella home page il bordo viola e frecce blu*/
+
+/* todo da qui si possono spostare i bottoni, per ora sono a bordo pagina*/
+/* fix the buttons positions */
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-next {
+    background-image: url(/img/svg/nav-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.swiper-button-prev {
+    background-image: url(/img/svg/nav-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
 
 
 /* nel carosello delle recensioni in index.html per fare comparire i dot della paginazione su dispositivi mobili e non mostrarli su desktop*/
