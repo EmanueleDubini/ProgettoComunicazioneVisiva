@@ -134,30 +134,60 @@ header{
 }
 
 #brand_name {
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
     z-index: 1;
 }
 
-#color_wave_upsidedown {
-    background-image: url("../img/svg/Wave_upside_down.svg");
-    background-position: center bottom;
-    background-size: cover;
+
+.color_wave_upsidedown {
+    background-image: none;
+    background-color: var(--TertiaryLightBlue);
+    mask-image: url("../img/svg/Wave_upside_down.svg");
+    mask-position: center bottom;
+    mask-size: cover;
+    fill: var(--TertiaryPink);
     height: 20em;
     position: relative;
+}
 
+#adventure_boundle .color_wave_upsidedown {
+    background-color: var(--TertiraryGreen);
+}
+
+#creativity_boundle .color_wave_upsidedown {
+    background-color: var(--TertiaryPink);
 }
 
 #relax_boundle main {
-    margin-top: -15%;
+    margin-top: -17%;
 }
 
-@media only screen and (min-width: 1200px) {
-    #color_wave_upsidedown {
-        height: 50em;
+#adventure_boundle main {
+    margin-top: -17%;
+}
+
+#creativity_boundle main {
+    margin-top: -17%;
+}
+
+@media only screen and (min-width: 768px) {
+    .color_wave_upsidedown {
+        height: 25em;
+    }
+
+    #relax_boundle main {
+        margin-top: -5%;
+    }
+
+    #adventure_boundle main {
+        margin-top: -5%;
+    }
+
+    #creativity_boundle main {
+        margin-top: -5%;
     }
 }
-
 
 /* ------------ CTA ------------ */
 button {
@@ -445,7 +475,7 @@ button:hover, button:active {
         margin-left: -10%;
     }
 
-    #relax, #creativity, .single_boundle #adventure {
+    #relax, #creativity, #adventure {
         padding-left: 8%;
     }
 
