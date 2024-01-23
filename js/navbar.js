@@ -2,7 +2,7 @@
 
 $(document).ready(function (){
     $(window).scroll(function () {
-        if($(document).scrollTop() > 300) {
+        if($(document).scrollTop() > 200) {
             $(".navbar").removeClass("nav-transparent").addClass("nav-colored");
         }else{
             $(".navbar").removeClass("nav-colored").addClass("nav-transparent");
