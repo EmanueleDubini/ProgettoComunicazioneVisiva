@@ -130,42 +130,25 @@ header {
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 60vh;
-}
-
-#brand_name {
-    margin-top: 5%;
-    text-align: center;
-    display: inline;
-    z-index: 1;
 }
 
 header img {
     width: 100%;
     height: fit-content;
     z-index: 0;
-    margin-top: -10%;
+    margin-top: -30%;
+    display: inline;
+}
+
+.white-wave h2{
+    color: var(--PrimaryColor);
 }
 
 .color_wave_upsidedown {
-    mask: url("../img/svg/Wave_upside_down.svg") no-repeat;
-    mask-size: cover;
+    width: 100%;
+    height: fit-content;
+    display: flex;
 }
-
-/*
-.color_wave .row {
-    padding-top: 80%;
-    padding-bottom: 5%;
-}
-
-@media only screen and (min-width:576px) {
-    .color_wave .row {
-        padding-top: 10%;
-    }
-}*/
-
-
-
 
 /* ------------ CTA ------------ */
 button {
