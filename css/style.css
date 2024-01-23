@@ -139,10 +139,25 @@ header{
     z-index: 1;
 }
 
-.color_wave_upsidedown {
-    mask: url("../img/svg/Wave_upside_down.svg") no-repeat;
-    mask-size: cover;
+#color_wave_upsidedown {
+    background-image: url("../img/svg/Wave_upside_down.svg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 20em;
+    position: relative;
+
 }
+
+#relax_boundle main {
+    margin-top: -15%;
+}
+
+@media only screen and (min-width: 1200px) {
+    #color_wave_upsidedown {
+        height: 50em;
+    }
+}
+
 
 /* ------------ CTA ------------ */
 button {
