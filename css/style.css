@@ -129,14 +129,13 @@ header{
     background-image: url("../img/Clouds_base.png");
     background-position: center bottom;
     background-size: cover;
-    height: 60vh;
+    height: 40vh;
     position: relative;
 }
 
 #brand_name {
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
-    display: inline;
     z-index: 1;
 }
 
@@ -150,12 +149,6 @@ header img {
 .color_wave_upsidedown {
     mask: url("../img/svg/Wave_upside_down.svg") no-repeat;
     mask-size: cover;
-}
-
-/*
-.color_wave .row {
-    padding-top: 80%;
-    padding-bottom: 5%;
 }
 
 /* ------------ CTA ------------ */
