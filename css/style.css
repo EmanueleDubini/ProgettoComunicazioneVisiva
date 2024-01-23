@@ -313,7 +313,7 @@ button:hover, button:active {
 /* ------------ HERO END ------------ */
 
 
-/* ------------ TRAVEL BOUNDLE ------------ */
+/* ------------ TRAVEL BOUNDLE AND SINGLE PAGE ------------ */
 
 .travel_boundle {
     background: var(--White);
@@ -336,6 +336,10 @@ button:hover, button:active {
     background-color: var(--White);
 }
 
+.single_boundle main p{
+    color: var(--PrimaryColor);
+}
+
 .single_boundle .boundle_img {
     z-index: 0;
 }
@@ -345,6 +349,15 @@ button:hover, button:active {
     padding: 5%;
     border:none;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.guide_card_boundle .travel_boundle {
+    z-index: 0;
+    padding-top: 15%;
+}
+
+.guide_card_boundle .boundle_img {
+    z-index: 1;
 }
 
 #relax .travel_boundle {
@@ -372,8 +385,15 @@ button:hover, button:active {
 
     .boundle_img {
         position: relative;
-        right: 0px;
+        right: 0;
         z-index: 0;
+        margin-left: -15%;
+    }
+
+    .boundle_img img{
+        width: auto;
+        height: 100%;
+
     }
 
     #adventure .travel_boundle {
@@ -383,11 +403,27 @@ button:hover, button:active {
         border-right: none;
         border-left: 0.3em solid var(--TertiraryGreen);
     }
+
+    .single_boundle #adventure .travel_boundle {
+        border:none;
+        margin-left: -10%;
+    }
+
+    #relax, #creativity, .single_boundle #adventure {
+        padding-left: 8%;
+    }
+
+    .guide_card_boundle .travel_boundle {
+        margin-left: 0;
+        margin-right: -10%;
+        padding-top: 5%;
+        padding-right: 15%;
+    }
 }
 
 /* ----------- ONDA SVG ------------ */
 .white-wave{
-    background-image: url("../img/svg/onda.svg");
+    background-image: url("../img/svg/Wave.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -395,6 +431,36 @@ button:hover, button:active {
 .white-wave h2{
     color: var(--PrimaryColor);
 }
+
+.color_wave {
+    mask: url("../img/svg/Wave.svg") no-repeat;
+    mask-size: cover;
+    z-index:0;
+}
+
+.color_wave .row {
+    padding-top: 80%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width:576px) {
+    .color_wave .row {
+        padding-top: 10%;
+    }
+}
+
+#relax_boundle .color_wave {
+    background-color: var(--TertiaryLightBlue);
+}
+
+#adventure_boundle .color_wave {
+    background-color: var(--TertiraryGreen);
+}
+
+#creativity_boundle .color_wave {
+    background-color: var(--TertiaryPink);
+}
+
 
 /* ----------- IMG GROW ON HOVER------------ */
 
