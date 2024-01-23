@@ -172,6 +172,15 @@ button:hover, button:active {
     color: var(--White); /* Colore per l'icona hamburger menu */
 }
 
+/* utile per rimuovere il colore di sfondo del bottone close della barra mobile quando tieni premuto*/
+.btn-close-white:hover {
+    background-color: transparent;
+}
+/* utile per rimuovere il colore di sfondo del bottone hamburger della barra mobile quando tieni premuto*/
+.navbar-toggler:hover {
+    background-color: transparent;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -181,6 +190,7 @@ button:hover, button:active {
 }
 
 .navbar a.dropdown-item {
+    background-color: transparent;
     color: #0c0725;
     position: relative;
     display: inline-block;
