@@ -129,9 +129,43 @@ header{
     background-image: url("../img/Clouds_base.png");
     background-position: center bottom;
     background-size: cover;
-    height: 75vh;
+    height: 60vh;
     position: relative;
 }
+
+#brand_name {
+    margin-top: 5%;
+    text-align: center;
+    display: inline;
+    z-index: 1;
+}
+
+header img {
+    width: 100%;
+    height: fit-content;
+    z-index: 0;
+    margin-top: -10%;
+}
+
+.color_wave_upsidedown {
+    mask: url("../img/svg/Wave_upside_down.svg") no-repeat;
+    mask-size: cover;
+}
+
+/*
+.color_wave .row {
+    padding-top: 80%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width:576px) {
+    .color_wave .row {
+        padding-top: 10%;
+    }
+}*/
+
+
+
 
 /* ------------ CTA ------------ */
 button {
@@ -290,9 +324,10 @@ button:hover, button:active {
     display: block;
 }
 
-#brand_name {
+#header_parallax #brand_name {
     position: relative;
     text-align: center;
+    margin-top: 0;
 }
 
 #slogan {
@@ -474,6 +509,15 @@ button:hover, button:active {
         transform: scale(1);
         transition: transform 0.5s ease;
     }
+}
+
+/* ------------ BRAND CARD ------------ */
+.brand-card{
+    border-radius: 2em;
+    background-color: #352688;;
+    padding: 2rem;
+    border-right: 0.5em solid #FFE037;
+    border-bottom: 0.5em solid #FFE037;
 }
 
 /* ------------ GUIDE CARD ------------ */
@@ -668,26 +712,9 @@ i.fa-star:not(:last-child){
     }
 }
 */
-/* ------------ CAROSELLO index.html & contactUs.html END ------------*/
 
 
-/* ------------ BRAND CARD ------------ */
-.brand-card{
-    border-radius: 2em;
-    background-color: #352688;;
-    padding: 2rem;
-    border-right: 0.5em solid #FFE037;
-    border-bottom: 0.5em solid #FFE037;
-}
-/* ------------ GUIDE CARD ------------ */
-
-
-.guide-card p {
-    color: var(--PrimaryColor);
-}
-
-/* ------------ FOOTER START------------ */
-/*todo impostare i font corretti*/
+/* ------------ FOOTER ------------ */
 footer {
     /*padding: 1em 1.8em 0 1.8em; /*i valori sono per il padding top, right, bottom, left*/
     background: #0C0922;
