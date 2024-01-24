@@ -669,17 +669,12 @@ form h5 {
     margin-top: 1.2em;
 }
 
-
 .testimonials-card p{
     text-align: center;
     margin-top: 20px;
     color: var(--White);
     font-size: 0.85rem;
     max-width: 90%;
-}
-
-i.fa-star:not(:last-child){
-    margin-right: 7px;
 }
 
 
@@ -750,15 +745,26 @@ i.fa-star:not(:last-child){
     right: 0;
 }
 
+/* Modifica la posizione quando la larghezza della finestra supera 1146px */
+@media (min-width: 1200px) {
+    .swiper-button-prev {
+        left: calc((100vw - 1200px) / 2);
+    }
+
+    .swiper-button-next {
+        right: calc((100vw - 1200px) / 2);
+    }
+}
+
 .swiper-button-next {
-    background-image: url(/img/svg/nav-arrow-right.svg);
+    background-image: url("../img/svg/nav-arrow-right.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
 }
 
 .swiper-button-prev {
-    background-image: url(/img/svg/nav-arrow-left.svg);
+    background-image: url("../img/svg/nav-arrow-left.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
