@@ -13,6 +13,7 @@
     --TertiaryLightBlue: #4C7CF8;
     --TertiraryGreen: #1DCD9F;
     --TertiaryPink: #F63A99;
+    --VariantColor: #8090E7;
     --White: #F6F6F9;
 
     --carouselColor: #9176FF; /*Se un valore viene usato una sola volta, non serve crare una custom property, infatti ho tolto quella per il colore sfondo del footer */
@@ -208,7 +209,7 @@ button a {
 }
 
 button:hover, button:active {
-    background: #8090E7;
+    background: var(--VariantColor);
 }
 
 /* ------------ NAVBAR ------------ */
@@ -548,6 +549,60 @@ form h5 {
     color: var(--PrimaryColor);
 }
 
+/* ----------- FORM GET IN TOUCH ------------ */
+
+#get_in_touch h2 {
+    color: var(--PrimaryColor);
+}
+
+#get_in_touch .travel_boundle {
+    padding: 5% 5% 5% 15%;
+    margin-left: -15%;
+    margin-top: 0;
+    z-index: 0;
+}
+
+#get_in_touch img{
+    position: relative;
+    z-index: 1;
+}
+
+#get_in_touch form {
+    background-color: var(--VariantColor);
+    border-radius: .5em;
+}
+
+input[type=text], select {
+    border-radius: .3rem;
+    border: none;
+    padding-left: .5em;
+}
+
+input[type=text] {
+    font-size: clamp(0.3rem, 2vw + 1rem, .7rem);
+}
+
+#get_in_touch label {
+    font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
+}
+
+#get_in_touch button:hover {
+    background-color: var(--White);
+}
+
+@media only screen and (min-width: 1200px) {
+    #get_in_touch form {
+        position: relative;
+        margin-left: -20%;
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #get_in_touch form {
+        margin-left: -60%;
+    }
+}
 
 /* ----------- IMG GROW ON HOVER------------ */
 

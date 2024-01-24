@@ -72,7 +72,7 @@
         </div>
     </nav>
 
-    <div class="container py-5">
+    <div class="container py-5 mb-5">
         <div class="row justify-content-center align-content-center">
             <div class="col-12">
                 <h1 id ="brand_name" class="page_title">Contact us</h1>
@@ -83,7 +83,36 @@
 <!-- END NAVBAR BOOTSTRAP + CSS -->
 
 <main>
-    <div class="container-fluid mt-5">
+    <section>
+        <div id="get_in_touch" class="container-fluid py-5">
+            <div class="row px-md-5 d-flex justify-content-center">
+                <div class="col-3 col-lg-4 d-flex align-items-end">
+                    <img srcset="img/Small/Razzo_small.png 162w, img/Large/Razzo_large.png 470w"
+                         sizes="(max-width: 768px) 180px, 500px"
+                         src="img/Small/Razzo_small.png" alt="Razzo che trasferirà i tuoi dati su Othania"
+                         class="img-fluid img-grow">
+                </div>
+                <div class="col-8 col-lg-5 travel_boundle">
+                    <h2>Get in touch</h2>
+                    <p class="mt-3">Compila il form per entrare in contatto con<br class="d-sm-none"> il nostro staff e organizzare il viaggio dei tuoi sogni.</p>
+                </div>
+                <div class="col-12 col-xl-3 d-flex justify-content-center align-items-center">
+                    <form class="p-5">
+                        <label for="name">Nome e cognome:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome"><br>
+
+                        <label class="pt-3" for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" placeholder="Inserisci la tua email"><br><br>
+
+                        <button class="mx-auto" type="submit" value="submit">Invia</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="container-fluid">
         <div class="row text-center">
             <div class="col-12 text-center mt-5 mb-3">
                 <h2>Our Team</h2>
@@ -148,6 +177,7 @@
             </div>
         </div>
     </div>
+    </section>
 </main>
 
     <!-- FOOTER START -->
