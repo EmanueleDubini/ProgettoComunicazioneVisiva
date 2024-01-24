@@ -556,7 +556,7 @@ form h5 {
 }
 
 #get_in_touch .travel_boundle {
-    padding: 5% 5% 5% 15%;
+    padding: 8% 8% 8% 15%;
     margin-left: -15%;
     margin-top: 0;
     z-index: 0;
@@ -590,7 +590,7 @@ input[type=text] {
     background-color: var(--White);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     #get_in_touch form {
         position: relative;
         margin-left: -20%;
@@ -600,7 +600,7 @@ input[type=text] {
 
 @media only screen and (min-width: 1300px) {
     #get_in_touch form {
-        margin-left: -60%;
+        margin-left: -65%;
     }
 }
 
