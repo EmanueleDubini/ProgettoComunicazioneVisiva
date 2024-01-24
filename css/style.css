@@ -527,6 +527,27 @@ button:hover, button:active {
     background-color: var(--TertiaryPink);
 }
 
+/* ----------- CREATE A PERSONAL BOUNDLE ------------ */
+
+.personal_boundle {
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    border: .3rem solid var(--TertiaryLightBlue);
+}
+
+#adventure_form {
+    border-color: var(--TertiraryGreen);
+}
+
+#creativity_form {
+    border-color: var(--TertiaryPink);
+}
+
+form h5 {
+    color: var(--PrimaryColor);
+}
+
 
 /* ----------- IMG GROW ON HOVER------------ */
 
