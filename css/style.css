@@ -635,7 +635,7 @@ input[type=text] {
 }
 
 .swiper-wrapper{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -649,7 +649,7 @@ input[type=text] {
 }
 
 .image-wrapper{
-    height: 38em;
+    height: auto;
 }
 
 .card{
@@ -768,9 +768,12 @@ input[type=text] {
     cursor: pointer;
 }*/
 /* ------------ IMAGE CARD ------------ */
+.image-carousel{
+    max-width: 80em;
+}
 .image-card{
     display: block;
-    width: 50em;
+    width: 50%;
     height: fit-content;
     object-fit: cover;
 }
