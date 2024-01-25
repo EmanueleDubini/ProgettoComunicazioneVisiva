@@ -106,6 +106,29 @@ body {
 
 /* ------------ HEADER ------------ */
 
+header{
+    background-image: url("../img/Clouds_base.png");
+    background-position: center bottom;
+    background-size: cover;
+    height: fit-content;
+    position: relative;
+}
+
+#brand_name {
+    text-align: center;
+    z-index: 1;
+}
+
+#logo {
+    position: relative;
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 0;
+    margin-inline: auto;
+}
+
+/* ------------ HEADER PARALLAX ------------ */
+
 #header_parallax {
     position: relative;
     width: 100%;
@@ -126,19 +149,38 @@ body {
     pointer-events: none;
 }
 
-header{
-    background-image: url("../img/Clouds_base.png");
-    background-position: center bottom;
-    background-size: cover;
-    height: fit-content;
+#header_parallax #logo{
     position: relative;
+    max-width: 8em;
+    max-height: 8em;
+    z-index: 1;
+    display: block;
+    margin: 0;
 }
 
-#brand_name {
-    margin-top: 15%;
+#header_parallax #brand_name {
+    position: relative;
     text-align: center;
-    z-index: 1;
 }
+
+#slogan {
+    position: relative;
+    text-align: center;
+}
+
+#button_hero{
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
+#cloud{
+    z-index: 3;
+    margin-top: 5%;
+}
+/* ------------ HERO END ------------ */
+
+
 
 
 .color_wave_upsidedown {
@@ -148,8 +190,8 @@ header{
     mask-position: center bottom;
     mask-size: cover;
     fill: var(--TertiaryPink);
-    height: 20em;
     position: relative;
+    height: 30em;
 }
 
 #adventure_boundle .color_wave_upsidedown {
@@ -160,33 +202,18 @@ header{
     background-color: var(--TertiaryPink);
 }
 
-#relax_boundle main {
-    margin-top: -17%;
+#relax_boundle main, #adventure_boundle main, #creativity_boundle main  {
+    margin-top: -15%;
 }
 
-#adventure_boundle main {
-    margin-top: -17%;
-}
-
-#creativity_boundle main {
-    margin-top: -17%;
-}
 
 @media only screen and (min-width: 768px) {
     .color_wave_upsidedown {
-        height: 25em;
+        height: 35em;
     }
 
-    #relax_boundle main {
-        margin-top: -5%;
-    }
-
-    #adventure_boundle main {
-        margin-top: -5%;
-    }
-
-    #creativity_boundle main {
-        margin-top: -5%;
+    #relax_boundle main, #adventure_boundle main, #creativity_boundle main  {
+        margin-top: -8%;
     }
 }
 
@@ -348,36 +375,6 @@ button:hover, button:active {
 /* ------------ NAVBAR END ------------ */
 
 
-/* ------------ HERO START ------------ */
-#header_parallax #logo{
-    position: relative;
-    max-width: 4.5em;
-    max-height: 4.5em;
-    z-index: 1;
-    display: block;
-}
-
-#header_parallax #brand_name {
-    position: relative;
-    text-align: center;
-    margin-top: 0;
-}
-
-#slogan {
-    position: relative;
-    text-align: center;
-}
-
-#button_hero{
-    position: relative;
-    display: block;
-    z-index: 2;
-}
-
-#cloud{
-    z-index: 3;
-}
-/* ------------ HERO END ------------ */
 
 
 /* ------------ TRAVEL BOUNDLE AND SINGLE PAGE ------------ */
