@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Othania</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- todo capire se necessario questo css messo sotto lo style.css, sarebbe meglio metterlo sopra nella gerarchia-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -153,6 +158,39 @@
     <!--CAROUSEL-->
     <section>
 
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper image-wrapper">
+
+                    <div class="swiper-slide image-card">
+                        <img srcset="img/Small/Savana_small.png 320w, img/Large/Savana_large.png 412w"
+                             sizes="(max-width:768px) 400px, 600px"
+                             src="img/Small/Savana_small.png" class="img-fluid"
+                             alt="Savana">
+                    </div>
+
+                    <div class="swiper-slide image-card">
+                        <img srcset="img/Small/Montagna_Rocciosa_small.png 320w, img/Large/Montagna_rocciosa_large.png 412w"
+                             sizes="(max-width:768px) 400px, 600px"
+                             src="img/Small/Montagna_Rocciosa_small.png" class="img-fluid"
+                             alt="Montagna rocciosa">
+                    </div>
+
+                    <div class="swiper-slide image-card">
+                        <img srcset="img/Small/Oasi_small.png 320w, img/Large/Oasi_large.png 412w"
+                             sizes="(max-width:768px) 400px, 600px"
+                             src="img/Small/Oasi_small.png" class="img-fluid"
+                             alt="Savana">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination guide-pagination"></div>
+
+                <!--<div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>-->
+            </div>
+        </div>
+
     </section>
 </main>
 
@@ -199,5 +237,61 @@
 </footer>
 
 <script src="js/navbar.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<!--link utile https://uiinitiative.com/catalog/carousel-slider/ -->
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        // Optional parameters
+        loop: false, // con 'loop: false' il carosello non si ripete all'infinito
+        slidesPerView: "auto",
+        centeredSlides: true,
+        grabCursor: true,
+
+        spaceBetween: 0, // con 'spaceBetween: 70' si crea uno spazio tra le slide
+
+        effect: "coverflow", // con 'effect: "coverflow"' il carosello scorre con l'effetto coverflow
+        coverflowEffect: {
+            rotate: 13,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+        },
+
+       initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
+
+
+
+
+
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            clickable: true,
+        },
+
+       /* autoplay: { // con 'autoplay: true' il carosello scorre automaticamente
+            delay: 5000,
+            pauseOnMouseEnter: true, // con 'pauseOnMouseEnter: true' il carosello si ferma quando il mouse è sopra
+            disableOnInteraction: true, // con 'disableOnInteraction: false' il carosello non si ferma quando si clicca su una slide
+        },*/
+
+
+        /*// Navigation arrows*/
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+        /*
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },*/
+    });
+</script>
+
 </body>
 </html>

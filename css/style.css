@@ -631,14 +631,25 @@ input[type=text] {
 /* ------------ GUIDE CARD ------------ */
 
 .swiper{
-    width: 100%;
+    height: 100%;
 }
 
 .swiper-wrapper{
-    width: 100%;
-    height: 35em;
+    width: 80%;
     display: flex;
     align-items: center;
+}
+
+.testimonials-wrapper{
+    height: 30em;
+ }
+
+.guide-wrapper{
+    height: 35em;
+}
+
+.image-wrapper{
+    height: 38em;
 }
 
 .card{
@@ -756,6 +767,14 @@ input[type=text] {
     margin-top: .5em;
     cursor: pointer;
 }*/
+/* ------------ IMAGE CARD ------------ */
+.image-card{
+    display: block;
+    width: 50em;
+    height: fit-content;
+    object-fit: cover;
+}
+
 
 .guide-pagination .swiper-pagination-bullet {
     opacity: 1;
