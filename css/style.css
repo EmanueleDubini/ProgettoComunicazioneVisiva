@@ -84,7 +84,7 @@ p {
     font-size: clamp(0.5rem, 2vw + 1rem, 1rem);
 }
 
-.small_copy a:hover {
+a.small_copy:hover {
     text-decoration: underline;
 }
 
@@ -205,7 +205,6 @@ header{
 #relax_boundle main, #adventure_boundle main, #creativity_boundle main  {
     margin-top: -15%;
 }
-
 
 @media only screen and (min-width: 768px) {
     .color_wave_upsidedown {
@@ -492,6 +491,11 @@ button:hover, button:active {
     background-size: cover;
 }
 
+.white-wave .row {
+    padding-top: 30%;
+    padding-bottom: 5%;
+}
+
 .white-wave h2{
     color: var(--PrimaryColor);
 }
@@ -503,13 +507,18 @@ button:hover, button:active {
 }
 
 .color_wave .row {
-    padding-top: 80%;
+    padding-top: 70%;
     padding-bottom: 5%;
 }
 
 @media only screen and (min-width:576px) {
     .color_wave .row {
         padding-top: 10%;
+    }
+
+    .white-wave .row {
+        padding-top: 7%;
+        padding-bottom: 5%;
     }
 }
 
