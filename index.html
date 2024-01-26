@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content ="Bancora Davide, Dubini Emanuela, Guida Lavinia Maria, Renda Aurora, Sibio Valentina, Stella Angela">
-    <meta name="description" content="Homepage del sito ufficiale di Serenity Dreams Travel, dove ogni tuo sogno prende forma  in un viaggio unico">
+    <meta name="description" content="Homepage del sito ufficiale di Serenity Dreams Travel, dove ogni tuo sogno prende forma in un viaggio unico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Link Bootstrap CDN -->
@@ -214,7 +214,7 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
 
                 <!-- CAROUSEL -->
                 <!-- Slider main container -->
-                <div class="col-12 swiper mySwiper">
+                <div class="col-12 swiper testimonials-swiper">
 
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper testimonials-wrapper">
@@ -321,57 +321,13 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <!--link utile https://uiinitiative.com/catalog/carousel-slider/ -->
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            // Optional parameters
-            loop: false, // con 'loop: false' il carosello non si ripete all'infinito
-
-            spaceBetween: 70, // con 'spaceBetween: 70' si crea uno spazio tra le slide
-
-            effect: "coverflow", // con 'effect: "coverflow"' il carosello scorre con l'effetto coverflow
-            grabCursor: true,
-            initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 13,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false,
-            },
 
 
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-                clickable: true,
-            },
-
-            /*autoplay: { // con 'autoplay: true' il carosello scorre automaticamente
-                delay: 5000,
-            },*/
-
-
-            /*// Navigation arrows*/
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-            /*
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },*/
-        });
-    </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/navbar.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
 

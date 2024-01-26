@@ -128,7 +128,7 @@
         <div class="row justify-content-center mb-5">
             <!-- GUIDE CARD -->
             <!-- Slider main container -->
-            <div class="col-12 swiper mySwiper mb-5">
+            <div class="col-12 swiper guide-swiper mb-5">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper guide-wrapper">
 
@@ -225,55 +225,11 @@
         </div>
     </footer>
 
+<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <!--link utile https://uiinitiative.com/catalog/carousel-slider/ -->
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            // Optional parameters
-            loop: false, // con 'loop: false' il carosello non si ripete all'infinito
-
-            ///spaceBetween: 30,
-
-            effect: "coverflow", // con 'effect: "coverflow"' il carosello scorre con l'effetto coverflow
-            grabCursor: true,
-            initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 300,
-                modifier: 1,
-                slideShadows: false,
-            },
-
-
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-                clickable: true,
-            },
-
-            /*autoplay: { // con 'autoplay: true' il carosello scorre automaticamente
-                delay: 5000,
-            },*/
-
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            /*
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },*/
-        });
-    </script>
 <script src="js/navbar.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
 
