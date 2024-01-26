@@ -24,6 +24,9 @@
 /* START CSS FOR NAVBAR BOOTSTRAP + CSS */
 
 /* ------------ FONTS & COLORS------------ */
+
+/*todo ottimizzare l'assegnazione del colore purple quando serve, usando la classe .purple (rinominarla)*/
+
 html {
     font-family: var(--fontNunito);
 }
@@ -179,9 +182,6 @@ header{
     margin-top: 5%;
 }
 /* ------------ HERO END ------------ */
-
-
-
 
 .color_wave_upsidedown {
     background-image: none;
@@ -501,7 +501,7 @@ button:hover, button:active {
 }
 
 .color_wave {
-    mask: url("../img/svg/Wave.svg") no-repeat;
+    mask: url("../img/svg/White_wave.svg") no-repeat;
     mask-size: cover;
     z-index:0;
 }
@@ -929,6 +929,13 @@ footer {
 .footer img{
     width: 4.5em;
     height: 4.5em;
+}
+
+@media (max-width: 350px) {
+    .image-logo-footer {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
