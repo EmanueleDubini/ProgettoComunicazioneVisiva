@@ -110,7 +110,7 @@ body {
 /* ------------ HEADER ------------ */
 
 header{
-    background-image: url("../img/Clouds_base.png");
+    background-image: url("../img/Clouds_reduced.png");
     background-position: center bottom;
     background-size: cover;
     height: fit-content;
