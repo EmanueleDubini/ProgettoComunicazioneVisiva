@@ -845,14 +845,6 @@ input[type=text] {
     .testimonials-button-next {
         right: calc((100vw - 1200px) / 2);
     }
-
-    .guide-button-prev{
-        left: calc((100vw - 960px) / 2);
-    }
-
-    .guide-button-next {
-        right: calc((100vw - 960px) / 2);
-    }
 }
 
 /* Modifica la posizione quando la larghezza della finestra supera 1200px */
@@ -864,6 +856,28 @@ input[type=text] {
 
     .guide-button-next {
         right: calc((100vw - 960px) / 2);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .testimonials-button-prev {
+        padding: 1.4rem 1.4rem;
+        transition: padding 0.5s ease-in-out;
+    }
+
+    .testimonials-button-next {
+        padding: 1.4rem 1.4rem;
+        transition: padding 0.5s ease-in-out;
+    }
+
+    .guide-button-prev {
+        padding: 1.4rem 1.4rem;
+        transition: padding 0.5s ease-in-out;
+    }
+
+    .guide-button-next {
+        padding: 1.4rem 1.4rem;
+        transition: padding 0.5s ease-in-out;
     }
 }
 
