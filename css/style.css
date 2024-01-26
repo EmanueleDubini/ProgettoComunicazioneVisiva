@@ -917,5 +917,12 @@ footer {
     height: 4.5em;
 }
 
+@media (max-width: 350px) {
+    .image-logo-footer {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 
