@@ -924,5 +924,17 @@ footer {
     }
 }
 
+/* ------------ PREMI CARD ------------ */
+
+.premi-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    object-fit: cover;
+}
+
+
 
 
