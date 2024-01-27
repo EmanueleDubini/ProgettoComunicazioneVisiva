@@ -104,19 +104,40 @@
                      class="img-fluid img-grow">
             </div>
             <div class="col-12 col-xl-3 d-flex justify-content-center align-items-center order-lg-3">
-                <form class="p-5">
+                <form class="p-5" id="contactForm">
                     <label for="name">Nome e cognome:</label><br>
                     <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required><br>
 
                     <label class="pt-3" for="email">Email:</label><br>
                     <input type="text" id="email" name="email" placeholder="Inserisci la tua email" required><br><br>
 
-                    <button type="submit" value="submit">Invia</button>
+                    <button type="submit" value="submitForm" onclick="submitForm()">Invia</button>
                 </form>
             </div>
         </div>
     </div>
     </section>
+
+    <!-- todo Sistemare la posizione del messaggio che compare -->
+    <script>
+        function submitForm() {
+            // Ottenere riferimenti agli elementi del form
+            var form = document.getElementById('contactForm');
+
+            // Creare un elemento h5 con il messaggio di ringraziamento
+            var thankYouMessageTitle = document.createElement('h4');
+            thankYouMessageTitle.textContent = 'Grazie!';
+
+            var thankYouMessageCont = document.createElement('h5');
+            thankYouMessageCont.textContent = 'Ti contatteremo il prima possibile.';
+
+            // Sostituire il contenuto del form con il messaggio di ringraziamento
+            form.innerHTML = '';
+            form.appendChild(thankYouMessageTitle);
+            form.appendChild(thankYouMessageCont);
+        }
+    </script>
+
 
     <!--
     <section>
