@@ -571,12 +571,23 @@ form h5 {
     z-index: 0;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     #get_in_touch .travel_boundle {
-        padding: 8% 8% 8% 15%;
-        margin-left: -15%;
+        padding: 8% 8% 8% 20%;
+        margin-left: -20%;
         margin-top: 0;
         z-index: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #get_in_touch .travel_boundle {
+        padding: 8% 8% 8% 20%;
+        margin-left: -35%;
+    }
+
+    #get_in_touch img {
+        margin-left: -60%;
     }
 }
 
@@ -589,7 +600,7 @@ form h5 {
 
 #get_in_touch form {
     background-color: var(--VariantColor);
-    border-radius: .5em;
+    border-radius: .8em;
     z-index: 2;
 }
 
@@ -597,7 +608,7 @@ input[type=text], select {
     border-radius: .3rem;
     border: none;
     padding-left: .5em;
-    height: 1.5rem;
+    height: 1.7rem;
 }
 
 input[type=text] {
@@ -612,10 +623,10 @@ input[type=text] {
     background-color: var(--White);
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     #get_in_touch form {
         position: relative;
-        margin-left: -20%;
+        margin-left: -35%;
         z-index: 2;
     }
 }
