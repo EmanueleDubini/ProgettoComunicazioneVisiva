@@ -980,6 +980,15 @@ footer {
     object-fit: cover;
 }
 
+/* ------------ Effetto fade out per sostituzione elementi in html ------------ */
+#mainContainer {
+    transition: opacity 0.5s ease-out;
+}
+
+.hidden {
+    display: none;
+}
+
 
 
 

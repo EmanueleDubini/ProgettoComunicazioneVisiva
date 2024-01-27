@@ -166,7 +166,7 @@
 
     <!-- RADIO FORM -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid" id="mainContainer">
             <div class="row px-2 px-md-5 mx-md-5">
                 <div class="col-12 col-lg-10">
                     <h2>Personalizza la tua esperienza</h2>
@@ -178,7 +178,7 @@
                 </div>
             </div>
 
-            <form>
+            <form id="customizeForm">
                 <div class="row g-4 pt-3 px-5 d-flex justify-content-evenly">
                     <div id="relax_form" class="col-12 col-lg-3 personal_boundle">
                         <h5>Relax</h5>
@@ -215,6 +215,35 @@
                 </div>
             </form>
         </div>
+
+        <script>
+            document.getElementById('customizeForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Impedisce il comportamento predefinito di invio del modulo
+
+                // Aggiungi la transizione al container principale
+                var mainContainer = document.getElementById('mainContainer');
+                mainContainer.style.opacity = 0;
+
+                setTimeout(function () {
+                    // Nascondi il form
+                    document.getElementById('customizeForm').classList.add('hidden');
+
+                    // Mostra il messaggio di ringraziamento
+                    var thankYouMessage = document.createElement('h5');
+                    thankYouMessage.textContent = 'Grazie, abbiamo inviato la tua domanda';
+                    thankYouMessage.classList.add('text-center');
+
+                    mainContainer.innerHTML = ''; // Rimuovi eventuali elementi precedenti
+                    mainContainer.appendChild(thankYouMessage);
+
+                    // Ripristina l'opacità
+                    mainContainer.style.opacity = 1;
+
+                    // Centra la pagina sull'h5 appena inserito
+                    thankYouMessage.scrollIntoView({ behavior: 'smooth' });
+                }, 500); // Attendiamo 500ms (durata della transizione) prima di eseguire le operazioni successive
+            });
+        </script>
     </section>
 </main>
 
