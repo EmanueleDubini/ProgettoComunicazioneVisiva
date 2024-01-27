@@ -87,7 +87,7 @@ const guideSwiper = new Swiper(".guide-swiper", {
     },*/
 });
 
-// -------------- Swiper Image othania.html Carousel --------------
+// -------------- Swiper Image 5_othania.html Carousel --------------
 const swiper = new Swiper(".mySwiper", {
     // Optional parameters
     loop: false, // con 'loop: false' il carosello non si ripete all'infinito
