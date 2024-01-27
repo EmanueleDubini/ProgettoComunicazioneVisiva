@@ -164,7 +164,7 @@
     <!--CAROUSEL-->
     <section>
         <div class="container-fluid image-carousel pb-5 my-5">
-            <div class="swiper mySwiper">
+            <div class="swiper image-Swiper">
                 <div class="swiper-wrapper image-wrapper">
 
                     <div class="swiper-slide image-card">
@@ -246,64 +246,12 @@
     </div>
 </footer>
 
-<script src="js/navbar.js"></script>
+
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<!--link utile https://uiinitiative.com/catalog/carousel-slider/ -->
-<script>
-    const swiper = new Swiper(".mySwiper", {
-        // Optional parameters
-        loop: false, // con 'loop: false' il carosello non si ripete all'infinito
-        slidesPerView: "auto",
-        centeredSlides: true,
-        grabCursor: true,
-
-        spaceBetween: 0, // con 'spaceBetween: 70' si crea uno spazio tra le slide
-
-        effect: "coverflow", // con 'effect: "coverflow"' il carosello scorre con l'effetto coverflow
-        coverflowEffect: {
-            rotate: 13,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-        },
-
-       initialSlide: 1, // con 'initialSlide: 1' viene visualizzata per prima la seconda slide, quella centrale delle 3 slide/card del carosello
-
-
-
-
-
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-            clickable: true,
-        },
-
-       /* autoplay: { // con 'autoplay: true' il carosello scorre automaticamente
-            delay: 5000,
-            pauseOnMouseEnter: true, // con 'pauseOnMouseEnter: true' il carosello si ferma quando il mouse è sopra
-            disableOnInteraction: true, // con 'disableOnInteraction: false' il carosello non si ferma quando si clicca su una slide
-        },*/
-
-
-        /*// Navigation arrows*/
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-        /*
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },*/
-    });
-
-
-</script>
+<script src="js/navbar.js"></script>
+<script src="js/carousel.js"></script>
 
 </body>
 </html>
