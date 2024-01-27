@@ -566,20 +566,31 @@ form h5 {
 }
 
 #get_in_touch .travel_boundle {
-    padding: 8% 8% 8% 15%;
-    margin-left: -15%;
+    padding: 8% 8% 20% 8%;
     margin-top: 0;
     z-index: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    #get_in_touch .travel_boundle {
+        padding: 8% 8% 8% 15%;
+        margin-left: -15%;
+        margin-top: 0;
+        z-index: 0;
+    }
 }
 
 #get_in_touch img{
     position: relative;
     z-index: 1;
+    margin-top: -30%;
 }
+
 
 #get_in_touch form {
     background-color: var(--VariantColor);
     border-radius: .5em;
+    z-index: 2;
 }
 
 input[type=text], select {
