@@ -486,9 +486,13 @@ button:hover, button:active {
 
 /* ----------- ONDA SVG ------------ */
 .white-wave{
-    background-image: url("../img/svg/Wave.svg");
+    background-image: url("../img/svg/White_wave.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#rewievs .white-wave {
+    background-image: url("../img/svg/Wave.svg");
 }
 
 .white-wave .row {
@@ -816,7 +820,6 @@ input[type=text] {
     border: 2px solid var(--PrimaryColor);
     color: var(--PrimaryColor);
 }
-/*todo mettere nella home page il bordo viola e frecce blu*/
 
 /* todo da qui si possono spostare i bottoni, per ora sono a bordo pagina*/
 /* fix the buttons positions */
@@ -940,7 +943,7 @@ footer {
 
 /* ------------ PREMI CARD ------------ */
 
-.premi-card{
+.prize-card{
     display: flex;
     justify-content: center;
     align-items: center;
