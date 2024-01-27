@@ -239,9 +239,10 @@
                     document.getElementById('customizeForm').classList.add('hidden');
 
                     // Mostra il messaggio di ringraziamento
-                    var thankYouMessage = document.createElement('h5');
-                    thankYouMessage.textContent = 'Grazie, abbiamo inviato la tua domanda';
+                    var thankYouMessage = document.createElement('h4');
+                    thankYouMessage.textContent = 'Grazie, il nostro team ha ricevuto la tua richiesta!';
                     thankYouMessage.classList.add('text-center');
+                    thankYouMessage.classList.add('mb-5');
 
                     mainContainer.innerHTML = ''; // Rimuovi eventuali elementi precedenti
                     mainContainer.appendChild(thankYouMessage);
