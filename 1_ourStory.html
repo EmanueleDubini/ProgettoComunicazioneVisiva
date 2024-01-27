@@ -133,48 +133,7 @@
                 </div>
             </div>
         </div>
-
-         <script>
-             $(document).ready(function () {
-                 // Funzione per controllare se si sta visualizzando su un dispositivo mobile
-                 function isMobile() {
-                     return window.innerWidth <= 768; // Puoi regolare questo valore in base alle tue esigenze
-                 }
-
-                 // Imposta l'opacità delle card a 0 solo se si è su un dispositivo mobile
-                 if (isMobile()) {
-                     $(".brand-card").css("opacity", 0);
-                 }
-
-                 // Funzione per controllare se un elemento è visibile nella finestra di visualizzazione
-                 function isScrolledIntoView(elem) {
-                     var docViewTop = $(window).scrollTop();
-                     var docViewBottom = docViewTop + $(window).height();
-                     var elemTop = $(elem).offset().top;
-                     var elemBottom = elemTop + $(elem).height();
-                     return elemBottom <= docViewBottom && elemTop >= docViewTop;
-                 }
-
-                 // Funzione per animare le card in base allo scrolling solo se si è su un dispositivo mobile
-                 function animateCards() {
-                     if (isMobile()) {
-                         $(".brand-card").each(function () {
-                             if (isScrolledIntoView(this)) {
-                                 $(this).animate({ opacity: 1 }, 350);
-                             }
-                         });
-                     }
-                 }
-
-                 // Chiamata alla funzione quando la pagina si carica e durante lo scrolling
-                 $(window).on("load scroll", function () {
-                     animateCards();
-                 });
-             });
-         </script>
-
      </section>
-
 
         <!-- HOW WE WORK -->
         <section>
@@ -205,6 +164,7 @@
 
 
         <!-- AWARDS -->
+        <section>
         <div class="container-fluid mb-5 py-5">
             <div class="row g-3 px-2 px-md-5">
                 <div class="col-12 col-lg-6">
@@ -264,6 +224,7 @@
                 </div>
             </div>
         </div>
+        </section>
     </main>
 
     <!-- FOOTER START -->
