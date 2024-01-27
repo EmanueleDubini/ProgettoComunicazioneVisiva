@@ -204,6 +204,16 @@
             document.getElementById('customizeForm').addEventListener('submit', function (event) {
                 event.preventDefault(); // Impedisce il comportamento predefinito di invio del modulo
 
+                // Verifica se almeno una voce è selezionata in ogni gruppo
+                var relaxChecked = document.querySelector('input[name="relax"]:checked');
+                var adventureChecked = document.querySelector('input[name="adventure"]:checked');
+                var creativityChecked = document.querySelector('input[name="creativity"]:checked');
+
+                if (!relaxChecked || !adventureChecked || !creativityChecked) {
+                    alert("Seleziona almeno una voce per ciascun gruppo.");
+                    return;
+                }
+
                 // Aggiungi la transizione al container principale
                 var mainContainer = document.getElementById('mainContainer');
                 mainContainer.style.opacity = 0;
