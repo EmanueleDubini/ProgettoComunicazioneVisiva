@@ -95,10 +95,6 @@ a.small_copy:hover {
     font-weight: bold;
 }
 
-.p-purple {
-    color: var(--PrimaryColor);
-}
-
 body {
     background: var(--PrimaryColor);
 }
@@ -371,10 +367,6 @@ button:hover, button:active {
     background-color: var(--PrimaryColor);
     text-align: center;
 }
-/* ------------ NAVBAR END ------------ */
-
-
-
 
 /* ------------ TRAVEL BOUNDLE AND SINGLE PAGE ------------ */
 
@@ -491,7 +483,7 @@ button:hover, button:active {
     background-size: cover;
 }
 
-#rewievs .white-wave {
+#reviews .white-wave {
     background-image: url("../img/svg/Wave.svg");
 }
 
@@ -500,7 +492,7 @@ button:hover, button:active {
     padding-bottom: 5%;
 }
 
-.white-wave h2{
+.white-wave h2, .white-wave p{
     color: var(--PrimaryColor);
 }
 
@@ -969,7 +961,7 @@ footer {
     }
 }
 
-/* ------------ PREMI CARD ------------ */
+/* ------------ PRIZE CARD ------------ */
 
 .prize-card{
     display: flex;
