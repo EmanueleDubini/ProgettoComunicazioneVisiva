@@ -615,6 +615,11 @@ input[type=text] {
     font-size: clamp(0.3rem, 2vw + 1rem, .7rem);
 }
 
+input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
 #get_in_touch label {
     font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
 }
