@@ -5,27 +5,19 @@
 :root{
     /* FONT */
     --fontLobster: 'Lobster', sans-serif;
-    --fontNunito: 'Nunito Sans', sans-serif; /*font usato nella navigation bar*/
+    --fontNunito: 'Nunito Sans', sans-serif;
 
     /* COLORS */
+    --White: #F6F6F9;
     --PrimaryColor: #181335;
     --SecondaryColor: #FFE037;
     --TertiaryLightBlue: #4C7CF8;
     --TertiraryGreen: #1DCD9F;
     --TertiaryPink: #F63A99;
     --VariantColor: #8090E7;
-    --White: #F6F6F9;
-
-    --carouselColor: #9176FF; /*Se un valore viene usato una sola volta, non serve crare una custom property, infatti ho tolto quella per il colore sfondo del footer */
 }
 
-/* todo UTILIZZARE LE CLASSI DI BOOTSTRAP PER PADDING/MARGIN */
-/* todo SOSTITUIRE UNITA' DI MISURA ASSOLUTE IN RELATIVE*/
-/* START CSS FOR NAVBAR BOOTSTRAP + CSS */
-
-/* ------------ FONTS & COLORS------------ */
-
-/*todo ottimizzare l'assegnazione del colore purple quando serve, usando la classe .purple (rinominarla)*/
+/* ------------ ASSEGNAZIONE FONTS E COLORI------------ */
 
 html {
     font-family: var(--fontNunito);
@@ -33,9 +25,6 @@ html {
 
 a{
     text-decoration: none;
-    /* rimosso sottolibneatura per i link come quelli in index.html*/
-    /*text-decoration: underline;
-    text-underline-offset: 5px; !* todo capire quanto spostare la sottolineatura*!*/
 }
 
 h1, h2, h3 {
@@ -99,8 +88,32 @@ body {
     background: var(--PrimaryColor);
 }
 
+/*Icone social*/
 .fa-brands {
     color: var(--White);
+}
+
+/* ------------ CTA ------------ */
+
+button {
+    color: var(--PrimaryColor);
+    background: var(--SecondaryColor);
+    padding: 1.25rem 3.125rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    border: none;
+}
+
+button a {
+    color:var(--PrimaryColor);
+}
+
+button:hover, button:active {
+    background: var(--VariantColor);
 }
 
 /* ------------ HEADER ------------ */
@@ -177,7 +190,8 @@ header{
     z-index: 3;
     margin-top: 5%;
 }
-/* ------------ HERO END ------------ */
+
+/* ------------ HEADER PAGINE SINGLE BOUNDLE ------------ */
 
 .color_wave_upsidedown {
     background-image: none;
@@ -210,28 +224,6 @@ header{
     #relax_boundle main, #adventure_boundle main, #creativity_boundle main  {
         margin-top: -8%;
     }
-}
-
-/* ------------ CTA ------------ */
-button {
-    color: var(--PrimaryColor);
-    background: var(--SecondaryColor);
-    padding: 1.25rem 3.125rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: inline-flex;
-    border: none;
-}
-
-button a {
-    color:var(--PrimaryColor);
-}
-
-button:hover, button:active {
-    background: var(--VariantColor);
 }
 
 /* ------------ NAVBAR ------------ */
@@ -368,6 +360,95 @@ button:hover, button:active {
     text-align: center;
 }
 
+/* ----------- IMG GROW ON HOVER------------ */
+
+/* media query per far sì che all'hover da desktop le immagini a cui è applicata la classe img-grow si ingrandiscano*/
+@media(hover: hover) and (pointer: fine) and (min-width: 1200px) {
+    .img-grow:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+    }
+
+    .img-grow:not(:hover){
+        transform: scale(1);
+        transition: transform 0.5s ease;
+    }
+}
+
+/* ----------- ONDA SVG ------------ */
+.white-wave{
+    background-image: url("../img/svg/White_wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reviews .white-wave {
+    background-image: url("../img/svg/Wave.svg");
+}
+
+.white-wave .row {
+    padding-top: 30%;
+    padding-bottom: 5%;
+}
+
+.white-wave h2, .white-wave p{
+    color: var(--PrimaryColor);
+}
+
+.color_wave {
+    mask: url("../img/svg/White_wave.svg") no-repeat;
+    mask-size: cover;
+    z-index:0;
+}
+
+.color_wave .row {
+    padding-top: 70%;
+}
+
+@media only screen and (min-width:576px) {
+    .color_wave .row {
+        padding-top: 10%;
+    }
+
+    .white-wave .row {
+        padding-top: 7%;
+        padding-bottom: 5%;
+    }
+}
+
+#relax_boundle .color_wave {
+    background-color: var(--TertiaryLightBlue);
+}
+
+#adventure_boundle .color_wave {
+    background-color: var(--TertiraryGreen);
+}
+
+#creativity_boundle .color_wave {
+    background-color: var(--TertiaryPink);
+}
+
+/* ------------ BRAND CARD (vision e mission) ------------ */
+
+.brand-card{
+    border-radius: 2em;
+    background-color: #352688;;
+    padding: 2rem;
+    border-right: 0.5em solid #FFE037;
+    border-bottom: 0.5em solid #FFE037;
+}
+
+/* ------------ PRIZE CARD ------------ */
+
+.prize-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    object-fit: cover;
+}
+
 /* ------------ TRAVEL BOUNDLE AND SINGLE PAGE ------------ */
 
 .travel_boundle {
@@ -387,7 +468,7 @@ button:hover, button:active {
     z-index: 1;
 }
 
-.single_boundle {
+#relax_boundle, #adventure_boundle, #creativity_boundle {
     background-color: var(--White);
 }
 
@@ -448,7 +529,6 @@ button:hover, button:active {
     .boundle_img img{
         width: auto;
         height: 100%;
-
     }
 
     #adventure .travel_boundle {
@@ -474,60 +554,6 @@ button:hover, button:active {
         padding-top: 5%;
         padding-right: 15%;
     }
-}
-
-/* ----------- ONDA SVG ------------ */
-.white-wave{
-    background-image: url("../img/svg/White_wave.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#reviews .white-wave {
-    background-image: url("../img/svg/Wave.svg");
-}
-
-.white-wave .row {
-    padding-top: 30%;
-    padding-bottom: 5%;
-}
-
-.white-wave h2, .white-wave p{
-    color: var(--PrimaryColor);
-}
-
-.color_wave {
-    mask: url("../img/svg/White_wave.svg") no-repeat;
-    mask-size: cover;
-    z-index:0;
-}
-
-.color_wave .row {
-    padding-top: 70%;
-    padding-bottom: 5%;
-}
-
-@media only screen and (min-width:576px) {
-    .color_wave .row {
-        padding-top: 10%;
-    }
-
-    .white-wave .row {
-        padding-top: 7%;
-        padding-bottom: 5%;
-    }
-}
-
-#relax_boundle .color_wave {
-    background-color: var(--TertiaryLightBlue);
-}
-
-#adventure_boundle .color_wave {
-    background-color: var(--TertiraryGreen);
-}
-
-#creativity_boundle .color_wave {
-    background-color: var(--TertiaryPink);
 }
 
 /* ----------- CREATE A PERSONAL BOUNDLE ------------ */
@@ -567,8 +593,6 @@ form h5 {
     #get_in_touch .travel_boundle {
         padding: 8% 8% 8% 20%;
         margin-left: -20%;
-        margin-top: 0;
-        z-index: 0;
     }
 }
 
@@ -634,28 +658,13 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     }
 }
 
-/* ----------- IMG GROW ON HOVER------------ */
-
-/* media query per applicare in seguito all'hover l'effetto di ingrandimento sull'astronauta solo su desktop */
-@media(hover: hover) and (pointer: fine) and (min-width: 1200px) {
-    .img-grow:hover{
-        transform: scale(1.1);
-        transition: transform 0.5s ease;
-    }
-
-    .img-grow:not(:hover){
-        transform: scale(1);
-        transition: transform 0.5s ease;
-    }
+/* ------------ Effetto fade out per sostituzione elementi in html ------------ */
+#mainContainer {
+    transition: opacity 0.5s ease-out;
 }
 
-/* ------------ BRAND CARD ------------ */
-.brand-card{
-    border-radius: 2em;
-    background-color: #352688;;
-    padding: 2rem;
-    border-right: 0.5em solid #FFE037;
-    border-bottom: 0.5em solid #FFE037;
+.hidden {
+    display: none;
 }
 
 /* ------------ GUIDE CARD ------------ */
@@ -689,21 +698,6 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     flex-direction: column;
 }
 
-#card_Zyrak {
-    border-right: .3rem solid var(--TertiaryLightBlue);
-    border-bottom: .3rem solid var(--TertiaryLightBlue);
-}
-
-#card_Lumara {
-    border-right: .3rem solid var(--TertiraryGreen);
-    border-bottom: .3rem solid var(--TertiraryGreen);
-}
-
-#card_Calysa {
-    border-right: .3rem solid var(--TertiaryPink);
-    border-bottom: .3rem solid var(--TertiaryPink);
-}
-
 .guide-card{
     width: 20em;
     height: 31em;
@@ -711,6 +705,7 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: var(--White);
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
     padding: 1.5rem;
+
 }
 
 .guide-card img{
@@ -727,11 +722,19 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     color: var(--PrimaryColor);
 }
 
-.card-title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: relative;
-    top: .2em;
+#card_Zyrak {
+    border-right: .3rem solid var(--TertiaryLightBlue);
+    border-bottom: .3rem solid var(--TertiaryLightBlue);
+}
+
+#card_Lumara {
+    border-right: .3rem solid var(--TertiraryGreen);
+    border-bottom: .3rem solid var(--TertiraryGreen);
+}
+
+#card_Calysa {
+    border-right: .3rem solid var(--TertiaryPink);
+    border-bottom: .3rem solid var(--TertiaryPink);
 }
 
 /* ------------ TESTIMONIAL CARD ------------ */
@@ -739,14 +742,8 @@ input[type=text]:focus, .form-container input[type=password]:focus {
 .testimonials-card{
     width: 20em;
     height: fit-content;
-    border-radius: 1.5em; /*possibile esprimere anche in px*/
+    border-radius: 1.5em;
     background-color: #352688;
-}
-
-.testimonials-card .rating{ /* todo una volta che si sono inserite le stelline con gli svg questa classe si potrebbe togliere (teoricamente)*/
-    margin-top: 5px;
-    font-size: 30px;
-    color: hsl(51, 98%, 60%);
 }
 
 .testimonials-card img{
@@ -773,31 +770,8 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     max-width: 90%;
 }
 
-
-/* Se si desidera applicare l'effetto blur sulle card che nono sono in primo piano, lo applica a tutti i caroselli del sito quindi index.html e contactus.html*/
-/*.swiper-slide:not(.swiper-slide-active){
-    filter: blur(1px);
-}*/
-
-
-/*.card__name{
-    color: var(--carouselColor);
-}*/
-
-
-/*.card__btn{
-    background-color: var(--carouselColor);
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
-    padding: .5em;
-    border-radius: .5em;
-    margin-top: .5em;
-    cursor: pointer;
-}*/
 /* ------------ IMAGE CARD ------------ */
+
 .image-carousel{
     max-width: 90em;
 }
@@ -807,7 +781,6 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     height: fit-content;
     object-fit: cover;
 }
-
 
 .guide-pagination .swiper-pagination-bullet {
     opacity: 1;
@@ -831,7 +804,6 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: var(--PrimaryColor);
 }
 
-/* per vedere come modificare le due freccie https://dev.to/ivadyhabimana/customizing-swiperjs-prevnext-arrow-buttons-and-pagination-bullets-in-react-3gkh*/
 .swiper-button-next,
 .swiper-button-prev {
     background-color: var(--White);
@@ -841,7 +813,6 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     color: var(--PrimaryColor);
 }
 
-/* todo da qui si possono spostare i bottoni, per ora sono a bordo pagina*/
 /* fix the buttons positions */
 .swiper-button-prev {
     left: 0;
@@ -910,7 +881,6 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     }
 }
 
-
 .swiper-button-next::after {
     display: none;
 }
@@ -919,74 +889,15 @@ input[type=text]:focus, .form-container input[type=password]:focus {
     display: none;
 }
 
-
-
-/* nel carosello delle recensioni in index.html per fare comparire i dot della paginazione su dispositivi mobili e non mostrarli su desktop*/
-/*
-.mySwiper .testimonials-pagination{
-    display: none;
-}
-
-@media (max-width: 992px) {
-    .mySwiper .testimonials-pagination {
-        display: block;
-    }
-}
-*/
-
-/*
-.mySwiper .swiper-button-prev,
-.mySwiper .swiper-button-next {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .mySwiper .swiper-button-prev,
-    .mySwiper .swiper-button-next {
-        display: block;
-    }
-}
-*/
-
-
 /* ------------ FOOTER ------------ */
 footer {
-    /*padding: 1em 1.8em 0 1.8em; /*i valori sono per il padding top, right, bottom, left*/
     background: #0C0922;
 }
 
-.footer img{
+footer img{
     width: 4.5em;
     height: 4.5em;
 }
-
-@media (max-width: 350px) {
-    .image-logo-footer {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* ------------ PRIZE CARD ------------ */
-
-.prize-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: fit-content;
-    object-fit: cover;
-}
-
-/* ------------ Effetto fade out per sostituzione elementi in html ------------ */
-#mainContainer {
-    transition: opacity 0.5s ease-out;
-}
-
-.hidden {
-    display: none;
-}
-
 
 
 

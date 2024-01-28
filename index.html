@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="it" xmlns="http://www.w3.org/1999/html">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content ="Bancora Davide, Dubini Emanuela, Guida Lavinia Maria, Renda Aurora, Sibio Valentina, Stella Angela">
+    <meta name="author" content ="Bancora Davide, Dubini Emanuele, Guida Lavinia Maria, Renda Aurora, Sibio Valentina, Stella Angela">
     <meta name="description" content="Homepage del sito ufficiale di Serenity Dreams Travel, dove ogni tuo sogno prende forma in un viaggio unico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,10 +20,6 @@
 
 </head>
 <body>
-
-<!-- todo Usare sempre la struttura header main e footer nelle pagine, perchè vanno a identificare semanticamente le sezioni
-ed è più corretto nella strutturazione del codice e aiuta poi a creare le regole CSS senza creare classi-->
-
     <!--NAVBAR BOOTSTRAP + CSS -->
     <header id="header_parallax">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -91,12 +87,12 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
                     <h1 id ="brand_name">Serenity Dreams Travel</h1>
                 </div>
                 <div class="col-12 justify-content-center">
-                    <p class="menu_footer" id ="slogan">Travel toward your dreams </p> <!--L'id serve per forza per richiamare l'elemento nello script-->
+                    <p class="menu_footer" id ="slogan">Travel toward your dreams </p>
                 </div>
                 <div class="col-12 justify-content-center">
                     <a title="Link alla pagina Live Yout Fantasy">
                         <button class="mx-auto" id="button_hero" onclick="window.location.href='4_liveYourFantasy.html'">Dream about</button>
-                    </a> <!--todo capire se usare gli id o le classi per il css-->
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,13 +115,9 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
             slogan.style.top = value * 0.4 + 'px';
             button_hero.style.top = value * 0.4 + 'px';
         })
-
     </script>
 
     <!-- END NAVBAR BOOTSTRAP + CSS -->
-
-    <!-- todo capire e correggere nel codice quando usare <section> e <div> per dare una suddivisione del contenuto della pagina-->
-
 
 <main>
     <section class="mt-5 pt-5">
@@ -137,7 +129,7 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
                     <p class="mt-3">Benvenuto nell'incantevole universo di SerenityDreams Travel, dove ogni viaggio
                         è una poesia di mondi inesplorati e avventure avvolte nella magia.
                         Ti invitiamo a sognare con noi attraverso i nostri pacchetti,
-                        che trasformeranno la tua vacanza in un'esperienza straordinaria. <br><br class=" d-md-none">
+                        che trasformeranno la tua vacanza in un'esperienza straordinaria. <br><br>
                         Abbandona l'ordinario e lasciati trasportare verso destinazioni uniche,
                         dove la magia si fonde con il sogno. Con noi ogni momento è un incantesimo da custodire.
                     </p>
@@ -150,7 +142,7 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
         <div class="row d-flex justify-content-xl-around">
             <div class="col-12 col-xl-5 mx-auto text-center">
                 <img src="img/svg/Astronauta.svg"
-                     alt="Astronauta" class="img-fluid img-grow"> <!--Non è cosa tanto buona assegnare una classe all'immagine-->
+                     alt="Astronauta" class="img-fluid img-grow">
             </div>
 
             <div class="col-12 col-xl-6 my-auto">
@@ -224,7 +216,7 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
                             <!-- Slides -->
                             <!-- CARD -->
                             <div class="card testimonials-card swiper-slide">
-                                <div class="rating">
+                                <div>
                                     <img src="img/svg/Star.svg" alt="Star" />
                                     <img src="img/svg/Star.svg" alt="Star" />
                                     <img src="img/svg/Star.svg" alt="Star" />
@@ -239,7 +231,7 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
 
                             <!-- CARD -->
                             <div class="card testimonials-card swiper-slide">
-                                <div class="rating">
+                                <div>
                                     <img src="img/svg/Star.svg" alt="Star" />
                                     <img src="img/svg/Star.svg" alt="Star" />
                                     <img src="img/svg/Star.svg" alt="Star" />
@@ -254,7 +246,7 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
 
                             <!-- CARD -->
                             <div class="card testimonials-card swiper-slide">
-                                <div class="rating">
+                                <div>
                                     <img src="img/svg/Star.svg" alt="Star" />
                                     <img src="img/svg/Star.svg" alt="Star" />
                                     <img src="img/svg/Star.svg" alt="Star" />
@@ -277,26 +269,26 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
                 <a href="1_ourStory.html" title="Link alla pagina Our Story"><button>I nostri premi</button></a>
             </div>
         </div>
-    </div>
+        </div>
     </section>
 </main>
 
-    <!-- FOOTER START -->
-    <footer class="container-fluid footer">
+    <!-- FOOTER -->
+    <footer class="container-fluid">
         <div class="row px-2 px-md-5 justify-content-start justify-content-lg-around align-items-lg-center">
 
-            <div class="col-12 col-lg-6"> <!--todo Questo figlio di puttana non funziona da tablet, dovrebbe pigliarsi 12 colonne per h1 e logo e altre 12 per i testi sotto, ma si piglia le dimensioni di lg-->
+            <div class="col-12 col-lg-6">
                 <div class="row g-3 my-3">
-                    <div class="col-9 col-lg-12"> <!-- impostato col-md-12 col-lg-12 per mettere il logo sotto la scritta Serenity Dreams Travel in modalità desktop-->
+                    <div class="col-9 col-lg-12">
                         <a href="index.html" title="Link Home"><h1>Serenity Dreams <br> Travel</h1></a>
                     </div>
                     <div class="col-3 pt-2">
-                        <a href="index.html" title="Link Home"><img class="image image-logo-footer" src="img/svg/Logo.svg" alt="Logo Serenity Dreams Travel"></a>
+                        <a href="index.html" title="Link Home"><img class="img-fluid" src="img/svg/Logo.svg" alt="Logo Serenity Dreams Travel"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-lg-5 mb-4"> <!-- d-none d-sm-block per nascondere il testo in modalità mobile-->
+            <div class="col-12 col-lg-5 mb-4">
                 <div class="row justify-content-around justify-content-lg-end">
                     <div class="col-7 col-lg-6">
                         <ul class="nav flex-column">
@@ -339,36 +331,3 @@ ed è più corretto nella strutturazione del codice e aiuta poi a creare le rego
 
 </body>
 </html>
-
-
-
-<!-- Script per animazione di chiusura del menù in MOBILE
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Esegui il codice solo se la larghezza della finestra è inferiore a 768 pixel (mobile)
-        if (window.innerWidth < 768) {
-            var offcanvasNavbar = new bootstrap.Offcanvas(document.getElementById('offcanvasNavbar'));
-            var navbarToggler = document.querySelector('.navbar-toggler');
-
-            // Apri la barra laterale senza animazione
-            offcanvasNavbar._element.style.transitionProperty = 'none';
-            offcanvasNavbar._element.style.transform = 'translateX(0)';
-            offcanvasNavbar.show();
-
-            // Imposta aria-expanded su "true"
-            navbarToggler.setAttribute('aria-expanded', 'true');
-
-            // Chiudi la barra laterale dopo 2 secondi (puoi regolare il tempo a tuo piacimento)
-            setTimeout(function() {
-                // Rimuovi stili inline che disabilitano l'animazione di apertura
-                offcanvasNavbar._element.style.transition = '';
-                offcanvasNavbar._element.style.transform = '';
-
-                offcanvasNavbar.hide();
-
-                // Imposta aria-expanded su "false" dopo la chiusura
-                navbarToggler.setAttribute('aria-expanded', 'false');
-            }, 500);
-        }
-    });
-</script>-->
