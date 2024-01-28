@@ -728,13 +728,13 @@ input[type=text]:focus, .form-container input[type=password]:focus {
 }
 
 #card_Lumara {
-    border-right: .3rem solid var(--TertiraryGreen);
-    border-bottom: .3rem solid var(--TertiraryGreen);
+    border-right: .3rem solid var(--TertiaryPink);
+    border-bottom: .3rem solid var(--TertiaryPink);
 }
 
 #card_Calysa {
-    border-right: .3rem solid var(--TertiaryPink);
-    border-bottom: .3rem solid var(--TertiaryPink);
+    border-right: .3rem solid var(--TertiraryGreen);
+    border-bottom: .3rem solid var(--TertiraryGreen);
 }
 
 /* ------------ TESTIMONIAL CARD ------------ */
