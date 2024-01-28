@@ -124,12 +124,13 @@
             // Ottenere riferimenti agli elementi del form
             var form = document.getElementById('contactForm');
 
-            // Creare un elemento h5 con il messaggio di ringraziamento
+            // Creare un elemento h4 con il messaggio di ringraziamento
             var thankYouMessageTitle = document.createElement('h4');
             thankYouMessageTitle.textContent = 'Grazie!';
+            thankYouMessageTitle.style.color="var(--PrimaryColor)";
 
             var thankYouMessageCont = document.createElement('h5');
-            thankYouMessageCont.textContent = 'Ti contatteremo il prima possibile.';
+            thankYouMessageCont.textContent = 'Il nostro team ti risponderà al più presto!';
 
             // Sostituire il contenuto del form con il messaggio di ringraziamento
             form.innerHTML = '';
