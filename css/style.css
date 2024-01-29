@@ -110,10 +110,6 @@ button {
     border: none;
 }
 
-button a {
-    color:var(--PrimaryColor);
-}
-
 button:hover, button:active {
     background: var(--VariantColor);
 }

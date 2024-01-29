@@ -36,7 +36,7 @@
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation" aria-expanded="false" >
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasNavbar">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title"></h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -86,8 +86,8 @@
             </div>
         </nav>
 
-        <img src="img/Clouds_base.png" id="bg">
-        <img src="img/Clouds_bottom.png" id="cloud">
+        <img src="img/Clouds_base.png" id="bg" alt="Immagine Hero">
+        <img src="img/Clouds_bottom.png" id="cloud" alt="Nuvola effetto parallasse">
 
         <div class="container">
             <div class="row justify-content-center">
@@ -101,9 +101,7 @@
                     <p class="menu_footer" id ="slogan">Travel toward your dreams </p>
                 </div>
                 <div class="col-12 justify-content-center">
-                    <a title="Link alla pagina Live Yout Fantasy">
-                        <button class="mx-auto" id="button_hero" onclick="window.location.href='4_liveYourFantasy.html'">Dream about</button>
-                    </a>
+                    <button class="mx-auto" id="button_hero" onclick="window.location.href='4_liveYourFantasy.html'">Dream about</button>
                 </div>
             </div>
         </div>
@@ -181,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-12 mt-4">
-                        <a href="3_contactUs.html" title="Link alla pagina Contact Us"><button>Contact us</button></a>
+                        <button title="Link alla pagina Contact Us" onclick="window.location.href='3_contactUs.html'">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -257,7 +255,7 @@
                 </div>
 
             <div class="col-12 d-flex justify-content-center my-5 pb-5">
-                <a href="1_ourStory.html" title="Link alla pagina Our Story"><button>I nostri premi</button></a>
+                <button title="Link alla pagina Our Story" onclick="window.location.href='1_ourStory.html'">I nostri premi</button>
             </div>
         </div>
         </div>
