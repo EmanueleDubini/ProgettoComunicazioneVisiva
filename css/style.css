@@ -347,16 +347,16 @@ lo spacing su risoluzioni diverse*/
 
 .nav-transparent{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: -moz-linear-gradient(left,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(left,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(to right,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(to right,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
     transition: background-color 0.7s ease;
 }
 
 .navbar.collapsing .navbar-nav,
 .navbar.show .navbar-nav{
-    background: -moz-linear-gradient(top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%);
+    background: -moz-linear-gradient(to top,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%);
     padding: 12px;
 }
 
@@ -401,7 +401,8 @@ lo spacing su risoluzioni diverse*/
 }
 
 .color_wave {
-    mask: url("../img/svg/White_wave.svg") no-repeat;
+    mask: url("img/svg/White_wave.svg");
+    mask-repeat: no-repeat;
     mask-size: cover;
     z-index:0;
 }
