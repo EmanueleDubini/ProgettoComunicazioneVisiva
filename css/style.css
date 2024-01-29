@@ -81,7 +81,8 @@ a.small_copy:hover {
 }
 
 /*Si è deciso di assegnare il bold attraverso una classe e non con i tag <b> o <strong>
- per poter rendere più versatile il codice nel caso in cui avessimo deciso di modificare anche altre proprietà*/
+ per poter rendere più versatile e mantenibile il codice nel caso in cui avessimo deciso di modificare
+ anche altre proprietà associate ai testi in grassetto*/
 .strong_copy {
     font-weight: bold;
 }
@@ -324,7 +325,7 @@ lo spacing su risoluzioni diverse*/
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* <-- Questa è la larghezza della barra: attenti che modifica anche su mobile */
+    width: 100%; /* Larghezza della barra */
 }
 
 .nav-item{
@@ -346,7 +347,6 @@ lo spacing su risoluzioni diverse*/
 }
 
 .nav-transparent{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
     background: -moz-linear-gradient(to right,  rgba(12,7,37,1) 0%, rgba(0,0,0,0) 50%); /* FF3.6-15 */
     background: -webkit-linear-gradient(to right,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  rgba(12,7,37,1) 0%,rgba(0,0,0,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -411,6 +411,7 @@ lo spacing su risoluzioni diverse*/
     padding-top: 70%;
 }
 
+/*Media query per riposizionare gli elementi della pagina rispetto all'onda ed evitare effetti di mascheramento*/
 @media only screen and (min-width:576px) {
     .color_wave .row {
         padding-top: 10%;
