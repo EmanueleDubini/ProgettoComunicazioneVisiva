@@ -1,5 +1,5 @@
 # ProgettoComunicazioneVisiva
-Progetto di Comunicazione Visiva e Design delle Interfacce AA2023\2024 @Unimib
+Progetto di Comunicazione Visiva e Design delle Interfacce AA2023/2024 @Unimib
 
 <img src="img/Clouds_reduced.png" alt="Serenity Dreams Logo"/>
 <p align="center">
