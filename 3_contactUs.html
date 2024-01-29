@@ -118,16 +118,23 @@
     </div>
     </section>
 
-    <!-- todo Sistemare la posizione del messaggio che compare -->
     <script>
         function submitForm() {
             // Ottenere riferimenti agli elementi del form
             var form = document.getElementById('contactForm');
+            var nameInput = document.getElementById('name');
+            var emailInput = document.getElementById('email');
+
+            // Validare i campi del modulo
+            if (nameInput.value.trim() === '' || emailInput.value.trim() === '') {
+                alert('Per favore, completa tutti i campi del modulo.');
+                return;
+            }
 
             // Creare un elemento h4 con il messaggio di ringraziamento
             var thankYouMessageTitle = document.createElement('h4');
             thankYouMessageTitle.textContent = 'Grazie!';
-            thankYouMessageTitle.style.color="var(--PrimaryColor)";
+            thankYouMessageTitle.style.color = "var(--PrimaryColor)";
 
             var thankYouMessageCont = document.createElement('h5');
             thankYouMessageCont.textContent = 'Il nostro team ti risponderà al più presto!';
@@ -136,8 +143,11 @@
             form.innerHTML = '';
             form.appendChild(thankYouMessageTitle);
             form.appendChild(thankYouMessageCont);
+
+            form.style.marginLeft = "0%";
         }
     </script>
+
 
     <!-- GUIDE DETAILS -->
     <section>
