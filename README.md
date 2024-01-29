@@ -1,10 +1,11 @@
 # ProgettoComunicazioneVisiva
 Progetto di Comunicazione Visiva e Design delle Interfacce AA2023\2024 @Unimib
 
-<p align="center">
-  <img src="https://github.com/EmanueleDubini/ProgettoComunicazioneVisiva/blob/main/img/svg/Logo.svg" alt="Serenity Dreams Logo"/>
-</p>
-<h1 align="center">Serenity Dreams Travel</h1>
+<img src="img/Clouds_reduced.png" alt="Serenity Dreams Logo"/>
+<center>
+    <img src="https://github.com/EmanueleDubini/ProgettoComunicazioneVisiva/blob/main/img/svg/Logo.svg" alt="Serenity Dreams Logo"/>
+    <h1>Serenity Dreams Travel</h1>
+</center>
 
 
 Tecnologie utilizzate:
