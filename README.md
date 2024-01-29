@@ -17,3 +17,4 @@ Tecnologie utilizzate:
 
 > Per avere un anteprima del progetto visitare il seguente link: https://emanueledubini.github.io/ProgettoComunicazioneVisiva/
 
+All'interno della cartella [**validation**](https://github.com/EmanueleDubini/ProgettoComunicazioneVisiva/tree/main/validation) sono presenti i file di validazione HTML e CSS del progetto.
