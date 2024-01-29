@@ -51,16 +51,16 @@ h3, h4 {
     letter-spacing: 0.06rem;
 }
 
-p, .menu_footer {
-    font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
-}
-
 h4 {
     font-family: var(--fontNunito);
 }
 
 h5 {
     font-weight: normal;
+}
+
+p, .menu_footer {
+    font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
 }
 
 p {
@@ -80,6 +80,8 @@ a.small_copy:hover {
     text-decoration: underline;
 }
 
+/*Si è deciso di assegnare il bold attraverso una classe e non con i tag <b> o <strong>
+ per poter rendere più versatile il codice nel caso in cui avessimo deciso di modificare anche altre proprietà*/
 .strong_copy {
     font-weight: bold;
 }
@@ -88,7 +90,7 @@ body {
     background: var(--PrimaryColor);
 }
 
-/*Icone social*/
+/*Icone social presenti nel footer*/
 .fa-brands {
     color: var(--White);
 }
@@ -140,6 +142,7 @@ header{
 }
 
 /* ------------ HEADER PARALLAX ------------ */
+/*Solo nella Homepage del sito si ha un effetto parallasse, con una Hero più ampia che comprene anche uno slogan e una CTA*/
 
 #header_parallax {
     position: relative;
@@ -192,6 +195,9 @@ header{
 }
 
 /* ------------ HEADER PAGINE SINGLE BOUNDLE ------------ */
+/*Nelle pagine sei singoli pacchetti si è deciso di rimuovere l'immagine della hero,
+sostituendola con l'svg già utilizzato in altre pagine del sito e assegnando allo stesso il colore identificativo del pacchetto,
+per portare completamente il focus dell'utente sul servizio proposto*/
 
 .color_wave_upsidedown {
     background-image: none;
@@ -215,6 +221,9 @@ header{
 #relax_boundle main, #adventure_boundle main, #creativity_boundle main  {
     margin-top: -15%;
 }
+
+/*Per gestire l'effetto di sovrapposizione tra il pacchetto e l'svg è stato necessario creare una media query per gestire
+lo spacing su risoluzioni diverse*/
 
 @media only screen and (min-width: 768px) {
     .color_wave_upsidedown {
@@ -362,7 +371,7 @@ header{
 
 /* ----------- IMG GROW ON HOVER------------ */
 
-/* media query per far sì che all'hover da desktop le immagini a cui è applicata la classe img-grow si ingrandiscano*/
+/* Media query per far sì che all'hover da desktop le immagini a cui è applicata la classe img-grow si ingrandiscano*/
 @media(hover: hover) and (pointer: fine) and (min-width: 1200px) {
     .img-grow:hover{
         transform: scale(1.1);
@@ -450,6 +459,8 @@ header{
 }
 
 /* ------------ TRAVEL BOUNDLE AND SINGLE PAGE ------------ */
+/*Si è cercato di ottimizzare il css e utilizzare le stesse classi in pagine diverse per proporre strutture simili tra loro,
+date da un'immagine e un box di testo che si sovrappongono tra loro*/
 
 .travel_boundle {
     background: var(--White);
@@ -507,6 +518,9 @@ header{
 #creativity .travel_boundle {
     border-color: var(--TertiaryPink);
 }
+
+/*Da mobile l'immagine appare sopra al box di test ed è in primo piano,
+ mentre da desktop l'immagine si affianca al box e passa in secondo piano*/
 
 @media only screen and (min-width: 1200px) {
 
@@ -589,13 +603,11 @@ form h5 {
     z-index: 0;
 }
 
-@media only screen and (min-width: 1200px) {
-    #get_in_touch .travel_boundle {
-        padding: 8% 8% 8% 20%;
-        margin-left: -20%;
-    }
-}
-
+/*Media query per gestire la diversa disposizione degli elementi su tabelt e desktop*/
+/*Su mobile, l'img del razzo viene posizionato al di sotto del box di testo
+Su tablet, il razzo affianca il testo, mentre il form rimane posizionato sotto
+Su desktop tutti e tre gli elementi (img, box testo e form) vengono posizionati sulla stessa riga
+ */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     #get_in_touch .travel_boundle {
         padding: 8% 8% 8% 20%;
@@ -604,6 +616,13 @@ form h5 {
 
     #get_in_touch img {
         margin-left: -60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #get_in_touch .travel_boundle {
+        padding: 8% 8% 8% 20%;
+        margin-left: -20%;
     }
 }
 
