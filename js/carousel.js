@@ -101,7 +101,7 @@ const imageSwiper = new Swiper(".image-Swiper", {
 const awardSwiper = new Swiper(".award-Swiper", {
     // Optional parameters
     centeredSlides: true,
-    grabCursor: false,
+    grabCursor: true,
 
     loop: true,
 
