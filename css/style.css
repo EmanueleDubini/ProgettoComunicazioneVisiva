@@ -60,7 +60,7 @@ h5 {
 }
 
 p, .menu_footer {
-    font-size: clamp(0.875rem, 1vw + 1rem, 1rem);
+    font-size: clamp(0.875rem, 1vw + 1rem, 1.1rem);
 }
 
 p {
