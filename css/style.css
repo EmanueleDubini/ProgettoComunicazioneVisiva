@@ -401,7 +401,7 @@ lo spacing su risoluzioni diverse*/
 }
 
 .color_wave {
-    mask: url("/img/svg/White_wave.svg");
+    mask: url("../img/svg/White_wave.svg");
     mask-repeat: no-repeat;
     mask-size: cover;
     z-index:0;
