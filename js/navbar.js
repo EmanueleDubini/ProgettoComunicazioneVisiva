@@ -12,7 +12,7 @@ $(document).ready(function (){
 
 
 <!-- Script per animazione di chiusura del menù in MOBILE -->
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
     // Esegui il codice solo se la larghezza della finestra è inferiore a 768 pixel (mobile)
     if (window.innerWidth < 768) {
@@ -40,4 +40,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500);
     }
 });
-
+*/
